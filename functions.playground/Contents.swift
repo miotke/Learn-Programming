@@ -102,3 +102,21 @@ func matchesPerCandle(candles: Int, matches: Int) -> Int {
 
 let matchesVsCandles = matchesPerCandle(candles: 100, matches: 200)
 
+
+// Function attempt #5
+var price = 100
+var days = 3
+
+func condoPrice(price: Int, days: Int) -> Int {
+    if price >= days {
+        print("The price of \(price) a day is ok for \(days) days.")
+    } else {
+        print("This is WAY too much money!")
+    }
+    return finalPrice
+}
+
+let finalPrice = condoPrice(price: 1000, days: 5)
+
+
+
