@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Content"
+      name = "Content">
+      <FileRef
+         location = "group:gameOver.png">
+      </FileRef>
+      <FileRef
+         location = "group:gameOver@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:penguinEvil.png">
+      </FileRef>
+      <FileRef
+         location = "group:penguinEvil@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:penguinGood.png">
+      </FileRef>
+      <FileRef
+         location = "group:penguinGood@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:whack.caf">
+      </FileRef>
+      <FileRef
+         location = "group:whackBackground.png">
+      </FileRef>
+      <FileRef
+         location = "group:whackBackground@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:whackBad.caf">
+      </FileRef>
+      <FileRef
+         location = "group:whackHole.png">
+      </FileRef>
+      <FileRef
+         location = "group:whackHole@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:whackMask.png">
+      </FileRef>
+      <FileRef
+         location = "group:whackMask@2x.png">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
