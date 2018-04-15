@@ -88,6 +88,17 @@ func laptopsPerBackpack(laptops: Int, backpacks: Int) -> Int {
 let availableLaptops = laptopsPerBackpack(laptops: 100, backpacks: 300)
 
 // Function attempt #4
+var candles: Int
+var matches: Int
 
+func matchesPerCandle(candles: Int, matches: Int) -> Int {
+    if candles <= matches {
+        print("We can light all of the candles, all \(candles) of them.")
+    } else {
+        print("We can't light all of the candles.")
+    }
+    return matchesVsCandles
+}
 
+let matchesVsCandles = matchesPerCandle(candles: 100, matches: 200)
 
