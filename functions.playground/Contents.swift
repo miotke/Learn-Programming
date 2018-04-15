@@ -18,7 +18,7 @@ var width3 = 8
 var area3 = length3 * length3
 
 // Functions
-func calculateArea(length: Int, width: Int) -> Int{
+func calculateArea(length: Int, width: Int) -> Int {
     let area = length * width
     return area
 }
@@ -42,4 +42,52 @@ func purchaseItem(currentBalance: Double, itemPrice: Double) -> Double {
 }
 
 let newBalance = purchaseItem(currentBalance: bankAccountBalance, itemPrice: retroLunchBox)
+
+
+// New function
+var dogs = 100
+var cats = 200
+
+func addDogsAndCats(dogs: Int, cats: Int) -> Int {
+    let totalDogsAndCats = dogs + cats
+    return totalDogsAndCats
+}
+
+let petPark1 = addDogsAndCats(dogs: 10, cats: 30)
+let petPark2 = addDogsAndCats(dogs: 100, cats: 50)
+let petPark3 = addDogsAndCats(dogs: 98127, cats: 3123)
+
+
+// Function attempt #2
+var people = 100
+var parks = 50
+
+func totalNumberOfPeopleInParks(people: Int, parks: Int) -> Int {
+    let multiplyPeopleVsParks = people * parks
+    print("\(multiplyPeopleVsParks)")
+    return multiplyPeopleVsParks
+}
+
+let everything = totalNumberOfPeopleInParks(people: 1000, parks: 20)
+let everything2 = totalNumberOfPeopleInParks(people: 123451, parks: 872387)
+
+
+// Function attempt #3
+var laptops: Int
+var backpacks: Int
+
+func laptopsPerBackpack(laptops: Int, backpacks: Int) -> Int {
+    if backpacks <= laptops {
+        print("There are enough backpacks for every laptop.")
+    } else {
+        print ("There are not enough backpacks, you don't get a laptop today.")
+    }
+    return availableLaptops
+}
+
+let availableLaptops = laptopsPerBackpack(laptops: 100, backpacks: 300)
+
+// Function attempt #4
+
+
 
