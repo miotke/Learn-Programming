@@ -88,9 +88,6 @@ func laptopsPerBackpack(laptops: Int, backpacks: Int) -> Int {
 let availableLaptops = laptopsPerBackpack(laptops: 100, backpacks: 300)
 
 // Function attempt #4
-var candles: Int
-var matches: Int
-
 func matchesPerCandle(candles: Int, matches: Int) -> Int {
     if candles <= matches {
         print("We can light all of the candles, all \(candles) of them.")
@@ -104,9 +101,6 @@ let matchesVsCandles = matchesPerCandle(candles: 100, matches: 200)
 
 
 // Function attempt #5
-var price = 100
-var days = 3
-
 func condoPrice(price: Int, days: Int) -> Int {
     if price >= days {
         print("The price of \(price) a day is ok for \(days) days.")
@@ -118,5 +112,14 @@ func condoPrice(price: Int, days: Int) -> Int {
 
 let finalPrice = condoPrice(price: 1000, days: 5)
 
+// Function attempt #6
+func foodFunction(burgers: Int, people: Int) -> Int {
+    if burgers >= people {
+        print("There's too much food for the amount of people here.")
+    } else {
+        print("We need a lot more food. There are only \(burgers) burgers and \(people)")
+    }
+    return burgerAmount
+}
 
-
+let burgerAmount = foodFunction(burgers: 30, people: 10)
