@@ -140,29 +140,51 @@ func busMethod(busSeats: Int, passengers: Int) -> Int {
 let busPassenger = busMethod(busSeats: busSeats, passengers: passengers)
 
 // Function attempt #8
-var totalPizzas = 10
-var pizzaSlices = 8
-var peopleToEatPizza = 20
-
-func canPeopleHavePizza() -> Int {
-    if totalPizzas / pizzaSlices == peopleToEatPizza {
+func canPeopleHavePizza(totalPizzas: Int, peopleToEatPizzas: Int) -> Int {
+    if totalPizzas <= peopleToEatPizzas {
         print("Everyone gets pizza!")
     } else {
         print("We need more pizza.")
     }
     
-    return canPeopleHavePizza()
+    return pizzaTime
 }
 
+let pizzaTime = canPeopleHavePizza(totalPizzas: 10, peopleToEatPizzas: 10)
 
 
 
+// Function attempt #9
+var availableBeers = 6
+var availableGlasses = 10
 
+func glassesForBeers(beers: Int, glasses: Int) -> Int {
+    if beers <= glasses {
+        print("There are enough glasses for beers. \(beers) beers and \(glasses) glasses")
+    } else {
+        print("We might need to get more glasses. We only have \(beers) beers and \(glasses) glasses")
+    }
+    
+    return freeGlasses
+}
 
+let freeGlasses = glassesForBeers(beers: availableBeers, glasses: availableGlasses)
 
+// Function attempt #10
+var peopleToSkate = 1000
+var skateboards = 3000
 
+func skateboardsForPeople(peopleToSkate: Int, skateboards: Int) -> Int {
+    if peopleToSkate <= skateboards {
+        print("There are \(peopleToSkate) people and this many skateboards \(skateboards), lets skate!")
+    } else {
+        print("Sadly there are not enough skateboards to give to all \(peopleToSkate) people")
+    }
+    
+    return availableSkateboards
+}
 
-
+let availableSkateboards = skateboardsForPeople(peopleToSkate: peopleToSkate, skateboards: skateboards)
 
 
 
