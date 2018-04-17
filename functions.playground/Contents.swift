@@ -123,3 +123,102 @@ func foodFunction(burgers: Int, people: Int) -> Int {
 }
 
 let burgerAmount = foodFunction(burgers: 30, people: 10)
+
+// Function attempt #7
+var busSeats = 100
+var passengers = 90
+
+func busMethod(busSeats: Int, passengers: Int) -> Int {
+    if busSeats <= passengers {
+        print("The bus can take off.")
+    } else {
+        print("We should wait for more passengers.")
+    }
+    return busPassenger
+}
+
+let busPassenger = busMethod(busSeats: busSeats, passengers: passengers)
+
+// Function attempt #8
+var totalPizzas = 10
+var pizzaSlices = 8
+var peopleToEatPizza = 20
+
+func canPeopleHavePizza() -> Int {
+    if totalPizzas / pizzaSlices == peopleToEatPizza {
+        print("Everyone gets pizza!")
+    } else {
+        print("We need more pizza.")
+    }
+    
+    return canPeopleHavePizza()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
