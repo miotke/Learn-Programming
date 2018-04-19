@@ -186,20 +186,48 @@ func skateboardsForPeople(peopleToSkate: Int, skateboards: Int) -> Int {
 
 let availableSkateboards = skateboardsForPeople(peopleToSkate: peopleToSkate, skateboards: skateboards)
 
+// Function attempt #11
+var cars = 100
+var lanes = 90
+
+func carsOnStreet(cars: Int, lanes: Int) -> Int {
+    if cars >= lanes {
+        print("There too many cars for the \(lanes) lanes that are available.")
+    } else {
+        print("Let the cars drive freely.")
+    }
+    
+    return carsOnRoad
+}
+
+let carsOnRoad = carsOnStreet(cars: cars, lanes: lanes)
 
 
+// Function attempt #12 with strings
+var name1 = "Bob"
 
+func whoIsWho(person1: String) -> String {
+    if name1 == "Bob" {
+        print("\(name1), you are allowed to pass.")
+    } else {
+        print("You may not pass!")
+    }
+    return personsName
+}
+let personsName = whoIsWho(person1: name1)
 
+// Function attempt #13 with strings
+var approvedName = "Gary"
 
-
-
-
-
-
-
-
-
-
+func whatIsYourName(approvedName: String) -> String {
+    if approvedName == "Gary" {
+        print("Welcome Gary!")
+    } else {
+        print("Please leave as you are not \(approvedName).")
+    }
+    return whoIs
+}
+let whoIs = whatIsYourName(approvedName: approvedName)
 
 
 
