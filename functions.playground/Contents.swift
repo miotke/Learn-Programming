@@ -217,17 +217,18 @@ func whoIsWho(person1: String) -> String {
 let personsName = whoIsWho(person1: name1)
 
 // Function attempt #13 with strings
-var approvedName = "Gary"
+let approvedName = "gary"
+let notApprovedName = "ron"
 
-func whatIsYourName(approvedName: String) -> String {
+func whatIsYourName(approvedName: String, notApprovedName: String) -> String {
     if approvedName == "Gary" {
-        print("Welcome Gary!")
+        print("Welcome \(approvedName)")
     } else {
-        print("Please leave as you are not \(approvedName).")
+        print("Please leave \(notApprovedName) as you are not \(approvedName).")
     }
     return whoIs
 }
-let whoIs = whatIsYourName(approvedName: approvedName)
+let whoIs = whatIsYourName(approvedName: approvedName.capitalized, notApprovedName: notApprovedName.capitalized)
 
 
 
