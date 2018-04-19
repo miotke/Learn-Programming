@@ -58,7 +58,7 @@ let petPark2 = addDogsAndCats(dogs: 100, cats: 50)
 let petPark3 = addDogsAndCats(dogs: 98127, cats: 3123)
 
 
-// Function attempt #2
+// Function #2
 var people = 100
 var parks = 50
 
@@ -72,7 +72,7 @@ let everything = totalNumberOfPeopleInParks(people: 1000, parks: 20)
 let everything2 = totalNumberOfPeopleInParks(people: 123451, parks: 872387)
 
 
-// Function attempt #3
+// Function #3
 var laptops: Int
 var backpacks: Int
 
@@ -87,7 +87,7 @@ func laptopsPerBackpack(laptops: Int, backpacks: Int) -> Int {
 
 let availableLaptops = laptopsPerBackpack(laptops: 100, backpacks: 300)
 
-// Function attempt #4
+// Function #4
 func matchesPerCandle(candles: Int, matches: Int) -> Int {
     if candles <= matches {
         print("We can light all of the candles, all \(candles) of them.")
@@ -100,7 +100,7 @@ func matchesPerCandle(candles: Int, matches: Int) -> Int {
 let matchesVsCandles = matchesPerCandle(candles: 100, matches: 200)
 
 
-// Function attempt #5
+// Function #5
 func condoPrice(price: Int, days: Int) -> Int {
     if price >= days {
         print("The price of \(price) a day is ok for \(days) days.")
@@ -112,7 +112,7 @@ func condoPrice(price: Int, days: Int) -> Int {
 
 let finalPrice = condoPrice(price: 1000, days: 5)
 
-// Function attempt #6
+// Function #6
 func foodFunction(burgers: Int, people: Int) -> Int {
     if burgers >= people {
         print("There's too much food for the amount of people here.")
@@ -124,7 +124,7 @@ func foodFunction(burgers: Int, people: Int) -> Int {
 
 let burgerAmount = foodFunction(burgers: 30, people: 10)
 
-// Function attempt #7
+// Function #7
 var busSeats = 100
 var passengers = 90
 
@@ -139,7 +139,7 @@ func busMethod(busSeats: Int, passengers: Int) -> Int {
 
 let busPassenger = busMethod(busSeats: busSeats, passengers: passengers)
 
-// Function attempt #8
+// Function #8
 func canPeopleHavePizza(totalPizzas: Int, peopleToEatPizzas: Int) -> Int {
     if totalPizzas <= peopleToEatPizzas {
         print("Everyone gets pizza!")
@@ -154,7 +154,7 @@ let pizzaTime = canPeopleHavePizza(totalPizzas: 10, peopleToEatPizzas: 10)
 
 
 
-// Function attempt #9
+// Function #9
 var availableBeers = 6
 var availableGlasses = 10
 
@@ -170,7 +170,7 @@ func glassesForBeers(beers: Int, glasses: Int) -> Int {
 
 let freeGlasses = glassesForBeers(beers: availableBeers, glasses: availableGlasses)
 
-// Function attempt #10
+// Function #10
 var peopleToSkate = 1000
 var skateboards = 3000
 
@@ -186,7 +186,7 @@ func skateboardsForPeople(peopleToSkate: Int, skateboards: Int) -> Int {
 
 let availableSkateboards = skateboardsForPeople(peopleToSkate: peopleToSkate, skateboards: skateboards)
 
-// Function attempt #11
+// Function #11
 var cars = 100
 var lanes = 90
 
@@ -203,7 +203,7 @@ func carsOnStreet(cars: Int, lanes: Int) -> Int {
 let carsOnRoad = carsOnStreet(cars: cars, lanes: lanes)
 
 
-// Function attempt #12 with strings
+// Function #12 with strings
 var name1 = "Bob"
 
 func whoIsWho(person1: String) -> String {
@@ -216,7 +216,7 @@ func whoIsWho(person1: String) -> String {
 }
 let personsName = whoIsWho(person1: name1)
 
-// Function attempt #13 with strings
+// Function #13 with strings
 let approvedName = "gary"
 let notApprovedName = "ron"
 
@@ -230,11 +230,31 @@ func whatIsYourName(approvedName: String, notApprovedName: String) -> String {
 }
 let whoIs = whatIsYourName(approvedName: approvedName.capitalized, notApprovedName: notApprovedName.capitalized)
 
+// Functions #14 with strings
+var goodCar = "volkswagen"
+let badCar = "chevy"
 
+func carName(goodCar: String, badCar: String) -> String {
+    if goodCar == "Volkswagen" {
+        print("\(goodCar)'s are good cars.")
+    } else {
+        print("You should have bought a \(goodCar)")
+    }
+    return car
+}
+let car = carName(goodCar: goodCar.capitalized, badCar: badCar.capitalized)
 
+// Function #15 with strings
+func dogtype(dog1: String, dog2: String) -> String {
+    if dog1 == "frenchie" {
+        print("Good luck on those medical bills")
+    } else {
+        print("You will still have medical bills.")
+    }
+    return dogBreed
+}
 
-
-
+var dogBreed = dogtype(dog1: "frenchie".capitalized, dog2: "corgie".capitalized)
 
 
 
