@@ -266,18 +266,31 @@ func catsAndDogs(cat: String, dog: String) -> String {
     } else {
         print("Cats are still ok.")
     }
-    
     return areDogsBetter
 }
-
 let areDogsBetter = catsAndDogs(cat: cat, dog: dog)
 
+// Function #17
+var computerBudget = 10000
+var pricePerComputer = 1000
+
+func getPricePerComputer(howManyComputersToBuy: Int) -> Int {
+    print(howManyComputersToBuy)
+    return computersPurchased
+}
+
+let computersPurchased = getPricePerComputer(howManyComputersToBuy: computerBudget / pricePerComputer)
 
 
+// Function #18
+var bigNumber = 12387983798
+var biggerNumber = 21983865981273
 
-
-
-
+func makeBigNumber(bigNumber: Int, biggerNumber: Int) -> Int {
+    print(getBigNumber)
+    return getBigNumber
+}
+let getBigNumber = makeBigNumber(totalNumber: bigNumber * biggerNumber)
 
 
 
