@@ -257,19 +257,20 @@ func dogtype(dog1: String, dog2: String) -> String {
 var dogBreed = dogtype(dog1: "frenchie".capitalized, dog2: "corgie".capitalized)
 
 // Function #16
-//var availableBudget = 10000
-//var computerCost = 4000
-//var totalBudget = 30000
-//
-//func findBudgetFit(availableBudget: Int, computerCost: Int) -> Int {
-//    availableBudget / computerCost
-//    
-//    return budget
-//}
-//let budget = findBudgetFit(availableBudget: availableBudget, computerCost: computerCost)
+var cat = "Some Cat"
+var dog = "Some Dog"
 
+func catsAndDogs(cat: String, dog: String) -> String {
+    if cat == "Some Cat" {
+        print("Cats are alright.")
+    } else {
+        print("Cats are still ok.")
+    }
+    
+    return areDogsBetter
+}
 
-
+let areDogsBetter = catsAndDogs(cat: cat, dog: dog)
 
 
 
