@@ -256,7 +256,17 @@ func dogtype(dog1: String, dog2: String) -> String {
 
 var dogBreed = dogtype(dog1: "frenchie".capitalized, dog2: "corgie".capitalized)
 
-
+// Function #16
+//var availableBudget = 10000
+//var computerCost = 4000
+//var totalBudget = 30000
+//
+//func findBudgetFit(availableBudget: Int, computerCost: Int) -> Int {
+//    availableBudget / computerCost
+//    
+//    return budget
+//}
+//let budget = findBudgetFit(availableBudget: availableBudget, computerCost: computerCost)
 
 
 
