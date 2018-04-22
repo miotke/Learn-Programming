@@ -55,16 +55,13 @@ for salary in employeeSalaries {
 var volkswagens: [String] = ["Golf", "Jetta", "Passat", "Fox"]
 
 for model in volkswagens {
-    print("Model: \(volkswagens )")
+    print("Model: \(volkswagens)")
 }
 
+// Line numbers loop
 var lineNumbersAreAvailable = true
 var lineNumberStart = 1
 var lineNumberRange = 120
-
-//for lineNumberStart in 1...lineNumberRange {
-//    print("\(lineNumberStart)")
-//}
 
 func getLineNumbers() -> Bool {
     if lineNumbersAreAvailable == true {
@@ -80,10 +77,10 @@ func getLineNumbers() -> Bool {
 getLineNumbers()
 
 
-
-
-
-
+var audiModel: [String] = ["A3", "S3", "RS3", "A4", "S4", "RS4", "A5", "S5", "RS5", "A6", "S7", "RS7", "A8", "A8L", "S8", "R8"]
+for audiType in audiModel {
+    print("\(audiModel)")
+}
 
 
 
