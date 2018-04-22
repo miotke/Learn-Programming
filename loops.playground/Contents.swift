@@ -40,13 +40,13 @@ for i in 0..<employeeSalaries.count {
 print(employeeSalaries)
 
 
-for z in 0...100 {
-    print("\(z)")
-}
-
-for appleInBucket in 100..<200 {
-    print("\(appleInBucket)")
-}
+//for z in 0...100 {
+//    print("\(z)")
+//}
+//
+//for appleInBucket in 100..<200 {
+//    print("\(appleInBucket)")
+//}
 
 for salary in employeeSalaries {
     print("Salary: \(employeeSalaries)")
@@ -58,16 +58,26 @@ for model in volkswagens {
     print("Model: \(volkswagens )")
 }
 
-var showLineNumbers = true
+var lineNumbersAreAvailable = true
 var lineNumberStart = 1
-var lineNumberRange = 100
+var lineNumberRange = 120
 
-for lineNumberStart in 1...lineNumberRange {
-    print("\(lineNumberStart)")
+//for lineNumberStart in 1...lineNumberRange {
+//    print("\(lineNumberStart)")
+//}
+
+func getLineNumbers() -> Bool {
+    if lineNumbersAreAvailable == true {
+        for lineNumberStart in 1...lineNumberRange {
+            print("\(lineNumberStart)")
+        }
+    } else {
+        print("Need numners")
+    }
+    return lineNumbersAreAvailable
 }
 
-
-
+getLineNumbers()
 
 
 
