@@ -58,7 +58,13 @@ for model in volkswagens {
     print("Model: \(volkswagens )")
 }
 
+var showLineNumbers = true
+var lineNumberStart = 1
+var lineNumberRange = 100
 
+for lineNumberStart in 1...lineNumberRange {
+    print("\(lineNumberStart)")
+}
 
 
 
