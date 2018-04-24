@@ -64,5 +64,13 @@ for initialsValue in initials.values {
     print("The intials stand for: \(initialsValue)")
 }
 
+// New dictionary
+var carNames = [String: String]()
+carNames["VW"] = "Volkswagen"
+carNames["AU"] = "Audi"
+carNames["BM"] = "BMW"
+carNames["MER"] = "Mercedes"
 
-
+for (carNamesKey, carNamesValue) in carNames {
+    print("\(carNamesKey): \(carNamesValue)")
+}
