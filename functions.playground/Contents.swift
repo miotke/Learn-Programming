@@ -283,21 +283,25 @@ let computersPurchased = getPricePerComputer(howManyComputersToBuy: computerBudg
 
 
 // Function #18
-var bigNumber = 12387983798
-var biggerNumber = 21983865981273
+//var bigNumber = 12387983798
+//var biggerNumber = 21983865981273
+//
+//func makeBiggestNumber(bigNumber: Int, biggerNumber: Int) -> Int {
+//    print("\(createBigNumber)")
+//}
+//
+//let createBigNumber = makeBiggestNumber(makeBiggerNumber: bigNumber * biggerNumber)
 
-func makeBigNumber(bigNumber: Int, biggerNumber: Int) -> Int {
-    print(getBigNumber)
-    return getBigNumber
+// Function # 19
+var string1 = "Here's string # 1"
+var string2 = "Here's string # 2"
+
+func showStrings(getString1: String, getString2: String) -> String {
+    print("\(showStrings)")
+    return availableStrings
 }
-let getBigNumber = makeBigNumber(totalNumber: bigNumber * biggerNumber)
 
-
-
-
-
-
-
+let availableStrings = showStrings(getString1: string1, getString2: string2)
 
 
 
