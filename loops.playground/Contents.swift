@@ -82,6 +82,10 @@ for audiType in audiModel {
     print("\(audiModel)")
 }
 
+for loop in 1 ..< 100 {
+    print("\(loop)")
+}
 
-
-
+for bigLoop in 1 ... 1000 {
+    print("\(bigLoop)")
+}
