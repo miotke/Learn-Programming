@@ -74,3 +74,28 @@ carNames["MER"] = "Mercedes"
 for (carNamesKey, carNamesValue) in carNames {
     print("\(carNamesKey): \(carNamesValue)")
 }
+
+
+// Dictionary with Strings and Ints
+var stringsAndInts = [String: Int]()
+stringsAndInts["Int1"] = 100
+stringsAndInts["Int2"] = 200
+stringsAndInts["Int3"] = 300
+stringsAndInts["Int4"] = 400
+
+for (stringKey, intValue) in stringsAndInts {
+    print("\(stringKey) : \(intValue)")
+}
+
+// Dictionary with Ints and Strings
+var intsAndStrings = [Int: String]()
+intsAndStrings[10] = "Ten"
+intsAndStrings[100] = "One Hundred"
+intsAndStrings[1000] = "One Thousand"
+intsAndStrings[10000] = "Ten Thousand"
+intsAndStrings[100000] = "One Hundred Thousand"
+intsAndStrings[1000000] = "One Million!"
+
+for (intKey, stringValue) in intsAndStrings {
+    print("\(intKey) = \(stringValue)")
+}
