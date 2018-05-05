@@ -194,7 +194,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="9XB-Zo-nfb" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="ahf-tB-vJ1"/>
+                                    <segue destination="9XB-Zo-nfb" kind="unwind" unwindAction="unwindFromLeagueVCWithUnwindSegue:" id="NQA-K5-rnF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -294,6 +294,21 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishButtonPressed:" destination="ymb-xO-m8w" eventType="touchUpInside" id="3Ex-8K-ImZ"/>
+                                    <segue destination="eQf-Z3-OT6" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="v1Q-7C-Tg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jO-kN-B6L">
+                                <rect key="frame" x="16" y="30" width="44" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="mKz-Uk-WDJ"/>
+                                    <constraint firstAttribute="height" constant="33" id="xhB-Du-0d0"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="eQf-Z3-OT6" kind="unwind" unwindAction="unwindFromSkillViewControllerWithUnwindSegue:" id="kxG-gy-xnZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,7 +320,9 @@
                             <constraint firstItem="tGI-UC-BuP" firstAttribute="bottom" secondItem="eHX-Cd-UE5" secondAttribute="bottom" constant="30" id="SMA-r3-UfQ"/>
                             <constraint firstItem="iU3-Dl-Bx0" firstAttribute="leading" secondItem="tGI-UC-BuP" secondAttribute="leading" constant="16" id="XMJ-tK-xnW"/>
                             <constraint firstItem="91Q-zr-pAU" firstAttribute="top" secondItem="tGI-UC-BuP" secondAttribute="top" constant="20" id="Y3x-PA-d8d"/>
+                            <constraint firstItem="3jO-kN-B6L" firstAttribute="leading" secondItem="tGI-UC-BuP" secondAttribute="leading" constant="16" id="dFM-bj-scU"/>
                             <constraint firstItem="91Q-zr-pAU" firstAttribute="leading" secondItem="tGI-UC-BuP" secondAttribute="leading" id="lCH-RY-iwk"/>
+                            <constraint firstItem="3jO-kN-B6L" firstAttribute="top" secondItem="tGI-UC-BuP" secondAttribute="top" constant="10" id="qky-LQ-7Sc"/>
                             <constraint firstItem="tGI-UC-BuP" firstAttribute="trailing" secondItem="eHX-Cd-UE5" secondAttribute="trailing" constant="16" id="reZ-Yw-vZH"/>
                             <constraint firstItem="U6k-7T-HxD" firstAttribute="leading" secondItem="tGI-UC-BuP" secondAttribute="leading" id="sme-rg-uqb"/>
                             <constraint firstItem="eHX-Cd-UE5" firstAttribute="leading" secondItem="tGI-UC-BuP" secondAttribute="leading" constant="16" id="uqR-rV-4zu"/>
@@ -316,6 +333,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAd-20-q15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eQf-Z3-OT6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1551" y="117"/>
         </scene>
