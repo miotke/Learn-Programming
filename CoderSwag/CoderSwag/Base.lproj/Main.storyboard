@@ -46,16 +46,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="3h0-fM-U9z">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="133.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="4Nu-g6-6Jd"/>
+                                                        <constraint firstAttribute="height" constant="133" id="xCy-pf-aMq"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndr-3j-KtD">
-                                                    <rect key="frame" x="143" y="52" width="88" height="35"/>
+                                                    <rect key="frame" x="84" y="52" width="207" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="YnF-E0-0ko"/>
-                                                        <constraint firstAttribute="height" constant="35" id="sT1-nh-DF0"/>
+                                                        <constraint firstAttribute="width" constant="207" id="dQM-a7-sbI"/>
+                                                        <constraint firstAttribute="height" constant="35" id="yDR-xX-5QH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,11 +64,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="3h0-fM-U9z" secondAttribute="trailing" id="3ui-Ja-o9H"/>
+                                                <constraint firstItem="3h0-fM-U9z" firstAttribute="top" secondItem="quN-YS-cGH" secondAttribute="top" constant="3" id="4jJ-1I-Kgh"/>
                                                 <constraint firstItem="3h0-fM-U9z" firstAttribute="leading" secondItem="quN-YS-cGH" secondAttribute="leading" id="FsJ-7Z-8Cd"/>
-                                                <constraint firstItem="ndr-3j-KtD" firstAttribute="centerX" secondItem="quN-YS-cGH" secondAttribute="centerX" id="Y7o-RQ-Ywr"/>
-                                                <constraint firstAttribute="bottom" secondItem="3h0-fM-U9z" secondAttribute="bottom" id="YBl-kg-Mpx"/>
-                                                <constraint firstItem="3h0-fM-U9z" firstAttribute="top" secondItem="quN-YS-cGH" secondAttribute="top" id="hKt-eG-dK2"/>
-                                                <constraint firstItem="ndr-3j-KtD" firstAttribute="centerY" secondItem="quN-YS-cGH" secondAttribute="centerY" id="prp-1b-fVd"/>
+                                                <constraint firstItem="ndr-3j-KtD" firstAttribute="centerY" secondItem="quN-YS-cGH" secondAttribute="centerY" id="lrV-g7-gVE"/>
+                                                <constraint firstAttribute="bottom" secondItem="3h0-fM-U9z" secondAttribute="bottom" constant="3" id="rLt-ES-aLD"/>
+                                                <constraint firstItem="ndr-3j-KtD" firstAttribute="centerX" secondItem="quN-YS-cGH" secondAttribute="centerX" id="sj2-Di-smH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
