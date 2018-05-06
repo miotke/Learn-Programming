@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="sQM-8j-hPr" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="sQM-8j-hPr" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sQM-8j-hPr" id="quN-YS-cGH">
@@ -92,17 +92,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="lv9-cg-E8u"/>
                     <connections>
                         <outlet property="categoryTable" destination="wXD-ww-Jc5" id="IrM-CD-rgj"/>
-                        <segue destination="FDM-p7-IMm" kind="show" id="bLX-pR-24L"/>
+                        <segue destination="FDM-p7-IMm" kind="show" identifier="ProductsVC" id="bLX-pR-24L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="455.19999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="2R9-Oe-KT2">
             <objects>
-                <viewController id="FDM-p7-IMm" sceneMemberID="viewController">
+                <viewController id="FDM-p7-IMm" customClass="ProductsVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nx7-c6-egO"/>
                         <viewControllerLayoutGuide type="bottom" id="5gB-kD-ayM"/>
@@ -131,7 +131,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="42R-Fl-sAj" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="42R-Fl-sAj" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="262"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -193,6 +193,9 @@
                             <constraint firstItem="5gB-kD-ayM" firstAttribute="top" secondItem="KhG-QH-Ckg" secondAttribute="bottom" id="yja-8f-RMU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="KhG-QH-Ckg" id="v0y-Bl-WaV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCf-wy-BA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

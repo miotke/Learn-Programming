@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492030E8209FB062006F9E5F /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492030E7209FB062006F9E5F /* ProductsVC.swift */; };
 		49D0A130209F70B900702219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A12F209F70B900702219 /* AppDelegate.swift */; };
 		49D0A132209F70B900702219 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A131209F70B900702219 /* CategoriesVC.swift */; };
 		49D0A135209F70B900702219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A133209F70B900702219 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492030E7209FB062006F9E5F /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		49D0A12C209F70B900702219 /* CoderSwag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderSwag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D0A12F209F70B900702219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D0A131209F70B900702219 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				49D0A131209F70B900702219 /* CategoriesVC.swift */,
+				492030E7209FB062006F9E5F /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492030E8209FB062006F9E5F /* ProductsVC.swift in Sources */,
 				49D0A132209F70B900702219 /* CategoriesVC.swift in Sources */,
 				49D0A130209F70B900702219 /* AppDelegate.swift in Sources */,
 				49D0A145209F747900702219 /* CategoryCell.swift in Sources */,
