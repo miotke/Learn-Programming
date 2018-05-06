@@ -23,7 +23,11 @@ class SkillVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func finishButtonPressed(_ sender: Any) {
+        print("Finish button pressed. 🏀")
+        
+    }
+    
     /*
     // MARK: - Navigation
 
