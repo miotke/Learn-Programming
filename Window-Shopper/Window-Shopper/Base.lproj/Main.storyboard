@@ -68,6 +68,10 @@
                             <constraint firstItem="SpG-f2-QCu" firstAttribute="leading" secondItem="LQX-ko-eI0" secondAttribute="leading" id="yxZ-4j-B6U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="SpG-f2-QCu" id="UWd-2Z-mgH"/>
+                        <outlet property="wageTxt" destination="LQX-ko-eI0" id="LD0-0A-Or4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
