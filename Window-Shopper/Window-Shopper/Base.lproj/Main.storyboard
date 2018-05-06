@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,22 +32,40 @@
                                     <constraint firstAttribute="width" constant="60" id="S9n-oZ-DxD"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQX-ko-eI0" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="53" y="189" width="268" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQX-ko-eI0" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="36" y="150" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JE9-FM-yfi"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpG-f2-QCu" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="36" y="215" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5D4-cE-y6T"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="SpG-f2-QCu" firstAttribute="trailing" secondItem="LQX-ko-eI0" secondAttribute="trailing" id="GwQ-7G-Bs5"/>
                             <constraint firstItem="kZI-Hv-i5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OAC-Um-3Sz"/>
                             <constraint firstItem="kZI-Hv-i5c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UFe-AB-eTo"/>
                             <constraint firstItem="CR9-bp-5TB" firstAttribute="top" secondItem="kza-LA-aWU" secondAttribute="bottom" constant="35" id="cS9-Qk-YYf"/>
                             <constraint firstItem="gWt-vE-kB8" firstAttribute="top" secondItem="kZI-Hv-i5c" secondAttribute="bottom" id="gvZ-ZL-GER"/>
+                            <constraint firstItem="LQX-ko-eI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="i2O-ho-lAk"/>
+                            <constraint firstItem="SpG-f2-QCu" firstAttribute="height" secondItem="LQX-ko-eI0" secondAttribute="height" id="j67-xX-7jX"/>
+                            <constraint firstItem="LQX-ko-eI0" firstAttribute="top" secondItem="CR9-bp-5TB" secondAttribute="bottom" constant="35" id="j7C-Of-xzT"/>
+                            <constraint firstItem="SpG-f2-QCu" firstAttribute="top" secondItem="LQX-ko-eI0" secondAttribute="bottom" constant="25" id="l9z-vp-eSe"/>
                             <constraint firstAttribute="trailing" secondItem="kZI-Hv-i5c" secondAttribute="trailing" id="uzh-xm-8YV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LQX-ko-eI0" secondAttribute="trailing" constant="20" id="vcP-4o-fSo"/>
                             <constraint firstItem="CR9-bp-5TB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xg6-se-rFW"/>
+                            <constraint firstItem="SpG-f2-QCu" firstAttribute="leading" secondItem="LQX-ko-eI0" secondAttribute="leading" id="yxZ-4j-B6U"/>
                         </constraints>
                     </view>
                 </viewController>
