@@ -14,7 +14,7 @@ let playground = sarcasticFunc(string1: playgroundsString, string2: sarcasticRes
 
 
 func getNumber(numberOne: Double, numberTwo: Double) -> Double {
-    if numberOne * numberTwo == 100 {
+    if numberOne + numberTwo == 100 {
         print("This is correct")
     } else {
         print("This is wrong")
@@ -23,3 +23,27 @@ func getNumber(numberOne: Double, numberTwo: Double) -> Double {
 }
 
 let getTheNumber = getNumber(numberOne: 49.5, numberTwo: 50.5)
+
+
+var weatherType = "sunny"
+var numberOfDrivers = "100"
+
+func isTrafficGood(weather: String, drivers: String) {
+    if weather == "sunny" {
+        print("Traffic will not be too bad")
+    } else {
+        print("OH GAWD JUST STAY HOME!")
+    }
+    return trafficCraze
+}
+
+let trafficCraze = isTrafficGood(weather: weatherType, drivers: numberOfDrivers)
+
+
+
+
+
+
+
+
+
