@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="1112.8" y="-200.14992503748127"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="oLM-hJ-bKI">
             <objects>
-                <viewController id="5tL-bW-cKB" sceneMemberID="viewController">
+                <viewController id="5tL-bW-cKB" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hh2-yu-N20">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +230,9 @@
                                     <constraint firstAttribute="height" constant="28" id="paP-f3-ma5"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="closeButton"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="5tL-bW-cKB" eventType="touchUpInside" id="yWS-dX-iBm"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Rt-OhV">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
@@ -278,7 +281,7 @@
                                     <constraint firstAttribute="height" constant="50" id="vsl-M7-0yX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -296,6 +299,7 @@
                             <constraint firstItem="XyC-8d-S4g" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="t9p-8y-8Jm"/>
                             <constraint firstItem="wcV-Rt-OhV" firstAttribute="top" secondItem="C1I-lz-dnc" secondAttribute="bottom" constant="40" id="zvQ-Hh-VIZ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="HUO-Qx-L08"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdf-yJ-MnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
