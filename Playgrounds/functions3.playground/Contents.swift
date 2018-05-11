@@ -40,10 +40,20 @@ func isTrafficGood(weather: String, drivers: String) {
 let trafficCraze = isTrafficGood(weather: weatherType, drivers: numberOfDrivers)
 
 
+func createLineNumbers(lineNumbers: Int, textLines: Int)  -> Int {
+    for lineNumbers in textLines ... 100 {
+        print("\(lineNumbers)")
+    }
+    return lineNumbers
+}
 
+let calcLineNumbers = createLineNumbers(lineNumbers: 100, textLines: 10)
 
-
-
-
-
+func createLoop(int1: Int, int2: Int) -> Int {
+    for number in int1 ... int2 {
+        print("\(number)")
+    }
+    return number
+}
+let number = createLoop(int1: 100, int2: 1000)
 
