@@ -13,7 +13,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+     
     }
 
     @IBAction func closePressed(_ sender: Any) {
@@ -23,5 +23,4 @@ class LoginVC: UIViewController {
     @IBAction func createAccountButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
     }
-    
 }

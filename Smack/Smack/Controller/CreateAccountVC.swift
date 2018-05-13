@@ -10,10 +10,12 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
     
+    // Outlets
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     // Variables
@@ -24,6 +26,8 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
         
         
     }
@@ -39,6 +43,9 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func createAccountPressed(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard let name = usernameTxt.text , usernameTxt.text != "" else { return }
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let password = passwordTxt.text, passwordTxt.text != "" else { return  }
@@ -49,7 +56,8 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
-                                print(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND, sender: nil)
                             }
                         })
@@ -79,5 +87,20 @@ class CreateAccountVC: UIViewController {
     
     @IBAction func closePressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
+    }
+    
+    func setupView() {
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        
+        spinner.isHidden = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
 }
