@@ -518,18 +518,18 @@
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tel-fe-IAz">
-                                <rect key="frame" x="16" y="78" width="343" height="589"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uo4-ln-Xmh">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="3v6-bh-cmV" customClass="AvatarCell" customModule="Smack" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="20" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -558,11 +558,11 @@
                             <constraint firstItem="62z-2t-9vC" firstAttribute="top" secondItem="fYS-Mu-gGa" secondAttribute="topMargin" constant="8" id="3so-HN-YQ9"/>
                             <constraint firstItem="tel-fe-IAz" firstAttribute="top" secondItem="62z-2t-9vC" secondAttribute="bottom" constant="20" id="6yh-Qc-WHp"/>
                             <constraint firstItem="V9M-Ze-dtZ" firstAttribute="top" secondItem="fYS-Mu-gGa" secondAttribute="topMargin" constant="8" id="E2G-VL-07O"/>
-                            <constraint firstItem="tel-fe-IAz" firstAttribute="leading" secondItem="fYS-Mu-gGa" secondAttribute="leadingMargin" id="Eya-ZA-fO4"/>
                             <constraint firstItem="62z-2t-9vC" firstAttribute="leading" secondItem="fYS-Mu-gGa" secondAttribute="leadingMargin" id="KOZ-6r-mFn"/>
                             <constraint firstItem="V9M-Ze-dtZ" firstAttribute="centerX" secondItem="fYS-Mu-gGa" secondAttribute="centerX" id="XfF-b8-6E5"/>
-                            <constraint firstItem="tel-fe-IAz" firstAttribute="trailing" secondItem="fYS-Mu-gGa" secondAttribute="trailingMargin" id="dnf-AF-DaP"/>
                             <constraint firstAttribute="bottomMargin" secondItem="tel-fe-IAz" secondAttribute="bottom" id="glY-87-yNN"/>
+                            <constraint firstAttribute="trailing" secondItem="tel-fe-IAz" secondAttribute="trailing" id="qvZ-hi-d3t"/>
+                            <constraint firstItem="tel-fe-IAz" firstAttribute="leading" secondItem="fYS-Mu-gGa" secondAttribute="leading" id="rOv-hD-CBH"/>
                         </constraints>
                     </view>
                     <connections>
