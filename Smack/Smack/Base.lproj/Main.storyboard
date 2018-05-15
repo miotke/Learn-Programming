@@ -178,6 +178,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="YtK-Zx-X3y" id="atR-6b-f6f"/>
+                        <outlet property="userImage" destination="c6O-dk-8jS" id="lzE-77-YS8"/>
                         <segue destination="5tL-bW-cKB" kind="show" identifier="toLogin" id="7g2-NB-ke7"/>
                     </connections>
                 </viewController>
@@ -571,6 +572,7 @@
                             <constraint firstAttribute="trailing" secondItem="tel-fe-IAz" secondAttribute="trailing" id="qvZ-hi-d3t"/>
                             <constraint firstItem="tel-fe-IAz" firstAttribute="leading" secondItem="fYS-Mu-gGa" secondAttribute="leading" id="rOv-hD-CBH"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aig-DS-JsH"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="tel-fe-IAz" id="ncI-Ay-vMX"/>
