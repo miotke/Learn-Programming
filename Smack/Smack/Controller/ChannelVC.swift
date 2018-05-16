@@ -28,7 +28,7 @@ class ChannelVC: UIViewController {
     }
     
     @objc func userDataDidChange(_ notif: Notification) {
-        if AuthService.instance.isLoggedIn {
+        if AuthService.instance.isLoggedIn == true {
             loginButton.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named: UserDataService.instance.avatarName)
         } else {
