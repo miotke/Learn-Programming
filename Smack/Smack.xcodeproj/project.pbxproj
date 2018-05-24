@@ -107,6 +107,7 @@
 		498DFD4E209FC809004922A7 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				49DBEDCB20B66EEF0049B1D7 /* XIBs */,
 				49AEA48B20A674CF0091074C /* Services */,
 				49252A5020A3F252002B5563 /* Utilities */,
 				498DFD64209FC822004922A7 /* Supporting Files */,
@@ -131,7 +132,6 @@
 				49BF7FDF20A3F9E900CF992A /* CreateAccountVC.swift */,
 				492EFBA420A8F69500156541 /* AvatarPickerVC.swift */,
 				49DBEDC720B66EBE0049B1D7 /* ProfileVC.swift */,
-				49DBEDC820B66EBE0049B1D7 /* ProfileVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +171,14 @@
 				49AEA49020A68B500091074C /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		49DBEDCB20B66EEF0049B1D7 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				49DBEDC820B66EBE0049B1D7 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		76CC7568C7F778A73F7FB436 /* Pods */ = {
