@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -288,11 +282,19 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="5tL-bW-cKB" eventType="touchUpInside" id="rDV-mh-nBc"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KOx-cJ-EWc">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="C1I-lz-dnc" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="1mc-nu-TMH"/>
+                            <constraint firstItem="KOx-cJ-EWc" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="2Nd-d0-HUZ"/>
                             <constraint firstItem="C1I-lz-dnc" firstAttribute="top" secondItem="Hh2-yu-N20" secondAttribute="topMargin" constant="60" id="5kn-1c-hjk"/>
                             <constraint firstItem="wcV-Rt-OhV" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="CHs-IR-0wQ"/>
                             <constraint firstItem="XyC-8d-S4g" firstAttribute="top" secondItem="wcV-Rt-OhV" secondAttribute="bottom" constant="40" id="Eag-Fr-tSp"/>
@@ -301,11 +303,15 @@
                             <constraint firstItem="Zsl-Pq-jDU" firstAttribute="top" secondItem="XyC-8d-S4g" secondAttribute="bottom" id="SpZ-fB-Yu1"/>
                             <constraint firstItem="Zsl-Pq-jDU" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="hpK-fB-ocy"/>
                             <constraint firstItem="XyC-8d-S4g" firstAttribute="centerX" secondItem="Hh2-yu-N20" secondAttribute="centerX" id="t9p-8y-8Jm"/>
+                            <constraint firstItem="KOx-cJ-EWc" firstAttribute="centerY" secondItem="Hh2-yu-N20" secondAttribute="centerY" constant="-100" id="uYW-L7-3AZ"/>
                             <constraint firstItem="wcV-Rt-OhV" firstAttribute="top" secondItem="C1I-lz-dnc" secondAttribute="bottom" constant="40" id="zvQ-Hh-VIZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HUO-Qx-L08"/>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="bLR-FP-utX" id="2vu-Uo-rFq"/>
+                        <outlet property="spinner" destination="KOx-cJ-EWc" id="dVM-TC-nHN"/>
+                        <outlet property="userNameText" destination="QQH-37-Sqc" id="0HE-gE-1I7"/>
                         <segue destination="tH5-W8-1q5" kind="show" identifier="toCreateAccount" id="gcG-r7-DQp"/>
                     </connections>
                 </viewController>
