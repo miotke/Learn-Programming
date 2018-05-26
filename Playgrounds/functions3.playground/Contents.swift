@@ -57,3 +57,21 @@ func createLoop(int1: Int, int2: Int) -> Int {
 }
 let number = createLoop(int1: 100, int2: 1000)
 
+
+
+
+func swiftDevelopersInTacoma(yes: String, no: String) -> String {
+    if yes == yes {
+        print("\(yes)")
+    } else {
+        print("\(no)")
+    }
+    return tacomaSwiftDev
+}
+
+let tacomaSwiftDev = swiftDevelopersInTacoma(yes: "Lets make it happen!", no: "If you're interested, why not start?")
+
+
+
+
+
