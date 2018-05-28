@@ -31,6 +31,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     var screenSize = UIScreen.main.bounds
     
     var imageUrlArray = [String]()
+    var imageArray = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func animateViewDown() {
+        cancelAllSessions()
         pullUpViewHeightConstraint.constant = 0
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
@@ -94,7 +96,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     func addProgressLabel() {
         progressLabel = UILabel()
         progressLabel?.frame = CGRect(x: (screenSize.width / 2) - 120, y: 175, width: 240, height: 40)
-        progressLabel?.font = UIFont(name: "Avenir Next", size: 18)
+        progressLabel?.font = UIFont(name: "Avenir Next", size: 15)
         progressLabel?.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         progressLabel?.textAlignment = .center
         collectionView?.addSubview(progressLabel!)
@@ -127,6 +129,29 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             handler(true)
         }
     }
+    
+    func retrieveImages(handler: @escaping (_ status: Bool) -> ()) {
+       imageArray = []
+        
+        for url in imageUrlArray {
+            Alamofire.request(url).responseImage { (response) in
+                guard let image = response.result.value else { return }
+                self.imageArray.append(image)
+                self.progressLabel?.text = "\(self.imageArray.count)/40 IMAGES DOWNLOADED"
+                
+                if self.imageArray.count == self.imageUrlArray.count {
+                    handler(true)
+                }
+            }
+        }
+    }
+    
+    func cancelAllSessions() {
+        Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
+            sessionDataTask.forEach({ $0.cancel() })
+            downloadData.forEach({ $0.cancel() })
+        }
+    }
 }
 
 
@@ -156,6 +181,8 @@ extension MapVC: MKMapViewDelegate {
         removePin()
         removeSpinner()
         removeProgresslabel()
+        cancelAllSessions()
+        
         animateViewUp()
         addSwipe()
         addSpinner()
@@ -174,8 +201,17 @@ extension MapVC: MKMapViewDelegate {
         mapView.setRegion(coordinateRegion, animated: true)
         print(touchPoint)
 
-        retrieveUrls(forAnnotation: annotation) { (true) in
-            print(self.imageUrlArray)
+        retrieveUrls(forAnnotation: annotation) { (finished) in
+//            print(self.imageUrlArray)
+            if finished {
+                self.retrieveImages(handler: { (finished) in
+                    if finished {
+                        self.removeSpinner()
+                        self.removeProgresslabel()
+                        // reload collection view with images
+                    }
+                })
+            }
         }
     }
     
