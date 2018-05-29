@@ -12,8 +12,10 @@ class PopVC: UIViewController, UIGestureRecognizerDelegate {
 
     // Outlets
     @IBOutlet weak var popImageView: UIImageView!
+    @IBOutlet weak var imageTitle: UILabel!
     
     var passedImage: UIImage!
+    
     
     func initData(forImage image: UIImage) {
         self.passedImage = image
@@ -25,6 +27,8 @@ class PopVC: UIViewController, UIGestureRecognizerDelegate {
 
         popImageView.image = passedImage
         addDoubleTap()
+        
+        imageTitle.text = ""
     }
     
     func addDoubleTap() {
@@ -37,5 +41,7 @@ class PopVC: UIViewController, UIGestureRecognizerDelegate {
   @objc func screenWasDoubleTapped() {
         dismiss(animated: true, completion: nil)
     }
+
+    
 
 }

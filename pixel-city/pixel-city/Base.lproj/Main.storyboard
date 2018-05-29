@@ -118,6 +118,12 @@
                                     <constraint firstAttribute="height" constant="25" id="lvL-dh-pNi"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label for example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXF-BW-MmT">
+                                <rect key="frame" x="16" y="40" width="254" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -126,10 +132,14 @@
                             <constraint firstAttribute="bottom" secondItem="WHb-5n-9Mc" secondAttribute="bottom" id="6Hw-Dz-V1N"/>
                             <constraint firstItem="6De-2B-bGj" firstAttribute="centerX" secondItem="NGm-k6-frw" secondAttribute="centerX" id="781-Kw-dal"/>
                             <constraint firstAttribute="trailing" secondItem="WHb-5n-9Mc" secondAttribute="trailing" id="Jcd-Ca-3bp"/>
+                            <constraint firstItem="PXF-BW-MmT" firstAttribute="top" secondItem="lB7-XR-3du" secondAttribute="top" constant="20" id="Q21-Ci-dM5"/>
                             <constraint firstItem="WHb-5n-9Mc" firstAttribute="top" secondItem="NGm-k6-frw" secondAttribute="top" id="wdv-gG-ikT"/>
+                            <constraint firstItem="PXF-BW-MmT" firstAttribute="leading" secondItem="lB7-XR-3du" secondAttribute="leading" constant="16" id="yRk-wT-Pnb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="lB7-XR-3du"/>
                     </view>
                     <connections>
+                        <outlet property="imageTitle" destination="PXF-BW-MmT" id="q1d-UG-mmV"/>
                         <outlet property="popImageView" destination="WHb-5n-9Mc" id="R3v-sh-Hbq"/>
                     </connections>
                 </viewController>

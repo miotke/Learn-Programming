@@ -33,6 +33,8 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     var imageUrlArray = [String]()
     var imageArray = [UIImage]()
     
+    var photoTitle: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +49,8 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         collectionView?.dataSource = self
         collectionView?.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         pullUpView.addSubview(collectionView!)
+        
+        registerForPreviewing(with: self, sourceView: collectionView!)
     }
     
     func addDoubleTap() {
@@ -107,13 +111,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             progressLabel?.removeFromSuperview()
         }
     }
-
-    // Actions
-    @IBAction func centerMapButtonWasPressed(_ sender: Any) {
-        if authorizationStatus == .authorizedAlways || authorizationStatus == .authorizedWhenInUse {
-            centerMapOnUserLocation()
-        }
-    }
+    
     
     func retrieveUrls(forAnnotation annotation: DroppablePin, handler: @escaping (_ status: Bool) -> ()) {
         Alamofire.request(flickrURL(forApiKey: apiKey, withAnnotation: annotation, andNumberOfPhotos: 40)).responseJSON { (response) in
@@ -122,6 +120,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             let photosDictArray = photosDict["photo"] as! [Dictionary<String, AnyObject>]
             for photo in photosDictArray {
                 let postUrl = "https://farm\(photo["farm"]!).staticflickr.com/\(photo["server"]!)/\(photo["id"]!)_\(photo["secret"]!)_h_d.jpg"
+                
                 self.imageUrlArray.append(postUrl)
             }
             handler(true)
@@ -146,6 +145,13 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
             sessionDataTask.forEach({ $0.cancel() })
             downloadData.forEach({ $0.cancel() })
+        }
+    }
+
+    // Actions
+    @IBAction func centerMapButtonWasPressed(_ sender: Any) {
+        if authorizationStatus == .authorizedAlways || authorizationStatus == .authorizedWhenInUse {
+            centerMapOnUserLocation()
         }
     }
 }
@@ -203,7 +209,7 @@ extension MapVC: MKMapViewDelegate {
         print(touchPoint)
 
         retrieveUrls(forAnnotation: annotation) { (finished) in
-//            print(self.imageUrlArray)
+            print(self.imageUrlArray)
             if finished {
                 self.retrieveImages(handler: { (finished) in
                     if finished {
@@ -263,3 +269,63 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
     }
 }
+
+extension MapVC: UIViewControllerPreviewingDelegate {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let indexPath = collectionView?.indexPathForItem(at: location), let cell = collectionView?.cellForItem(at: indexPath) else { return nil}
+        
+        guard let popVC = storyboard?.instantiateViewController(withIdentifier: "PopVC") as? PopVC else { return nil }
+        
+        popVC.initData(forImage: imageArray[indexPath.row])
+        
+        previewingContext.sourceRect = cell.contentView.frame
+    
+        return popVC
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        show(viewControllerToCommit, sender: self)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
