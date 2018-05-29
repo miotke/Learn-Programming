@@ -33,6 +33,8 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     var imageUrlArray = [String]()
     var imageArray = [UIImage]()
     
+    var photoTitle: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,13 +111,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             progressLabel?.removeFromSuperview()
         }
     }
-
-    // Actions
-    @IBAction func centerMapButtonWasPressed(_ sender: Any) {
-        if authorizationStatus == .authorizedAlways || authorizationStatus == .authorizedWhenInUse {
-            centerMapOnUserLocation()
-        }
-    }
+    
     
     func retrieveUrls(forAnnotation annotation: DroppablePin, handler: @escaping (_ status: Bool) -> ()) {
         Alamofire.request(flickrURL(forApiKey: apiKey, withAnnotation: annotation, andNumberOfPhotos: 40)).responseJSON { (response) in
@@ -124,6 +120,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             let photosDictArray = photosDict["photo"] as! [Dictionary<String, AnyObject>]
             for photo in photosDictArray {
                 let postUrl = "https://farm\(photo["farm"]!).staticflickr.com/\(photo["server"]!)/\(photo["id"]!)_\(photo["secret"]!)_h_d.jpg"
+                
                 self.imageUrlArray.append(postUrl)
             }
             handler(true)
@@ -148,6 +145,13 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
             sessionDataTask.forEach({ $0.cancel() })
             downloadData.forEach({ $0.cancel() })
+        }
+    }
+
+    // Actions
+    @IBAction func centerMapButtonWasPressed(_ sender: Any) {
+        if authorizationStatus == .authorizedAlways || authorizationStatus == .authorizedWhenInUse {
+            centerMapOnUserLocation()
         }
     }
 }
@@ -205,7 +209,7 @@ extension MapVC: MKMapViewDelegate {
         print(touchPoint)
 
         retrieveUrls(forAnnotation: annotation) { (finished) in
-//            print(self.imageUrlArray)
+            print(self.imageUrlArray)
             if finished {
                 self.retrieveImages(handler: { (finished) in
                     if finished {
