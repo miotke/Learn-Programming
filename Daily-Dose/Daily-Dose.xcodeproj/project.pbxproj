@@ -12,9 +12,12 @@
 		495103D620BD0280008219DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495103D420BD0280008219DD /* Main.storyboard */; };
 		495103D820BD0280008219DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495103D720BD0280008219DD /* Assets.xcassets */; };
 		495103DB20BD0280008219DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495103D920BD0280008219DD /* LaunchScreen.storyboard */; };
+		4965A8BE20BD0C330079C640 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965A8BD20BD0C330079C640 /* GoogleMobileAds.framework */; };
+		F15260E4BD6953B23C0FD125 /* Pods_Daily_Dose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81306FD0DB30B26EB5AF47E /* Pods_Daily_Dose.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206CA0B87830024843566FEA /* Pods-Daily-Dose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily-Dose.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daily-Dose/Pods-Daily-Dose.release.xcconfig"; sourceTree = "<group>"; };
 		495103CD20BD0280008219DD /* Daily-Dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily-Dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495103D020BD0280008219DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495103D220BD0280008219DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		495103D720BD0280008219DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495103DA20BD0280008219DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495103DC20BD0280008219DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4965A8BD20BD0C330079C640 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		CAE335DA221D67C7E7B6F13F /* Pods-Daily-Dose.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily-Dose.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daily-Dose/Pods-Daily-Dose.debug.xcconfig"; sourceTree = "<group>"; };
+		E81306FD0DB30B26EB5AF47E /* Pods_Daily_Dose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_Dose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4965A8BE20BD0C330079C640 /* GoogleMobileAds.framework in Frameworks */,
+				F15260E4BD6953B23C0FD125 /* Pods_Daily_Dose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				495103CF20BD0280008219DD /* Daily-Dose */,
 				495103CE20BD0280008219DD /* Products */,
+				627BD30D3364B9559263B15D /* Pods */,
+				B89C1201ED4D8115F04D47EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,7 @@
 		495103CF20BD0280008219DD /* Daily-Dose */ = {
 			isa = PBXGroup;
 			children = (
+				495103E420BD05AC008219DD /* Frameworks */,
 				495103D020BD0280008219DD /* AppDelegate.swift */,
 				495103D220BD0280008219DD /* ViewController.swift */,
 				495103D420BD0280008219DD /* Main.storyboard */,
@@ -64,6 +75,31 @@
 			path = "Daily-Dose";
 			sourceTree = "<group>";
 		};
+		495103E420BD05AC008219DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4965A8BD20BD0C330079C640 /* GoogleMobileAds.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		627BD30D3364B9559263B15D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE335DA221D67C7E7B6F13F /* Pods-Daily-Dose.debug.xcconfig */,
+				206CA0B87830024843566FEA /* Pods-Daily-Dose.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B89C1201ED4D8115F04D47EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81306FD0DB30B26EB5AF47E /* Pods_Daily_Dose.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495103DF20BD0280008219DD /* Build configuration list for PBXNativeTarget "Daily-Dose" */;
 			buildPhases = (
+				7F3EE27300D0F16905DF16B8 /* [CP] Check Pods Manifest.lock */,
 				495103C920BD0280008219DD /* Sources */,
 				495103CA20BD0280008219DD /* Frameworks */,
 				495103CB20BD0280008219DD /* Resources */,
@@ -129,6 +166,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F3EE27300D0F16905DF16B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daily-Dose-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		495103C920BD0280008219DD /* Sources */ = {
@@ -278,10 +336,15 @@
 		};
 		495103E020BD0280008219DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE335DA221D67C7E7B6F13F /* Pods-Daily-Dose.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Daily-Dose/Frameworks",
+				);
 				INFOPLIST_FILE = "Daily-Dose/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,10 +359,15 @@
 		};
 		495103E120BD0280008219DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206CA0B87830024843566FEA /* Pods-Daily-Dose.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Daily-Dose/Frameworks",
+				);
 				INFOPLIST_FILE = "Daily-Dose/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
