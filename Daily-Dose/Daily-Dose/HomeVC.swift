@@ -20,13 +20,13 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) == nil {
+        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
+            removeAdsButton.removeFromSuperview()
+            bannerView.removeFromSuperview()
+        } else {
             bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
             bannerView.rootViewController = self
             bannerView.load(GADRequest())
-        } else {
-            removeAdsButton.removeFromSuperview()
-            bannerView.removeFromSuperview()
         }
     }
 
