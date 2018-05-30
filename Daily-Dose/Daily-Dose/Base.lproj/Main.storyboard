@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Daily_Dose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Daily_Dose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,12 +41,25 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-Bd-wGx">
+                                        <rect key="frame" x="335" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ery-Lc-ffN"/>
+                                            <constraint firstAttribute="width" constant="30" id="iLa-ey-QNu"/>
+                                        </constraints>
+                                        <state key="normal" image="restore"/>
+                                        <connections>
+                                            <action selector="restoreButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYA-5n-rsd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="g2o-9k-cAp" firstAttribute="centerX" secondItem="gbB-jv-mnf" secondAttribute="centerX" id="1aC-sI-GoZ"/>
+                                    <constraint firstItem="xAu-Bd-wGx" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" constant="10" id="Bc3-Aa-lWb"/>
                                     <constraint firstAttribute="height" constant="141" id="P7i-5X-qBY"/>
                                     <constraint firstItem="D94-1A-Z0R" firstAttribute="leading" secondItem="gbB-jv-mnf" secondAttribute="leading" id="Pcs-Lw-YVf"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAu-Bd-wGx" secondAttribute="trailing" constant="10" id="ThK-hf-Hej"/>
                                     <constraint firstAttribute="trailing" secondItem="D94-1A-Z0R" secondAttribute="trailing" id="bVt-D3-uLq"/>
                                     <constraint firstItem="g2o-9k-cAp" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" constant="30" id="n2f-Hl-Sud"/>
                                     <constraint firstItem="D94-1A-Z0R" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" id="pm2-4u-Sab"/>
@@ -72,19 +85,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATIVES LISTEN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-ky-teg">
-                                <rect key="frame" x="51" y="191" width="272" height="32.5"/>
+                                <rect key="frame" x="51.5" y="191" width="272" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEVER LEAVE HOME W ITHOUT IT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-ww-3de">
-                                <rect key="frame" x="10.5" y="329" width="353.5" height="27.5"/>
+                                <rect key="frame" x="11" y="329" width="353.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANOHTER COOL THING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-wG-k8C">
-                                <rect key="frame" x="52.5" y="467" width="269" height="30"/>
+                                <rect key="frame" x="53" y="467" width="269" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -106,6 +119,9 @@
                                         <state key="normal" title="REMOVE ADS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeAdsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lh4-ZR-MZZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,6 +165,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="AGN-Cm-oad" id="Msf-4Q-onM"/>
+                        <outlet property="removeAdsButton" destination="SEp-8s-Z5A" id="rwD-1I-3Rd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,6 +175,7 @@
     </scenes>
     <resources>
         <image name="BGImage" width="475" height="300"/>
+        <image name="restore" width="31" height="27"/>
         <image name="videoThumbnail" width="375" height="250"/>
     </resources>
 </document>

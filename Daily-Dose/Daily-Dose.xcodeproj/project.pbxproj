@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4923E3BD20BE5D0800255C4B /* Purchasemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923E3BC20BE5D0800255C4B /* Purchasemanager.swift */; };
 		495103D120BD0280008219DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495103D020BD0280008219DD /* AppDelegate.swift */; };
-		495103D320BD0280008219DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495103D220BD0280008219DD /* ViewController.swift */; };
+		495103D320BD0280008219DD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495103D220BD0280008219DD /* HomeVC.swift */; };
 		495103D620BD0280008219DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495103D420BD0280008219DD /* Main.storyboard */; };
 		495103D820BD0280008219DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495103D720BD0280008219DD /* Assets.xcassets */; };
 		495103DB20BD0280008219DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495103D920BD0280008219DD /* LaunchScreen.storyboard */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		206CA0B87830024843566FEA /* Pods-Daily-Dose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily-Dose.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daily-Dose/Pods-Daily-Dose.release.xcconfig"; sourceTree = "<group>"; };
+		4923E3BC20BE5D0800255C4B /* Purchasemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchasemanager.swift; sourceTree = "<group>"; };
 		495103CD20BD0280008219DD /* Daily-Dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily-Dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495103D020BD0280008219DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495103D220BD0280008219DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		495103D220BD0280008219DD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		495103D520BD0280008219DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495103D720BD0280008219DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495103DA20BD0280008219DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4923E3BA20BE5CE200255C4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4923E3BB20BE5CFA00255C4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4923E3BC20BE5D0800255C4B /* Purchasemanager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		495103C420BD027F008219DD = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +81,11 @@
 		495103CF20BD0280008219DD /* Daily-Dose */ = {
 			isa = PBXGroup;
 			children = (
+				4923E3BB20BE5CFA00255C4B /* Services */,
+				4923E3BA20BE5CE200255C4B /* Controller */,
 				495103E420BD05AC008219DD /* Frameworks */,
 				495103D020BD0280008219DD /* AppDelegate.swift */,
-				495103D220BD0280008219DD /* ViewController.swift */,
+				495103D220BD0280008219DD /* HomeVC.swift */,
 				495103D420BD0280008219DD /* Main.storyboard */,
 				495103D720BD0280008219DD /* Assets.xcassets */,
 				495103D920BD0280008219DD /* LaunchScreen.storyboard */,
@@ -193,8 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495103D320BD0280008219DD /* ViewController.swift in Sources */,
+				495103D320BD0280008219DD /* HomeVC.swift in Sources */,
 				495103D120BD0280008219DD /* AppDelegate.swift in Sources */,
+				4923E3BD20BE5D0800255C4B /* Purchasemanager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
