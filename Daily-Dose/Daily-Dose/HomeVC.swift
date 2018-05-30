@@ -19,15 +19,8 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
-            removeAdsButton.removeFromSuperview()
-            bannerView.removeFromSuperview()
-        } else {
-            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-            bannerView.rootViewController = self
-            bannerView.load(GADRequest())
-        }
+        setupAds()
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +39,25 @@ class HomeVC: UIViewController {
             } else {
                 // show failed message to the user
             }
+        }
+    }
+    
+    @IBAction func restoreButtonPressed(_ sender: Any) {
+        PurchaseManager.instance.restorePurchases { (success) in
+            if success {
+                self.setupAds()
+            }
+        }
+    }
+    
+    func setupAds() {
+        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
+            removeAdsButton.removeFromSuperview()
+            bannerView.removeFromSuperview()
+        } else {
+            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
         }
     }
 }

@@ -41,12 +41,25 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-Bd-wGx">
+                                        <rect key="frame" x="335" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ery-Lc-ffN"/>
+                                            <constraint firstAttribute="width" constant="30" id="iLa-ey-QNu"/>
+                                        </constraints>
+                                        <state key="normal" image="restore"/>
+                                        <connections>
+                                            <action selector="restoreButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYA-5n-rsd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="g2o-9k-cAp" firstAttribute="centerX" secondItem="gbB-jv-mnf" secondAttribute="centerX" id="1aC-sI-GoZ"/>
+                                    <constraint firstItem="xAu-Bd-wGx" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" constant="10" id="Bc3-Aa-lWb"/>
                                     <constraint firstAttribute="height" constant="141" id="P7i-5X-qBY"/>
                                     <constraint firstItem="D94-1A-Z0R" firstAttribute="leading" secondItem="gbB-jv-mnf" secondAttribute="leading" id="Pcs-Lw-YVf"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAu-Bd-wGx" secondAttribute="trailing" constant="10" id="ThK-hf-Hej"/>
                                     <constraint firstAttribute="trailing" secondItem="D94-1A-Z0R" secondAttribute="trailing" id="bVt-D3-uLq"/>
                                     <constraint firstItem="g2o-9k-cAp" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" constant="30" id="n2f-Hl-Sud"/>
                                     <constraint firstItem="D94-1A-Z0R" firstAttribute="top" secondItem="gbB-jv-mnf" secondAttribute="top" id="pm2-4u-Sab"/>
@@ -162,6 +175,7 @@
     </scenes>
     <resources>
         <image name="BGImage" width="475" height="300"/>
+        <image name="restore" width="31" height="27"/>
         <image name="videoThumbnail" width="375" height="250"/>
     </resources>
 </document>
