@@ -14,6 +14,11 @@
 		490065EB20BFA7CA00BE6288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490065EA20BFA7CA00BE6288 /* Assets.xcassets */; };
 		490065EE20BFA7CA00BE6288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490065EC20BFA7CA00BE6288 /* LaunchScreen.storyboard */; };
 		490065FB20BFB12800BE6288 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490065FA20BFB12800BE6288 /* GoalCell.swift */; };
+		491AEADF20C0E83600449EAA /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AEADE20C0E83600449EAA /* GoalType.swift */; };
+		491AEAE120C0ED7100449EAA /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AEAE020C0ED7100449EAA /* CreateGoalVC.swift */; };
+		491AEAE320C0EE9F00449EAA /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AEAE220C0EE9F00449EAA /* UIViewControllerExt.swift */; };
+		491AEAE520C0F1DD00449EAA /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AEAE420C0F1DD00449EAA /* UIViewExt.swift */; };
+		491AEAE720C0F4DD00449EAA /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AEAE620C0F4DD00449EAA /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		490065ED20BFA7CA00BE6288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490065EF20BFA7CA00BE6288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490065FA20BFB12800BE6288 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		491AEADE20C0E83600449EAA /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		491AEAE020C0ED7100449EAA /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		491AEAE220C0EE9F00449EAA /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		491AEAE420C0F1DD00449EAA /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		491AEAE620C0F4DD00449EAA /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				490065E220BFA7C900BE6288 /* GoalsVC.swift */,
+				491AEAE020C0ED7100449EAA /* CreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 		490065F820BFA82100BE6288 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				491AEADE20C0E83600449EAA /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -98,6 +110,9 @@
 		490065F920BFA82700BE6288 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				491AEAE220C0EE9F00449EAA /* UIViewControllerExt.swift */,
+				491AEAE420C0F1DD00449EAA /* UIViewExt.swift */,
+				491AEAE620C0F4DD00449EAA /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,8 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				490065FB20BFB12800BE6288 /* GoalCell.swift in Sources */,
+				491AEAE120C0ED7100449EAA /* CreateGoalVC.swift in Sources */,
+				491AEADF20C0E83600449EAA /* GoalType.swift in Sources */,
 				490065E320BFA7C900BE6288 /* GoalsVC.swift in Sources */,
+				491AEAE520C0F1DD00449EAA /* UIViewExt.swift in Sources */,
 				490065E120BFA7C900BE6288 /* AppDelegate.swift in Sources */,
+				491AEAE320C0EE9F00449EAA /* UIViewControllerExt.swift in Sources */,
+				491AEAE720C0F4DD00449EAA /* UIButtonExt.swift in Sources */,
 				490065E920BFA7C900BE6288 /* Goal_Post.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
