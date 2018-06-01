@@ -303,6 +303,7 @@
                         <outlet property="goalTextView" destination="IPR-cz-s4B" id="cPK-PR-DzZ"/>
                         <outlet property="longTermButton" destination="7nB-8Z-5Dg" id="hEs-X9-RBk"/>
                         <outlet property="nextButton" destination="ylk-Zg-bCe" id="MzD-J7-LD6"/>
+                        <outlet property="shortTermButton" destination="qkL-9u-lvw" id="ix9-32-Bts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJ4-Z2-smX" userLabel="First Responder" sceneMemberID="firstResponder"/>
