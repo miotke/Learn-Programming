@@ -14,7 +14,7 @@
         <!--GoalsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalsVC" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsVC" id="BYZ-38-t0r" customClass="GoalsVC" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,6 @@
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7G-CJ-o47"/>
-                                            <segue destination="aoZ-Ce-R9k" kind="presentation" id="cno-Yq-g5e"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -178,7 +177,7 @@
         <!--Create GoalVC-->
         <scene sceneID="RBi-ED-3Tq">
             <objects>
-                <viewController id="aoZ-Ce-R9k" customClass="CreateGoalVC" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateGoalVC" id="aoZ-Ce-R9k" customClass="CreateGoalVC" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONM-Sn-6fa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
