@@ -18,6 +18,6 @@ class GoalCell: UITableViewCell {
     func configureCell(description: String, type: GoalType, goalProgressAmount: Int) {
         self.goalDescriptionLabel.text = description
         self.goalTypeLabel.text = type.rawValue
-        self.goalProgressLabel.text = String(describing: goalProgressLabel)
+        self.goalProgressLabel.text = String(describing: goalProgressAmount)
     }
 }
