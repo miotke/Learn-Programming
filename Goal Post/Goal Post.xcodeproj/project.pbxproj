@@ -77,8 +77,8 @@
 				490065E020BFA7C900BE6288 /* AppDelegate.swift */,
 				490065E420BFA7C900BE6288 /* Main.storyboard */,
 				490065EA20BFA7CA00BE6288 /* Assets.xcassets */,
-				490065EC20BFA7CA00BE6288 /* LaunchScreen.storyboard */,
 				490065EF20BFA7CA00BE6288 /* Info.plist */,
+				490065EC20BFA7CA00BE6288 /* LaunchScreen.storyboard */,
 				490065E720BFA7C900BE6288 /* Goal_Post.xcdatamodeld */,
 			);
 			path = "Goal Post";
