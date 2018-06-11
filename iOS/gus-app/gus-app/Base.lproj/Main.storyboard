@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fIx-yY-oNw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gus_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDO-J2-UrV">
+                                <rect key="frame" x="16" y="157" width="343" height="109"/>
+                                <color key="backgroundColor" red="0.34196319318592361" green="0.61670607675655087" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Gus Heads">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gusHeads:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiL-ak-rS3"/>
+                                    <segue destination="e4A-k6-IEr" kind="presentation" identifier="ToGusHeads" id="tbT-OW-Y1u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-Pk-NOU">
+                                <rect key="frame" x="16" y="279" width="343" height="109"/>
+                                <color key="backgroundColor" red="0.34196319320000002" green="0.6167060768" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Share Gus">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gusHeads:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zgm-UD-qWw"/>
+                                    <action selector="shareGus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1OC-3a-QN6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq7-Ah-Rcb">
+                                <rect key="frame" x="16" y="400" width="343" height="109"/>
+                                <color key="backgroundColor" red="0.34196319320000002" green="0.6167060768" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Gus Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gusGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFC-YK-r64"/>
+                                    <action selector="gusHeads:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfT-OW-KUw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TDO-J2-UrV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5CA-fZ-GWk"/>
+                            <constraint firstItem="TDO-J2-UrV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="683-ic-sNW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vq7-Ah-Rcb" secondAttribute="bottom" constant="158" id="Cai-AL-rsZ"/>
+                            <constraint firstItem="xBl-Pk-NOU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jlo-Mz-ArR"/>
+                            <constraint firstItem="TDO-J2-UrV" firstAttribute="leading" secondItem="xBl-Pk-NOU" secondAttribute="leading" id="Nhf-4D-aTO"/>
+                            <constraint firstItem="xBl-Pk-NOU" firstAttribute="top" secondItem="TDO-J2-UrV" secondAttribute="bottom" constant="13" id="gYq-Of-PpL"/>
+                            <constraint firstItem="TDO-J2-UrV" firstAttribute="trailing" secondItem="xBl-Pk-NOU" secondAttribute="trailing" id="jcd-ND-Xyl"/>
+                            <constraint firstItem="xBl-Pk-NOU" firstAttribute="trailing" secondItem="Vq7-Ah-Rcb" secondAttribute="trailing" id="n7l-ZH-8OX"/>
+                            <constraint firstItem="xBl-Pk-NOU" firstAttribute="leading" secondItem="Vq7-Ah-Rcb" secondAttribute="leading" id="pNL-kJ-OFv"/>
+                            <constraint firstItem="TDO-J2-UrV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="pO2-zu-wQY"/>
+                            <constraint firstItem="Vq7-Ah-Rcb" firstAttribute="top" secondItem="xBl-Pk-NOU" secondAttribute="bottom" constant="12" id="zMa-4R-dNz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kCC-hW-mvu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="116.49175412293854"/>
+        </scene>
+        <!--Gus Heads View Controller-->
+        <scene sceneID="C50-4P-Rgx">
+            <objects>
+                <viewController id="bcr-pA-r7l" customClass="GusHeadsViewController" customModule="gus_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OH7-5e-U9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DtW-Gs-PIH">
+                                <rect key="frame" x="16" y="72" width="343" height="370"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCh-z6-Cbm">
+                                <rect key="frame" x="16" y="498" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="eM7-Hv-4R2"/>
+                                </constraints>
+                                <state key="normal" title="Gus 1"/>
+                                <connections>
+                                    <action selector="gusOne:" destination="bcr-pA-r7l" eventType="touchUpInside" id="jX6-Yy-7v2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7O-Wh-TdQ">
+                                <rect key="frame" x="105" y="498" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="hkb-OK-uuB"/>
+                                </constraints>
+                                <state key="normal" title="Gus 2"/>
+                                <connections>
+                                    <action selector="gusTwo:" destination="bcr-pA-r7l" eventType="touchUpInside" id="Bok-FA-e76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDi-Ng-66g">
+                                <rect key="frame" x="105" y="574" width="73" height="30"/>
+                                <state key="normal" title="Gus 6"/>
+                                <connections>
+                                    <action selector="gusSix:" destination="bcr-pA-r7l" eventType="touchUpInside" id="yie-gN-Ofz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcX-On-f4a">
+                                <rect key="frame" x="194" y="498" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="xtf-73-QXv"/>
+                                </constraints>
+                                <state key="normal" title="Gus 3"/>
+                                <connections>
+                                    <action selector="gusThree:" destination="bcr-pA-r7l" eventType="touchUpInside" id="wDK-4L-Pfk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DH-Ed-Ha1">
+                                <rect key="frame" x="194" y="574" width="73" height="30"/>
+                                <state key="normal" title="Gus 7"/>
+                                <connections>
+                                    <action selector="gusSeven:" destination="bcr-pA-r7l" eventType="touchUpInside" id="wKl-lv-azg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-j7-MMS">
+                                <rect key="frame" x="286" y="498" width="73" height="30"/>
+                                <state key="normal" title="Gus 4"/>
+                                <connections>
+                                    <action selector="gusFour:" destination="bcr-pA-r7l" eventType="touchUpInside" id="Kgw-tj-EeY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8e-dq-cZG">
+                                <rect key="frame" x="286" y="574" width="73" height="30"/>
+                                <state key="normal" title="Gus 8"/>
+                                <connections>
+                                    <action selector="gusEight:" destination="bcr-pA-r7l" eventType="touchUpInside" id="PL5-oN-fWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvl-1y-8eN">
+                                <rect key="frame" x="16" y="574" width="73" height="30"/>
+                                <state key="normal" title="Gus 5"/>
+                                <connections>
+                                    <action selector="gusFive:" destination="bcr-pA-r7l" eventType="touchUpInside" id="e9l-mH-utJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R7O-Wh-TdQ" firstAttribute="leading" secondItem="QCh-z6-Cbm" secondAttribute="trailing" constant="16" id="2oE-bP-58B"/>
+                            <constraint firstItem="QCh-z6-Cbm" firstAttribute="top" secondItem="DtW-Gs-PIH" secondAttribute="bottom" constant="56" id="7oI-qd-P8w"/>
+                            <constraint firstItem="wvl-1y-8eN" firstAttribute="baseline" secondItem="rDi-Ng-66g" secondAttribute="baseline" id="Dwm-Lm-WPm"/>
+                            <constraint firstItem="jgT-j7-MMS" firstAttribute="leading" secondItem="wcX-On-f4a" secondAttribute="trailing" constant="19" id="EXj-5H-Z0z"/>
+                            <constraint firstItem="QCh-z6-Cbm" firstAttribute="baseline" secondItem="R7O-Wh-TdQ" secondAttribute="baseline" id="Ee4-Me-xj2"/>
+                            <constraint firstItem="wcX-On-f4a" firstAttribute="leading" secondItem="5DH-Ed-Ha1" secondAttribute="leading" id="F6d-7f-Gd0"/>
+                            <constraint firstItem="5DH-Ed-Ha1" firstAttribute="baseline" secondItem="h8e-dq-cZG" secondAttribute="baseline" id="Fh6-87-k6i"/>
+                            <constraint firstItem="R7O-Wh-TdQ" firstAttribute="trailing" secondItem="rDi-Ng-66g" secondAttribute="trailing" id="Pkb-Qd-Ey9"/>
+                            <constraint firstItem="jgT-j7-MMS" firstAttribute="trailing" secondItem="h8e-dq-cZG" secondAttribute="trailing" id="UJf-CX-gCp"/>
+                            <constraint firstItem="R7O-Wh-TdQ" firstAttribute="leading" secondItem="rDi-Ng-66g" secondAttribute="leading" id="VX9-e6-Yv8"/>
+                            <constraint firstItem="DtW-Gs-PIH" firstAttribute="top" secondItem="jLn-EX-RHK" secondAttribute="top" constant="8" id="ZeW-Vf-aa9"/>
+                            <constraint firstItem="QCh-z6-Cbm" firstAttribute="trailing" secondItem="wvl-1y-8eN" secondAttribute="trailing" id="eWs-xu-av5"/>
+                            <constraint firstItem="jLn-EX-RHK" firstAttribute="bottom" secondItem="wvl-1y-8eN" secondAttribute="bottom" constant="63" id="gXN-bN-xoV"/>
+                            <constraint firstItem="DtW-Gs-PIH" firstAttribute="trailing" secondItem="jgT-j7-MMS" secondAttribute="trailing" id="gro-FH-vIw"/>
+                            <constraint firstItem="wcX-On-f4a" firstAttribute="baseline" secondItem="jgT-j7-MMS" secondAttribute="baseline" id="hkh-yK-eYM"/>
+                            <constraint firstItem="DtW-Gs-PIH" firstAttribute="leading" secondItem="OH7-5e-U9t" secondAttribute="leadingMargin" id="kml-TY-62b"/>
+                            <constraint firstItem="wcX-On-f4a" firstAttribute="leading" secondItem="R7O-Wh-TdQ" secondAttribute="trailing" constant="16" id="m0p-BT-AEZ"/>
+                            <constraint firstItem="QCh-z6-Cbm" firstAttribute="leading" secondItem="wvl-1y-8eN" secondAttribute="leading" id="moh-DN-KFc"/>
+                            <constraint firstItem="rDi-Ng-66g" firstAttribute="baseline" secondItem="5DH-Ed-Ha1" secondAttribute="baseline" id="nxk-8N-zWe"/>
+                            <constraint firstItem="wcX-On-f4a" firstAttribute="trailing" secondItem="5DH-Ed-Ha1" secondAttribute="trailing" id="qZb-yO-nyx"/>
+                            <constraint firstItem="jgT-j7-MMS" firstAttribute="leading" secondItem="h8e-dq-cZG" secondAttribute="leading" id="tVq-Ys-F0D"/>
+                            <constraint firstItem="R7O-Wh-TdQ" firstAttribute="baseline" secondItem="wcX-On-f4a" secondAttribute="baseline" id="ur3-vb-byX"/>
+                            <constraint firstItem="DtW-Gs-PIH" firstAttribute="trailing" secondItem="OH7-5e-U9t" secondAttribute="trailingMargin" id="w1L-F8-l8b"/>
+                            <constraint firstItem="wvl-1y-8eN" firstAttribute="top" secondItem="QCh-z6-Cbm" secondAttribute="bottom" constant="46" id="y14-SC-ar1"/>
+                            <constraint firstItem="DtW-Gs-PIH" firstAttribute="leading" secondItem="QCh-z6-Cbm" secondAttribute="leading" id="z8g-w7-cZw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jLn-EX-RHK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3iv-PA-g3K"/>
+                    <connections>
+                        <outlet property="gusHeadImage" destination="DtW-Gs-PIH" id="3Ki-tI-oyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfl-Tp-Tzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1wu-CX-OZd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fIx-yY-oNw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uNZ-93-pbB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jdz-fK-yyS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ur-aJ-jfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wht-Yr-9Yz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e4A-k6-IEr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YR5-k0-RnY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bcr-pA-r7l" kind="relationship" relationship="rootViewController" id="c5S-y4-hF6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ap0-vn-1P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="328"/>
+        </scene>
+    </scenes>
+</document>
