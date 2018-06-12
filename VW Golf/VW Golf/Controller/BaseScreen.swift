@@ -34,9 +34,8 @@ class BaseScreen: UIViewController {
 
     // Actions
     @IBAction func chooseModelButtonPressed(_ sender: Any) {
-        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectionScreen
-        selectionDelegate.didTapChoice(image: UIImage(named: "mk1_git")!, name: "Mk1", Color: .black)
-        dismiss(animated: true, completion: nil)
+        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as? SelectionScreen
+        present(selectionVC!, animated: true, completion: nil)
         
     }
     

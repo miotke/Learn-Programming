@@ -22,15 +22,19 @@ class SelectionScreen: UIViewController {
     }
     
     @IBAction func mk1ButtonPressed(_ sender: Any) {
+        print("MK1")
     }
     
     @IBAction func mk2ButtonPressed(_ sender: Any) {
+        print("MK2")
     }
 }
 
 extension BaseScreen: SelectModelDelegate {
     func didTapChoice(image: UIImage, name: String, Color: UIColor) {
-        carModelLabel = name
-        carImage = image
+        carModelLabel.text = name
+        carImage.image = image
+        view.backgroundColor = Color
+        
     }
 }
