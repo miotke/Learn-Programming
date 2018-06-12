@@ -8,8 +8,14 @@
 
 import UIKit
 
-class SelectionScreen: UIViewController {
+protocol SelectModelDelegate {
+    func didTapChoice(image: UIImage, name: String, Color: UIColor)
+}
 
+class SelectionScreen: UIViewController {
+    
+    var selectionDelegate: SelectModelDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,18 +29,17 @@ class SelectionScreen: UIViewController {
     
     @IBAction func mk1ButtonPressed(_ sender: Any) {
         print("MK1")
+        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
+        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1", Color: .black)
+        present(modelVC, animated: true, completion: nil)
+        
     }
     
     @IBAction func mk2ButtonPressed(_ sender: Any) {
         print("MK2")
+        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
+        present(modelVC, animated: true, completion: nil)
     }
-}
-
-extension BaseScreen: SelectModelDelegate {
-    func didTapChoice(image: UIImage, name: String, Color: UIColor) {
-        carModelLabel.text = name
-        carImage.image = image
-        view.backgroundColor = Color
-        
-    }
+    
+    // ADD EXTENSION
 }
