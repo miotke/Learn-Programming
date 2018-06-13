@@ -12,7 +12,7 @@ protocol SelectModelDelegate {
     func didTapChoice(image: UIImage, name: String, description: String)
 }
 
-class SelectionScreen: UIViewController {
+class SelectModelVC: UIViewController {
     
     var selectionDelegate: SelectModelDelegate!
     

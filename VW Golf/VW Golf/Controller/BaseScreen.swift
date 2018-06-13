@@ -21,6 +21,7 @@ class BaseScreen: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         setInitialView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +38,7 @@ class BaseScreen: UIViewController {
 
     // Actions
     @IBAction func chooseModelButtonPressed(_ sender: Any) {
-        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectionScreen
+        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectModelVC
         selectionVC.selectionDelegate = self
         present(selectionVC, animated: true, completion: nil)
         
