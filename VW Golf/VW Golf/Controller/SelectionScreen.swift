@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SelectModelDelegate {
-    func didTapChoice(image: UIImage, name: String, color: UIColor)
+    func didTapChoice(image: UIImage, name: String, description: String)
 }
 
 class SelectionScreen: UIViewController {
@@ -19,7 +19,6 @@ class SelectionScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,29 +28,24 @@ class SelectionScreen: UIViewController {
     
     @IBAction func mk1ButtonPressed(_ sender: Any) {
         print("MK1")
-        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
-        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1", color: .black)
-        present(modelVC, animated: true, completion: nil)
+//        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
+        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1", description: "MK1, MK1, MK1, MK1, MK1, MK1, MK1")
+        dismiss(animated: true, completion: nil)
         
     }
     
     @IBAction func mk2ButtonPressed(_ sender: Any) {
         print("MK2")
-        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
-        present(modelVC, animated: true, completion: nil)
+//        let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
+        selectionDelegate?.didTapChoice(image: UIImage(named: "mk2_gti")!, name: "MK2", description: "MK2, MK2, MK2, MK2, MK2, MK2, MK2")
+        dismiss(animated: true, completion: nil)
     }
-    
-    // ADD EXTENSION
-    
 }
 
 extension BaseScreen: SelectModelDelegate {
-    func didTapChoice(image: UIImage, name: String, color: UIColor) {
+    func didTapChoice(image: UIImage, name: String, description: String) {
         carModelLabel.text = name
         carImage.image = image
-        carDescription.backgroundColor = color
-        
+        carDescription.text = description
     }
-    
-    
 }

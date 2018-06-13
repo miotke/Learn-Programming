@@ -8,19 +8,12 @@
 
 import UIKit
 
-//protocol SelectModelDelegate {
-//    func didTapChoice(image: UIImage, name: String, Color: UIColor)
-//}
-
 class BaseScreen: UIViewController {
 
-    
     // Outlets
     @IBOutlet weak var carModelLabel: UILabel!
     @IBOutlet weak var carImage: UIImageView!
     @IBOutlet weak var carDescription: UITextView!
-    
-//    var selectionDelegate: SelectModelDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +28,9 @@ class BaseScreen: UIViewController {
     // Actions
     @IBAction func chooseModelButtonPressed(_ sender: Any) {
         let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectionScreen
+        selectionVC.selectionDelegate = self
         present(selectionVC, animated: true, completion: nil)
         
     }
-    
 }
 
