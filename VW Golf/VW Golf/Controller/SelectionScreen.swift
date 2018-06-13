@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SelectModelDelegate {
-    func didTapChoice(image: UIImage, name: String, Color: UIColor)
+    func didTapChoice(image: UIImage, name: String, color: UIColor)
 }
 
 class SelectionScreen: UIViewController {
@@ -30,7 +30,7 @@ class SelectionScreen: UIViewController {
     @IBAction func mk1ButtonPressed(_ sender: Any) {
         print("MK1")
         let modelVC = storyboard?.instantiateViewController(withIdentifier: "BaseScreen") as! BaseScreen
-        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1", Color: .black)
+        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1", color: .black)
         present(modelVC, animated: true, completion: nil)
         
     }
@@ -42,4 +42,16 @@ class SelectionScreen: UIViewController {
     }
     
     // ADD EXTENSION
+    
+}
+
+extension BaseScreen: SelectModelDelegate {
+    func didTapChoice(image: UIImage, name: String, color: UIColor) {
+        carModelLabel.text = name
+        carImage.image = image
+        carDescription.backgroundColor = color
+        
+    }
+    
+    
 }
