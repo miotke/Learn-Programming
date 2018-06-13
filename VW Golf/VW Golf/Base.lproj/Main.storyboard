@@ -65,6 +65,7 @@
                         <outlet property="carDescription" destination="wd7-XZ-x8g" id="Qw7-6z-BED"/>
                         <outlet property="carImage" destination="yPq-bE-rC5" id="bv3-YN-ty5"/>
                         <outlet property="carModelLabel" destination="H3h-az-x2W" id="bTY-we-up1"/>
+                        <outlet property="chooseModelButton" destination="eQL-5J-EKH" id="2Wu-E2-JCI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

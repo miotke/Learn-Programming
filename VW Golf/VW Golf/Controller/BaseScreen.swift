@@ -14,15 +14,25 @@ class BaseScreen: UIViewController {
     @IBOutlet weak var carModelLabel: UILabel!
     @IBOutlet weak var carImage: UIImageView!
     @IBOutlet weak var carDescription: UITextView!
+    @IBOutlet weak var chooseModelButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setInitialView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setInitialView() {
+        carModelLabel.text = "Volkswagen"
+        carImage.image = UIImage(named: "mk2_gti")
+        carDescription.text = "Click the Choose Model button to view a new model"
+        chooseModelButton.setTitle("Choose Model", for: .normal)
     }
 
     // Actions
