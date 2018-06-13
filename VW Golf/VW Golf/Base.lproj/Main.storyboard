@@ -108,6 +108,9 @@
                                         <state key="normal" title="Mk3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mk3ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="1Hr-xm-mst"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-kV-zVz">
                                         <rect key="frame" x="0.0" y="135" width="343" height="30"/>
@@ -115,6 +118,9 @@
                                         <state key="normal" title="Mk4">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mk4ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="O0K-ph-fNQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-vg-DUf">
                                         <rect key="frame" x="0.0" y="180" width="343" height="30"/>
@@ -122,6 +128,9 @@
                                         <state key="normal" title="Mk5">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mk5ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="3YM-2u-YqQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-iu-xiU">
                                         <rect key="frame" x="0.0" y="225" width="343" height="30"/>
@@ -129,6 +138,9 @@
                                         <state key="normal" title="Mk6">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mk6ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="Sdq-V2-zfV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-ov-G6J">
                                         <rect key="frame" x="0.0" y="270" width="343" height="30"/>
@@ -136,6 +148,9 @@
                                         <state key="normal" title="Mk7">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mk7ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="rfC-kz-jEX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
