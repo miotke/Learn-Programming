@@ -30,8 +30,8 @@ class BaseScreen: UIViewController {
     }
     
     func setInitialView() {
-        carModelLabel.text = "Volkswagen"
-        carImage.image = UIImage(named: "mk2_gti")
+        carModelLabel.text = "Volkswagen GTI"
+        carImage.image = UIImage(named: "mk4_gti")
         carDescription.text = "Click the Choose Model button to view a new model"
         chooseModelButton.setTitle("Choose Model", for: .normal)
     }
