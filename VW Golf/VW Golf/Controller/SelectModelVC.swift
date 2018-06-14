@@ -33,14 +33,14 @@ class SelectModelVC: UIViewController {
     
     @IBAction func mk1ButtonPressed(_ sender: Any) {
         print("MK1")
-        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1 GTI", description: "Mk1 GTI")
+        selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1 GTI", description: GenerationDetail.mk1.rawValue)
         dismiss(animated: true, completion: nil)
         
     }
     
     @IBAction func mk2ButtonPressed(_ sender: Any) {
         print("MK2")
-        selectionDelegate?.didTapChoice(image: UIImage(named: "mk2_gti")!, name: "Mk2 GTI", description: "Mk2 GTI")
+        selectionDelegate?.didTapChoice(image: UIImage(named: "mk2_gti")!, name: "Mk2 GTI", description: GenerationDetail.mk2.rawValue)
         dismiss(animated: true, completion: nil)
     }
     

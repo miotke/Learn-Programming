@@ -15,6 +15,8 @@
 		4941051020CDFFF40080AA59 /* SelectModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941050F20CDFFF40080AA59 /* SelectModelVC.swift */; };
 		4C8E8C1820D1FA8900D661CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8E8C1720D1FA8900D661CF /* Assets.xcassets */; };
 		4C8E8C1A20D1FD2D00D661CF /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E8C1920D1FD2D00D661CF /* LabelStyle.swift */; };
+		4C8E8C1C20D1FEAA00D661CF /* ModelDetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E8C1B20D1FEAA00D661CF /* ModelDetailTextView.swift */; };
+		4C8E8C1F20D1FFCC00D661CF /* GenerationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E8C1E20D1FFCC00D661CF /* GenerationDetail.swift */; };
 		4CE28D5820D0A849002013A2 /* BaseButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE28D5720D0A849002013A2 /* BaseButtonStyling.swift */; };
 		4CE28D5A20D0AB32002013A2 /* ModelButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE28D5920D0AB32002013A2 /* ModelButtonStyling.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		4941050F20CDFFF40080AA59 /* SelectModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelVC.swift; sourceTree = "<group>"; };
 		4C8E8C1720D1FA8900D661CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8E8C1920D1FD2D00D661CF /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
+		4C8E8C1B20D1FEAA00D661CF /* ModelDetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailTextView.swift; sourceTree = "<group>"; };
+		4C8E8C1E20D1FFCC00D661CF /* GenerationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationDetail.swift; sourceTree = "<group>"; };
 		4CE28D5720D0A849002013A2 /* BaseButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonStyling.swift; sourceTree = "<group>"; };
 		4CE28D5920D0AB32002013A2 /* ModelButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelButtonStyling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +68,7 @@
 		494104F820CDFFC20080AA59 /* VW Golf */ = {
 			isa = PBXGroup;
 			children = (
+				4C8E8C1D20D1FFBA00D661CF /* Constants */,
 				4CE28D5620D0A839002013A2 /* View */,
 				4941050E20CDFFCD0080AA59 /* Controller */,
 				494104F920CDFFC20080AA59 /* AppDelegate.swift */,
@@ -85,12 +90,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4C8E8C1D20D1FFBA00D661CF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E8C1E20D1FFCC00D661CF /* GenerationDetail.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		4CE28D5620D0A839002013A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4CE28D5720D0A849002013A2 /* BaseButtonStyling.swift */,
 				4CE28D5920D0AB32002013A2 /* ModelButtonStyling.swift */,
 				4C8E8C1920D1FD2D00D661CF /* LabelStyle.swift */,
+				4C8E8C1B20D1FEAA00D661CF /* ModelDetailTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,9 +184,11 @@
 				4941050220CDFFC20080AA59 /* VW_Golf.xcdatamodeld in Sources */,
 				4C8E8C1A20D1FD2D00D661CF /* LabelStyle.swift in Sources */,
 				494104FC20CDFFC20080AA59 /* BaseScreen.swift in Sources */,
+				4C8E8C1F20D1FFCC00D661CF /* GenerationDetail.swift in Sources */,
 				4941051020CDFFF40080AA59 /* SelectModelVC.swift in Sources */,
 				4CE28D5820D0A849002013A2 /* BaseButtonStyling.swift in Sources */,
 				494104FA20CDFFC20080AA59 /* AppDelegate.swift in Sources */,
+				4C8E8C1C20D1FEAA00D661CF /* ModelDetailTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
