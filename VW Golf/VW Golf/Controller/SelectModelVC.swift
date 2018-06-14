@@ -14,11 +14,16 @@ protocol SelectModelDelegate {
 
 class SelectModelVC: UIViewController {
     
+    // Outlets
+    @IBOutlet weak var selectModelLabel: UILabel!
+    
+    
     var selectionDelegate: SelectModelDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        selectModelLabel.text = "VW GTI Generation"
     }
 
     override func didReceiveMemoryWarning() {
