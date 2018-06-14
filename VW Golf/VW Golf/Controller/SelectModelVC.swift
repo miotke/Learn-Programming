@@ -41,31 +41,31 @@ class SelectModelVC: UIViewController {
     
     @IBAction func mk3ButtonPressed(_ sender: Any) {
         print("MK3")
-        selectionDelegate.didTapChoice(image: UIImage(named: "mk2_gti")!, name: "Mk3 GTI", description: "Mk3 GTI")
+        selectionDelegate.didTapChoice(image: UIImage(named: "mk3_gti")!, name: "Mk3 GTI", description: "Mk3 GTI")
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func mk4ButtonPressed(_ sender: Any) {
         print("MK4")
-        selectionDelegate.didTapChoice(image: UIImage(named: "mk1_gti")!, name: "Mk4 GTI", description: "Mk4 GTI")
+        selectionDelegate.didTapChoice(image: UIImage(named: "mk4_gti")!, name: "Mk4 GTI", description: "Mk4 GTI")
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func mk5ButtonPressed(_ sender: Any) {
         print("MK5")
-        selectionDelegate.didTapChoice(image: UIImage(named:"mk2_gti")!, name: "Mk5 GTI", description: "Mk5 GTI")
+        selectionDelegate.didTapChoice(image: UIImage(named:"mk5_gti")!, name: "Mk5 GTI", description: "Mk5 GTI")
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func mk6ButtonPressed(_ sender: Any) {
         print("MK6")
-        selectionDelegate.didTapChoice(image: UIImage(named: "mk2_gti")!, name: "Mk6 GTI", description: "Mk6 GTI")
+        selectionDelegate.didTapChoice(image: UIImage(named: "mk6_gti")!, name: "Mk6 GTI", description: "Mk6 GTI")
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func mk7ButtonPressed(_ sender: Any) {
         print("MK7")
-        selectionDelegate.didTapChoice(image: UIImage(named: "mk1_gti")!, name: "Mk7 GTI", description: "Mk7 GTI")
+        selectionDelegate.didTapChoice(image: UIImage(named: "mk7_gti")!, name: "Mk7 GTI", description: "Mk7 GTI")
         dismiss(animated: true, completion: nil)
     }
     

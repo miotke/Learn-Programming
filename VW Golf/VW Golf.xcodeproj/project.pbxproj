@@ -11,9 +11,9 @@
 		494104FC20CDFFC20080AA59 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494104FB20CDFFC20080AA59 /* BaseScreen.swift */; };
 		494104FF20CDFFC20080AA59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494104FD20CDFFC20080AA59 /* Main.storyboard */; };
 		4941050220CDFFC20080AA59 /* VW_Golf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4941050020CDFFC20080AA59 /* VW_Golf.xcdatamodeld */; };
-		4941050420CDFFC30080AA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4941050320CDFFC30080AA59 /* Assets.xcassets */; };
 		4941050720CDFFC30080AA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4941050520CDFFC30080AA59 /* LaunchScreen.storyboard */; };
 		4941051020CDFFF40080AA59 /* SelectModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941050F20CDFFF40080AA59 /* SelectModelVC.swift */; };
+		4C8E8C1820D1FA8900D661CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8E8C1720D1FA8900D661CF /* Assets.xcassets */; };
 		4CE28D5820D0A849002013A2 /* BaseButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE28D5720D0A849002013A2 /* BaseButtonStyling.swift */; };
 		4CE28D5A20D0AB32002013A2 /* ModelButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE28D5920D0AB32002013A2 /* ModelButtonStyling.swift */; };
 /* End PBXBuildFile section */
@@ -24,10 +24,10 @@
 		494104FB20CDFFC20080AA59 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		494104FE20CDFFC20080AA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4941050120CDFFC20080AA59 /* VW_Golf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VW_Golf.xcdatamodel; sourceTree = "<group>"; };
-		4941050320CDFFC30080AA59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4941050620CDFFC30080AA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4941050820CDFFC30080AA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4941050F20CDFFF40080AA59 /* SelectModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelVC.swift; sourceTree = "<group>"; };
+		4C8E8C1720D1FA8900D661CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CE28D5720D0A849002013A2 /* BaseButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonStyling.swift; sourceTree = "<group>"; };
 		4CE28D5920D0AB32002013A2 /* ModelButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelButtonStyling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +65,8 @@
 				4CE28D5620D0A839002013A2 /* View */,
 				4941050E20CDFFCD0080AA59 /* Controller */,
 				494104F920CDFFC20080AA59 /* AppDelegate.swift */,
+				4C8E8C1720D1FA8900D661CF /* Assets.xcassets */,
 				494104FD20CDFFC20080AA59 /* Main.storyboard */,
-				4941050320CDFFC30080AA59 /* Assets.xcassets */,
 				4941050520CDFFC30080AA59 /* LaunchScreen.storyboard */,
 				4941050820CDFFC30080AA59 /* Info.plist */,
 				4941050020CDFFC20080AA59 /* VW_Golf.xcdatamodeld */,
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4941050720CDFFC30080AA59 /* LaunchScreen.storyboard in Resources */,
-				4941050420CDFFC30080AA59 /* Assets.xcassets in Resources */,
+				4C8E8C1820D1FA8900D661CF /* Assets.xcassets in Resources */,
 				494104FF20CDFFC20080AA59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
