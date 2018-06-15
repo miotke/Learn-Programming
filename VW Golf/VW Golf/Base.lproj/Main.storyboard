@@ -181,6 +181,7 @@
                         <viewLayoutGuide key="safeArea" id="QhC-6U-ymB"/>
                     </view>
                     <connections>
+                        <outlet property="generationButtonText" destination="lv0-vg-DUf" id="LZg-gf-xQE"/>
                         <outlet property="selectModelLabel" destination="Wwb-Vy-yK2" id="kak-BL-9dY"/>
                     </connections>
                 </viewController>

@@ -16,21 +16,29 @@ class SelectModelVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var selectModelLabel: UILabel!
+    @IBOutlet weak var generationButtonText: ModelButtonStyling!
     
     
     var selectionDelegate: SelectModelDelegate!
+    var generationNumber = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         selectModelLabel.text = "VW GTI Generation"
+        loopGenerationNames()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loopGenerationNames() {
+        for i in generationNumber ..< 22 {
+            selectModelLabel.text = "Mk\(i)"
+        }
+        
     }
     
+    
+    // Actions
     @IBAction func mk1ButtonPressed(_ sender: Any) {
         print("MK1")
         selectionDelegate?.didTapChoice(image: UIImage(named:"mk1_gti")!, name: "Mk1 GTI", description: GenerationDetail.mk1.rawValue)
