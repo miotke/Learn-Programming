@@ -83,70 +83,70 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-fz-yya">
                                 <rect key="frame" x="16" y="152" width="343" height="363"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdX-Ve-b3B" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdX-Ve-b3B" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk1">
+                                        <state key="normal" title="Mk1" image="mk1_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="mk1ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="mqE-1H-g3R"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-0P-H2i" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-0P-H2i" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="54" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk2">
+                                        <state key="normal" title="Mk2" image="mk2_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="mk2ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="Pa7-zO-K7W"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-8l-Tn2" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-8l-Tn2" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="108" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk3">
+                                        <state key="normal" title="Mk3" image="mk3_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="mk3ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="1Hr-xm-mst"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-kV-zVz" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-kV-zVz" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="162" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk4">
+                                        <state key="normal" title="Mk4" image="mk4_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="mk4ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="O0K-ph-fNQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-vg-DUf" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-vg-DUf" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="216" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk5">
+                                        <state key="normal" title="Mk5" image="mk5_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="mk5ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="3YM-2u-YqQ"/>
+                                            <action selector="mk5ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="IYi-N3-TO8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-iu-xiU" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-iu-xiU" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="270" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk6">
+                                        <state key="normal" title="Mk6" image="mk6_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="mk6ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="Sdq-V2-zfV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-ov-G6J" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-ov-G6J" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="324" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Mk7">
+                                        <state key="normal" title="Mk7" image="mk7_front">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -181,7 +181,6 @@
                         <viewLayoutGuide key="safeArea" id="QhC-6U-ymB"/>
                     </view>
                     <connections>
-                        <outlet property="generationButtonText" destination="lv0-vg-DUf" id="LZg-gf-xQE"/>
                         <outlet property="selectModelLabel" destination="Wwb-Vy-yK2" id="kak-BL-9dY"/>
                     </connections>
                 </viewController>
@@ -191,6 +190,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mk1_front" width="461" height="74"/>
         <image name="mk1_gti" width="480" height="360"/>
+        <image name="mk2_front" width="397" height="77"/>
+        <image name="mk3_front" width="594" height="77"/>
+        <image name="mk4_front" width="583" height="75"/>
+        <image name="mk5_front" width="209" height="31"/>
+        <image name="mk6_front" width="493" height="84"/>
+        <image name="mk7_front" width="450" height="66"/>
     </resources>
 </document>
