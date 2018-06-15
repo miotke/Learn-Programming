@@ -130,7 +130,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="mk5ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="3YM-2u-YqQ"/>
+                                            <action selector="mk5ButtonPressed:" destination="l9q-ij-vBe" eventType="touchUpInside" id="IYi-N3-TO8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-iu-xiU" customClass="ModelButtonStyling" customModule="VW_Golf" customModuleProvider="target">
@@ -181,7 +181,6 @@
                         <viewLayoutGuide key="safeArea" id="QhC-6U-ymB"/>
                     </view>
                     <connections>
-                        <outlet property="generationButtonText" destination="lv0-vg-DUf" id="LZg-gf-xQE"/>
                         <outlet property="selectModelLabel" destination="Wwb-Vy-yK2" id="kak-BL-9dY"/>
                     </connections>
                 </viewController>

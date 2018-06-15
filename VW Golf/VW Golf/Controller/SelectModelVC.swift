@@ -16,8 +16,7 @@ class SelectModelVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var selectModelLabel: UILabel!
-    @IBOutlet weak var generationButtonText: ModelButtonStyling!
-    
+    @IBOutlet weak var chooseGenerationButton: UIButton!
     
     var selectionDelegate: SelectModelDelegate!
     var generationNumber = 20
@@ -26,16 +25,14 @@ class SelectModelVC: UIViewController {
         super.viewDidLoad()
 
         selectModelLabel.text = "VW GTI Generation"
-        loopGenerationNames()
-        
+//        loopGenerationNames()
     }
-
-    func loopGenerationNames() {
-        for i in generationNumber ..< 22 {
-            selectModelLabel.text = "Mk\(i)"
-        }
-        
-    }
+//
+//    func loopGenerationNames() {
+//        for i in generationNumber ..< 22 {
+//            chooseGenerationButton.setTitle("Mk\(i)", for: .normal)
+//        }
+//    }
     
     
     // Actions
