@@ -8,9 +8,13 @@
 
 import UIKit
 
+protocol AudiRSGenerations {
+    func rsGenerations(generationNumber: String, image: UIImage, description: String)
+}
+
 class SelectRSView: UIViewController {
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,6 +39,16 @@ class SelectRSView: UIViewController {
     @IBAction func b9RS4(_ sender: Any) {
         print("b9 RS4")
     }
+}
+
+extension BaseView: AudiRSGenerations {
+    func rsGenerations(generationNumber: String, image: UIImage, description: String) {
+        generationLabel.text = generationNumber
+        generationImage.image = image
+        generationDescription.text = description
+    }
     
     
 }
+
+
