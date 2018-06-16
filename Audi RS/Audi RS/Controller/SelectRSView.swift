@@ -9,12 +9,9 @@
 import UIKit
 
 class SelectRSView: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-
-
 }

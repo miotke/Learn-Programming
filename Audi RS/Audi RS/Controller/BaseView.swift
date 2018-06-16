@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol RSSelectionDelegate {
+    func selectRSModel(model: String, generation: String, description: String)
+}
+
 class BaseView: UIViewController {
+    
+    var chooseRSModel: RSSelectionDelegate!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +26,12 @@ class BaseView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+extension SelectRSView: RSSelectionDelegate {
+    func selectRSModel(model: String, generation: String, description: String) {
+        
+    }
+    
+    
+}
