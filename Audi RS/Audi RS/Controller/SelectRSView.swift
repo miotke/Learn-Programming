@@ -15,12 +15,16 @@ protocol AudiRSGenerations {
 class SelectRSView: UIViewController {
     
     
+    var audiGenerationDelegate: AudiRSGenerations!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // Actions
     @IBAction func b4RS2(_ sender: Any) {
+        audiGenerationDelegate.rsGenerations(generationNumber: "b4 RS2", image: UIImage(named: "b4_rs2")!, description: "Audi b4 RS2")
+        dismiss(animated: true, completion: nil)
         print("b4 RS2")
     }
     

@@ -23,7 +23,9 @@ class BaseView: UIViewController {
     
     // Actions
     @IBAction func chooseGenerationButton(_ sender: Any) {
-        
+      let rsSelectionVC = storyboard?.instantiateViewController(withIdentifier: "GenerationVC") as! SelectRSView
+      rsSelectionVC.audiGenerationDelegate = self
+      present(rsSelectionVC, animated: true, completion: nil)
     }
 }
 
