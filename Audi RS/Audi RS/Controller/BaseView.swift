@@ -8,25 +8,25 @@
 
 import UIKit
 
-protocol RSSelectionDelegate {
-    func selectRSModel(model: String, generation: String, description: String)
-}
-
 class BaseView: UIViewController {
     
-    var chooseRSModel: RSSelectionDelegate!
-
-
+    // Outlets
+    @IBOutlet weak var generationLabel: UILabel!
+    @IBOutlet weak var generationImage: UIImageView!
+    @IBOutlet weak var generationDescription: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }    
-}
-
-extension SelectRSView: RSSelectionDelegate {
-    func selectRSModel(model: String, generation: String, description: String) {
         
     }
     
-    
+    // Actions
+    @IBAction func chooseGenerationButton(_ sender: Any) {
+      let rsSelectionVC = storyboard?.instantiateViewController(withIdentifier: "GenerationVC") as! SelectRSView
+      rsSelectionVC.audiGenerationDelegate = self
+      present(rsSelectionVC, animated: true, completion: nil)
+    }
 }
+
+
