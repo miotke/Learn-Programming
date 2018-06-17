@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C150B0B20D5F2B600439A99 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C150B0A20D5F2B600439A99 /* ButtonStyle.swift */; };
+		4C150B0E20D5F46400439A99 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C150B0D20D5F46400439A99 /* LabelStyle.swift */; };
 		4C4D728420D3460800BA02D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D728320D3460800BA02D5 /* AppDelegate.swift */; };
 		4C4D728620D3460800BA02D5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D728520D3460800BA02D5 /* BaseView.swift */; };
 		4C4D728920D3460800BA02D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D728720D3460800BA02D5 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C150B0A20D5F2B600439A99 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		4C150B0D20D5F46400439A99 /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 		4C4D728020D3460800BA02D5 /* Audi RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audi RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4D728320D3460800BA02D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4D728520D3460800BA02D5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		4C4D729620D3461F00BA02D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C150B0A20D5F2B600439A99 /* ButtonStyle.swift */,
+				4C150B0D20D5F46400439A99 /* LabelStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4D728620D3460800BA02D5 /* BaseView.swift in Sources */,
+				4C150B0B20D5F2B600439A99 /* ButtonStyle.swift in Sources */,
+				4C150B0E20D5F46400439A99 /* LabelStyle.swift in Sources */,
 				4C4D728420D3460800BA02D5 /* AppDelegate.swift in Sources */,
 				4C4D729920D3466F00BA02D5 /* SelectRSView.swift in Sources */,
 			);

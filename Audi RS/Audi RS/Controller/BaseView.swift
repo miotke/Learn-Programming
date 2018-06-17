@@ -14,11 +14,19 @@ class BaseView: UIViewController {
     @IBOutlet weak var generationLabel: UILabel!
     @IBOutlet weak var generationImage: UIImageView!
     @IBOutlet weak var generationDescription: UITextView!
+    @IBOutlet weak var chooseGenerationButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupInitialView()
+    }
+    
+    func setupInitialView() {
+        generationLabel.text = "Audi //RS"
+        generationImage.image = UIImage(named: "rs_logo")
+        generationDescription.text = "Choose an Audi //RS generation"
+        chooseGenerationButton.setTitle("Choose //RS Generation", for: .normal)
     }
     
     // Actions
