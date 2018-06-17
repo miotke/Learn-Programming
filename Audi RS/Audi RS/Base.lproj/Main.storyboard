@@ -150,6 +150,7 @@
                         <outlet property="b7RS4" destination="oJw-WP-PW2" id="mhM-3R-c3e"/>
                         <outlet property="b8RS4" destination="5CY-RL-n7k" id="1Cu-Dr-9ZP"/>
                         <outlet property="b9RS4" destination="TcR-Hn-ydK" id="VVI-7R-HcI"/>
+                        <outlet property="generationLabelText" destination="VrZ-H5-Uc8" id="JGz-tw-Vfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFS-OG-dIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
