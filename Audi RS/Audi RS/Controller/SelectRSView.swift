@@ -25,7 +25,7 @@ class SelectRSView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        generationLabelText.text = "Audi RS"
+        generationLabelText.text = "Audi //RS"
         setButtonTitle()
         
     }
