@@ -13,6 +13,11 @@ protocol AudiRSGenerations {
 }
 
 class SelectRSView: UIViewController {
+    @IBOutlet weak var b4RS2: UIButton!
+    @IBOutlet weak var b5RS4: UIButton!
+    @IBOutlet weak var b7RS4: UIButton!
+    @IBOutlet weak var b8RS4: UIButton!
+    @IBOutlet weak var b9RS4: UIButton!
     
     
     var audiGenerationDelegate: AudiRSGenerations!
