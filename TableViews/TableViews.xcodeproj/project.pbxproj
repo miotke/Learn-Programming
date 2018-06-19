@@ -56,8 +56,8 @@
 		49FD035320D727CE00437246 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				49FD036620D727D900437246 /* Controller */,
 				49FD035420D727CE00437246 /* AppDelegate.swift */,
+				49FD036620D727D900437246 /* Controller */,
 				49FD035820D727CE00437246 /* Main.storyboard */,
 				49FD035B20D727CF00437246 /* Assets.xcassets */,
 				49FD035D20D727CF00437246 /* LaunchScreen.storyboard */,

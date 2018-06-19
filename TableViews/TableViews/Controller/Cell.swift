@@ -14,25 +14,20 @@ class Cell: UIViewController {
     
     
     
-    public var data = ["data15", "data16", "data17", "data18", "data19", "data20", "data21", "data22", "data23", "data24", "data25", "data26", "data27", "data28"]
+    public var myData = ["data15", "data16", "data17", "data18", "data19", "data20", "data21", "data22", "data23", "data24", "data25", "data26", "data27", "data28"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.blue
         tableView.delegate = self
         tableView.dataSource = self
-
     }
-    
-//    func configureCell() {
-//      cellLabel.text = [data]
-//    }
 }
 
 
 extension Cell: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return myData.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,7 +36,7 @@ extension Cell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = myData[indexPath.row]
         return cell
     }
 }
