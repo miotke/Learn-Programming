@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C25DCB20D8AA5F00564E45 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C25DCA20D8AA5F00564E45 /* Cell.swift */; };
 		49FD035520D727CE00437246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD035420D727CE00437246 /* AppDelegate.swift */; };
 		49FD035A20D727CE00437246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD035820D727CE00437246 /* Main.storyboard */; };
 		49FD035C20D727CF00437246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FD035B20D727CF00437246 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49C25DCA20D8AA5F00564E45 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		49FD035120D727CE00437246 /* TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD035420D727CE00437246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FD035920D727CE00437246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,8 +56,8 @@
 		49FD035320D727CE00437246 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				49FD036620D727D900437246 /* Controller */,
 				49FD035420D727CE00437246 /* AppDelegate.swift */,
+				49FD036620D727D900437246 /* Controller */,
 				49FD035820D727CE00437246 /* Main.storyboard */,
 				49FD035B20D727CF00437246 /* Assets.xcassets */,
 				49FD035D20D727CF00437246 /* LaunchScreen.storyboard */,
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				49FD036720D7280C00437246 /* FirstTableViewTableViewController.swift */,
+				49C25DCA20D8AA5F00564E45 /* Cell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				49FD036820D7280C00437246 /* FirstTableViewTableViewController.swift in Sources */,
 				49FD035520D727CE00437246 /* AppDelegate.swift in Sources */,
+				49C25DCB20D8AA5F00564E45 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
