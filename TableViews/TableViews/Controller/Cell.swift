@@ -12,15 +12,25 @@ class Cell: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var viewTitle: UILabel!
+    
     
     
     public var myData = ["data15", "data16", "data17", "data18", "data19", "data20", "data21", "data22", "data23", "data24", "data25", "data26", "data27", "data28"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.darkGray
+        
+        viewTitle.backgroundColor = UIColor.darkGray
+        viewTitle.textColor = UIColor.white
+        viewTitle.textAlignment = .center
+        viewTitle.font = UIFont(name: "Avenir Next", size: 30)
+        viewTitle.text = "Table Views and Cells"
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
 }
 
