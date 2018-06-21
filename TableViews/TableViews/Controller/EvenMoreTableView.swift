@@ -20,12 +20,28 @@ class EvenMoreTableView: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.green
+        label.backgroundColor = UIColor.purple
+        label.textColor = UIColor.white
+        label.textAlignment = .center
+        label.font = UIFont(name: "Avenir Next", size: 30)
+        label.text = "I really love Maggie!"
         
-        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
 }
 
-extension EvenMoreTableView: UITableViewDelegate {
+extension EvenMoreTableView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return maggieArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let maggieCell = tableView.dequeueReusableCell(withIdentifier: "MaggieCell", for: indexPath)
+        maggieCell.textLabel?.text = maggieArray[indexPath.row]
+        return maggieCell
+    }
+    
     
 }
