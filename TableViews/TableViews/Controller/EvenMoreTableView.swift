@@ -14,7 +14,7 @@ class EvenMoreTableView: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var maggieArray = ["Maggie", "is", "the best", "person", "ever!"]
+    var maggieArray = ["Maggie", "really", "is", "the best", "person", "ever!"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
