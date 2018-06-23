@@ -15,6 +15,7 @@ class EvenMoreTableView: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var maggieArray = ["Maggie", "really", "is", "the best", "person", "ever!"]
+    var detailArray = ["just me", "saying", "how", "much", "I love", "MAGGIE"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,9 @@ extension EvenMoreTableView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let maggieCell = tableView.dequeueReusableCell(withIdentifier: "MaggieCell", for: indexPath)
-        maggieCell.textLabel?.text = maggieArray[indexPath.row]
+        maggieCell.textLabel?.text = detailArray[indexPath.row]
+        maggieCell.detailTextLabel?.text = detailArray[indexPath.row]
+        maggieCell.accessoryType = .detailButton
         return maggieCell
     }
     
