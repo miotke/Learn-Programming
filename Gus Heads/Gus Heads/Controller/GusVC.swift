@@ -31,6 +31,13 @@ class GusVC: UIViewController {
     // Actions
     @IBAction func chooseGusButtonWasPressed(_ sender: Any) {
     }
-    
 }
 
+extension GusVC: SelectGusDelegate {
+    func chooseAGus(gusHeadTitle: String, gusHead: UIImage) {
+        gusLabel.text = gusHeadTitle
+        gusImage.image = gusHead
+    }
+    
+    
+}
