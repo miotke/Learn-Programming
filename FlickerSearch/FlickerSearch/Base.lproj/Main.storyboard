@@ -18,19 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="crN-fu-vNo">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="eJI-5q-5QD">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="eJI-5q-5QD" customClass="FlickerPhotoCell" customModule="FlickerSearch" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51F-n8-xyJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="51F-n8-xyJ" secondAttribute="trailing" id="Ehi-kx-cJE"/>
+                                    <constraint firstItem="51F-n8-xyJ" firstAttribute="leading" secondItem="eJI-5q-5QD" secondAttribute="leading" id="Kj6-m1-mDT"/>
+                                    <constraint firstItem="51F-n8-xyJ" firstAttribute="top" secondItem="eJI-5q-5QD" secondAttribute="top" id="ggB-AJ-uOJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="51F-n8-xyJ" secondAttribute="bottom" id="lkF-tF-H7L"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="51F-n8-xyJ" id="oyC-8u-9Yi"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
