@@ -17,6 +17,7 @@ final class FlickrPhotosViewController: UICollectionViewController {
     fileprivate let sectionInset = UIEdgeInsetsMake(50.0, 20.0, 50.0, 20.0)
     fileprivate var search = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
+    fileprivate let itemsPerRow: CGFloat = 3
 }
 
 // MARK: - Private
@@ -82,7 +83,28 @@ extension FlickrPhotosViewController {
     }
 }
 
-
+extension FlickrPhotosViewController: UICollectionViewDelegateFlowLayout {
+    // 1
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // 2
+        let paddingSpace = sectionInset.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    // 3
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInset
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return sectionInset.left
+    }
+}
 
 
 
