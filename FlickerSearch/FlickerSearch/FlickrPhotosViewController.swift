@@ -15,8 +15,9 @@ final class FlickrPhotosViewController: UICollectionViewController {
     // MARK: Properties
     fileprivate let reuseIdentifier = "FlickrCell"
     fileprivate let sectionInset = UIEdgeInsetsMake(50.0, 20.0, 50.0, 20.0)
-    fileprivate let search = [FlickrSearchResults]()
+    fileprivate var search = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
+    fileprivate let itemsPerRow: CGFloat = 3
 }
 
 // MARK: - Private
@@ -48,7 +49,7 @@ extension FlickrPhotosViewController: UITextFieldDelegate {
             if let results = results {
                 // 3
                 print("found \(results.searchResults.count) matching \(results.searchTerm)")
-                self.searches.insert(results, at: 0)
+                self.search.insert(results, at: 0)
                 
                 // 4
                 self.collectionView?.reloadData()
@@ -60,3 +61,88 @@ extension FlickrPhotosViewController: UITextFieldDelegate {
         return true
     }
 }
+
+// MARK: - UICollectionViewDataSource
+extension FlickrPhotosViewController {
+    // 1
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return search.count
+    }
+    
+    // 2
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return search[section].searchResults.count
+    }
+    
+    // 3
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // 1
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FlickerPhotoCell
+        
+        // 2
+        let flickrPhoto = photoForIndexPath(indexPath: indexPath)
+        cell.backgroundColor = UIColor.white
+        
+        // 3
+        cell.imageView.image = flickrPhoto.thumbnail
+        
+        // Configure the cell
+        return cell
+    }
+}
+
+extension FlickrPhotosViewController: UICollectionViewDelegateFlowLayout {
+    // 1
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // 2
+        let paddingSpace = sectionInset.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    // 3
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInset
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return sectionInset.left
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
