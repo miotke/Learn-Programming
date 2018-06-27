@@ -60,3 +60,59 @@ extension FlickrPhotosViewController: UITextFieldDelegate {
         return true
     }
 }
+
+// MARK: - UICollectionViewDataSource
+extension FlickrPhotosViewController {
+    // 1
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return search.count
+    }
+    
+    // 2
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return search[section].searchResults.count
+    }
+    
+    // 3
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        cell.backgroundColor = UIColor.black
+        // Configure the cell
+        return cell
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
