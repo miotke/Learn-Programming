@@ -15,7 +15,7 @@ final class FlickrPhotosViewController: UICollectionViewController {
     // MARK: Properties
     fileprivate let reuseIdentifier = "FlickrCell"
     fileprivate let sectionInset = UIEdgeInsetsMake(50.0, 20.0, 50.0, 20.0)
-    fileprivate let search = [FlickrSearchResults]()
+    fileprivate var search = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
 }
 
@@ -48,7 +48,7 @@ extension FlickrPhotosViewController: UITextFieldDelegate {
             if let results = results {
                 // 3
                 print("found \(results.searchResults.count) matching \(results.searchTerm)")
-                self.searches.insert(results, at: 0)
+                self.search.insert(results, at: 0)
                 
                 // 4
                 self.collectionView?.reloadData()
