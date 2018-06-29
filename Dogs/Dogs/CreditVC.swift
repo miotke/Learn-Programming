@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreditVC.swift
 //  Dogs
 //
 //  Created by Andrew Miotke on 6/28/18.
@@ -7,24 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
+class CreditVC: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var webView: WKWebView!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setupTitleLabel()
-        
     }
 
     func setupTitleLabel() {
         titleLabel.textAlignment = .center
-        titleLabel.text = "Dog CEO - Dog API"
+        titleLabel.text = "Credt to Dog CEO"
         titleLabel.font = UIFont(name: "Verdana", size: 30)
     }
 
-    
 }
-
