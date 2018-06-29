@@ -1,5 +1,5 @@
 //
-//  DogCell.swift
+//  Dog.swift
 //  Dogs
 //
 //  Created by Andrew Miotke on 6/28/18.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class DogCell: UICollectionViewCell {
-    @IBOutlet weak var imageView: UIImageView!
+class Dog {
+    
 }

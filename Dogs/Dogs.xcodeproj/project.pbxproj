@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4C0FCB4D20E5D83F00BBF1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FCB4C20E5D83F00BBF1EB /* AppDelegate.swift */; };
-		4C0FCB4F20E5D83F00BBF1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FCB4E20E5D83F00BBF1EB /* ViewController.swift */; };
+		4C0FCB4F20E5D83F00BBF1EB /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FCB4E20E5D83F00BBF1EB /* DogViewController.swift */; };
 		4C0FCB5220E5D83F00BBF1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FCB5020E5D83F00BBF1EB /* Main.storyboard */; };
 		4C0FCB5420E5D84200BBF1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FCB5320E5D84200BBF1EB /* Assets.xcassets */; };
 		4C0FCB5720E5D84200BBF1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FCB5520E5D84200BBF1EB /* LaunchScreen.storyboard */; };
 		4C6B5D5F20E5DBC2000E5D6D /* CreditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B5D5E20E5DBC2000E5D6D /* CreditVC.swift */; };
 		4C6B5D6120E5DDA4000E5D6D /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B5D6020E5DDA4000E5D6D /* DogCell.swift */; };
+		4CFCCB5C20E5E1D7003DB562 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCCB5B20E5E1D7003DB562 /* Dog.swift */; };
+		4CFCCB5E20E5E20B003DB562 /* DogQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCCB5D20E5E20B003DB562 /* DogQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0FCB4920E5D83F00BBF1EB /* Dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0FCB4C20E5D83F00BBF1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C0FCB4E20E5D83F00BBF1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C0FCB4E20E5D83F00BBF1EB /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
 		4C0FCB5120E5D83F00BBF1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0FCB5320E5D84200BBF1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0FCB5620E5D84200BBF1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0FCB5820E5D84200BBF1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C6B5D5E20E5DBC2000E5D6D /* CreditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditVC.swift; sourceTree = "<group>"; };
 		4C6B5D6020E5DDA4000E5D6D /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		4CFCCB5B20E5E1D7003DB562 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		4CFCCB5D20E5E20B003DB562 /* DogQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				4C0FCB4C20E5D83F00BBF1EB /* AppDelegate.swift */,
-				4C0FCB4E20E5D83F00BBF1EB /* ViewController.swift */,
+				4C0FCB4E20E5D83F00BBF1EB /* DogViewController.swift */,
 				4C0FCB5020E5D83F00BBF1EB /* Main.storyboard */,
 				4C0FCB5320E5D84200BBF1EB /* Assets.xcassets */,
 				4C0FCB5520E5D84200BBF1EB /* LaunchScreen.storyboard */,
 				4C0FCB5820E5D84200BBF1EB /* Info.plist */,
 				4C6B5D5E20E5DBC2000E5D6D /* CreditVC.swift */,
 				4C6B5D6020E5DDA4000E5D6D /* DogCell.swift */,
+				4CFCCB5B20E5E1D7003DB562 /* Dog.swift */,
+				4CFCCB5D20E5E20B003DB562 /* DogQuery.swift */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 				TargetAttributes = {
 					4C0FCB4820E5D83F00BBF1EB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -141,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0FCB4F20E5D83F00BBF1EB /* ViewController.swift in Sources */,
+				4C0FCB4F20E5D83F00BBF1EB /* DogViewController.swift in Sources */,
 				4C6B5D5F20E5DBC2000E5D6D /* CreditVC.swift in Sources */,
 				4C6B5D6120E5DDA4000E5D6D /* DogCell.swift in Sources */,
+				4CFCCB5C20E5E1D7003DB562 /* Dog.swift in Sources */,
+				4CFCCB5E20E5E20B003DB562 /* DogQuery.swift in Sources */,
 				4C0FCB4D20E5D83F00BBF1EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = andrewmiotke.Dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = andrewmiotke.Dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
