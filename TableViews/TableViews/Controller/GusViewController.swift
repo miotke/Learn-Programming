@@ -19,19 +19,23 @@ class GusViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gusLabel.text = "Gus!"
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
-
 extension GusViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        gusArray.count
+        return gusArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "gusGusCell", for: indexPath)
+        cell.textLabel?.text = gusArray[indexPath.row]
+        return cell
     }
     
     

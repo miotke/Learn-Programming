@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="696.79999999999995" y="782.15892053973016"/>
         </scene>
-        <!--Gus View Controller-->
+        <!--Gus Table View-->
         <scene sceneID="fgu-Hn-nZA">
             <objects>
-                <viewController id="bbb-bh-LWd" customClass="GusViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bbb-bh-LWd" customClass="GusTableView" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8vL-u9-aX9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
                                 <rect key="frame" x="0.0" y="48.5" width="375" height="598.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GusCell" id="LZK-1E-4Qq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gusGusCell" id="LZK-1E-4Qq">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LZK-1E-4Qq" id="dSr-eQ-LQd">
@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="1501.5999999999999" y="781.25937031484261"/>
         </scene>
-        <!--View Controller-->
+        <!--Gus View Controller-->
         <scene sceneID="Qa3-ou-VW4">
             <objects>
-                <viewController id="z1R-nZ-ZYe" sceneMemberID="viewController">
+                <viewController id="z1R-nZ-ZYe" customClass="GusViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cqe-nD-Hu3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,6 +233,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SnM-wY-evI"/>
                     </view>
+                    <connections>
+                        <outlet property="gusLabel" destination="DcM-CY-iRF" id="ywh-fg-4mW"/>
+                        <outlet property="tableView" destination="bn6-HM-5yv" id="ccF-Wm-wii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQG-PP-q7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
