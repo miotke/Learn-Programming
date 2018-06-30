@@ -19,11 +19,17 @@ class GusViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        gusLabel.text = "Gus!"
-
+        setupGusLabel()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func setupGusLabel() {
+        gusLabel.text = "Gus!"
+        gusLabel.textAlignment = .center
+        gusLabel.textColor = UIColor.white
+        gusLabel.backgroundColor = UIColor.brown
+        gusLabel.font = UIFont(name: "Avenir Next", size: 30)
     }
 }
 
