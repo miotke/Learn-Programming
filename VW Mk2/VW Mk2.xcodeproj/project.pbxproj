@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4CA151E220E7DD2500F25F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151E120E7DD2500F25F81 /* AppDelegate.swift */; };
-		4CA151E420E7DD2500F25F81 /* detailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151E320E7DD2500F25F81 /* detailVC.swift */; };
+		4CA151E420E7DD2500F25F81 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151E320E7DD2500F25F81 /* DetailVC.swift */; };
 		4CA151E720E7DD2500F25F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA151E520E7DD2500F25F81 /* Main.storyboard */; };
 		4CA151E920E7DD2700F25F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA151E820E7DD2700F25F81 /* Assets.xcassets */; };
 		4CA151EC20E7DD2700F25F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA151EA20E7DD2700F25F81 /* LaunchScreen.storyboard */; };
+		4CA151FC20E7F7C000F25F81 /* DetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151FB20E7F7C000F25F81 /* DetailTableView.swift */; };
+		4CA151FE20E7F92400F25F81 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151FD20E7F92400F25F81 /* DetailCell.swift */; };
+		4CA1520120E7FB1200F25F81 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CA151FF20E7FB1200F25F81 /* Model.xcdatamodeld */; };
+		4CA1520420E7FD2E00F25F81 /* DetailType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1520320E7FD2D00F25F81 /* DetailType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CA151DE20E7DD2500F25F81 /* VW Mk2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VW Mk2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA151E120E7DD2500F25F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CA151E320E7DD2500F25F81 /* detailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailVC.swift; sourceTree = "<group>"; };
+		4CA151E320E7DD2500F25F81 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		4CA151E620E7DD2500F25F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CA151E820E7DD2700F25F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA151EB20E7DD2700F25F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA151ED20E7DD2700F25F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA151FB20E7F7C000F25F81 /* DetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableView.swift; sourceTree = "<group>"; };
+		4CA151FD20E7F92400F25F81 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		4CA1520020E7FB1200F25F81 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4CA1520320E7FD2D00F25F81 /* DetailType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		4CA151E020E7DD2500F25F81 /* VW Mk2 */ = {
 			isa = PBXGroup;
 			children = (
+				4CA1520220E7FD1900F25F81 /* Enums */,
+				4CA151F620E7F6DA00F25F81 /* Extensions */,
 				4CA151F520E7E10600F25F81 /* Model */,
 				4CA151F420E7E10100F25F81 /* View */,
 				4CA151F320E7E0FB00F25F81 /* Controller */,
@@ -62,6 +72,7 @@
 				4CA151E820E7DD2700F25F81 /* Assets.xcassets */,
 				4CA151EA20E7DD2700F25F81 /* LaunchScreen.storyboard */,
 				4CA151ED20E7DD2700F25F81 /* Info.plist */,
+				4CA151FF20E7FB1200F25F81 /* Model.xcdatamodeld */,
 			);
 			path = "VW Mk2";
 			sourceTree = "<group>";
@@ -69,7 +80,7 @@
 		4CA151F320E7E0FB00F25F81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CA151E320E7DD2500F25F81 /* detailVC.swift */,
+				4CA151E320E7DD2500F25F81 /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 		4CA151F420E7E10100F25F81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CA151FD20E7F92400F25F81 /* DetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +98,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4CA151F620E7F6DA00F25F81 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CA151FB20E7F7C000F25F81 /* DetailTableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4CA1520220E7FD1900F25F81 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4CA1520320E7FD2D00F25F81 /* DetailType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA151E420E7DD2500F25F81 /* detailVC.swift in Sources */,
+				4CA1520420E7FD2E00F25F81 /* DetailType.swift in Sources */,
+				4CA151FC20E7F7C000F25F81 /* DetailTableView.swift in Sources */,
+				4CA151E420E7DD2500F25F81 /* DetailVC.swift in Sources */,
+				4CA1520120E7FB1200F25F81 /* Model.xcdatamodeld in Sources */,
+				4CA151FE20E7F92400F25F81 /* DetailCell.swift in Sources */,
 				4CA151E220E7DD2500F25F81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CA151FF20E7FB1200F25F81 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CA1520020E7FB1200F25F81 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4CA1520020E7FB1200F25F81 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CA151D620E7DD2400F25F81 /* Project object */;
 }

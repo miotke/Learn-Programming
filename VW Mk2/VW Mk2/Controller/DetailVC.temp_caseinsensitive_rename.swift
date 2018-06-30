@@ -8,7 +8,7 @@
 
 import UIKit
 
-class detailVC: UIViewController {
+class DetailVC: UIViewController {
 
     // MARK: Outlets
     @IBOutlet weak var imageView: UIImageView!
@@ -16,7 +16,7 @@ class detailVC: UIViewController {
     @IBOutlet weak var redStripeview: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var mk2Array = ["Motor", "Transmission", "Weight", ]
+    var mk2Array = ["", "", "", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,15 +40,5 @@ class detailVC: UIViewController {
     }
 }
 
-extension detailVC: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mk2Array.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath)
-        cell.textLabel?.text = mk2Array[indexPath.row]
-        return cell
-    }
-}
+
 

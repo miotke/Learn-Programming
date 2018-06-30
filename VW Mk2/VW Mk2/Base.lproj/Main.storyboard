@@ -12,7 +12,7 @@
         <!--DetailVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="detailVC" customModule="VW_Mk2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetailVC" customModule="VW_Mk2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,13 +43,40 @@
                                 <rect key="frame" x="0.0" y="313" width="375" height="354"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="hBi-kV-cvh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="hBi-kV-cvh" customClass="DetailCell" customModule="VW_Mk2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hBi-kV-cvh" id="OVV-9n-fQX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-vd-xDy">
+                                                    <rect key="frame" x="10" y="2" width="42" height="39.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Detail label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-c2-aon">
+                                                    <rect key="frame" x="60" y="13" width="300" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kdw-c2-aon" secondAttribute="bottom" constant="2" id="6MG-Kq-OCY"/>
+                                                <constraint firstItem="ar0-vd-xDy" firstAttribute="top" secondItem="OVV-9n-fQX" secondAttribute="top" constant="2" id="7Np-Pw-gFj"/>
+                                                <constraint firstItem="kdw-c2-aon" firstAttribute="trailing" secondItem="OVV-9n-fQX" secondAttribute="trailingMargin" constant="10" id="FAh-Tb-I6p"/>
+                                                <constraint firstItem="kdw-c2-aon" firstAttribute="leading" secondItem="ar0-vd-xDy" secondAttribute="trailing" constant="5" id="Tfh-kb-Wbo"/>
+                                                <constraint firstItem="ar0-vd-xDy" firstAttribute="leading" secondItem="OVV-9n-fQX" secondAttribute="leading" constant="10" id="XJe-r5-Vqp"/>
+                                                <constraint firstAttribute="bottom" secondItem="ar0-vd-xDy" secondAttribute="bottom" constant="2" id="gTJ-DN-KLs"/>
+                                                <constraint firstItem="kdw-c2-aon" firstAttribute="top" secondItem="OVV-9n-fQX" secondAttribute="topMargin" constant="2" id="jDZ-hq-bnh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="kdw-c2-aon" id="S0x-7b-Hl2"/>
+                                            <outlet property="detailType" destination="ar0-vd-xDy" id="uLe-N7-oWo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="117.5" y="117.5"/>
         </scene>
     </scenes>
 </document>
