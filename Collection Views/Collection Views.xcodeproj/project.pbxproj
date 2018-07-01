@@ -12,6 +12,7 @@
 		4971A2EF20E93E3D00C97C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4971A2EE20E93E3D00C97C39 /* Assets.xcassets */; };
 		4971A2F220E93E3D00C97C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971A2F020E93E3D00C97C39 /* LaunchScreen.storyboard */; };
 		4971A2FA20E9402900C97C39 /* CollectionViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971A2F920E9402900C97C39 /* CollectionViewCollection.swift */; };
+		49B87F5020E9690C009ED7C4 /* AnotherCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B87F4F20E9690C009ED7C4 /* AnotherCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4971A2F120E93E3D00C97C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4971A2F320E93E3D00C97C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4971A2F920E9402900C97C39 /* CollectionViewCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCollection.swift; sourceTree = "<group>"; };
+		49B87F4F20E9690C009ED7C4 /* AnotherCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4971A2E720E93E3C00C97C39 /* AppDelegate.swift */,
 				4971A2F920E9402900C97C39 /* CollectionViewCollection.swift */,
+				49B87F4F20E9690C009ED7C4 /* AnotherCollectionViewController.swift */,
 				4971A2EB20E93E3C00C97C39 /* Main.storyboard */,
 				4971A2EE20E93E3D00C97C39 /* Assets.xcassets */,
 				4971A2F020E93E3D00C97C39 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				4971A2FA20E9402900C97C39 /* CollectionViewCollection.swift in Sources */,
 				4971A2E820E93E3C00C97C39 /* AppDelegate.swift in Sources */,
+				49B87F5020E9690C009ED7C4 /* AnotherCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
