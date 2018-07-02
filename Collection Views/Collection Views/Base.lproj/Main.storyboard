@@ -152,7 +152,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="qCy-kN-7Ud">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gusCell" id="qCy-kN-7Ud" customClass="GusHeadImage" customModule="Collection_Views" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -170,6 +170,9 @@
                                             <constraint firstAttribute="bottom" secondItem="zdx-7Y-WNb" secondAttribute="bottom" id="WuI-ZQ-1a3"/>
                                             <constraint firstAttribute="trailing" secondItem="zdx-7Y-WNb" secondAttribute="trailing" id="jYj-4Y-9cT"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="gusHeadImage" destination="zdx-7Y-WNb" id="XL5-vS-8HH"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

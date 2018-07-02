@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "imageCell"
+private let reuseIdentifier = "gusCell"
 
 class ImageCollectionView: UIViewController {
 
@@ -26,7 +26,7 @@ class ImageCollectionView: UIViewController {
     }
     
     func setupLabel() {
-        label.text = "Collection Views!"
+        label.text = "Collection of Gus!"
         label.textAlignment = .center
         label.font = UIFont(name: "Avenir Next", size: 30)
     }
@@ -43,8 +43,9 @@ extension ImageCollectionView: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GusHeadImage
+        cell.gusHeadImage.image = UIImage(named: "gus-head")
+        cell.backgroundColor = UIColor.brown
         return cell
     }
     

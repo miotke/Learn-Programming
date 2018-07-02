@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4943999420E99EF80035A84C /* ManualCollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943999320E99EF80035A84C /* ManualCollectionViewExtension.swift */; };
 		4943999620E9A01B0035A84C /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943999520E9A01B0035A84C /* ImageCollectionView.swift */; };
+		4943999920E9A2F80035A84C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943999820E9A2F80035A84C /* ImageView.swift */; };
 		4971A2E820E93E3C00C97C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971A2E720E93E3C00C97C39 /* AppDelegate.swift */; };
 		4971A2ED20E93E3C00C97C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971A2EB20E93E3C00C97C39 /* Main.storyboard */; };
 		4971A2EF20E93E3D00C97C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4971A2EE20E93E3D00C97C39 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		4943999320E99EF80035A84C /* ManualCollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualCollectionViewExtension.swift; sourceTree = "<group>"; };
 		4943999520E9A01B0035A84C /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		4943999820E9A2F80035A84C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		4971A2E420E93E3C00C97C39 /* Collection Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4971A2E720E93E3C00C97C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4971A2EC20E93E3C00C97C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4943999720E9A2E70035A84C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4943999820E9A2F80035A84C /* ImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4971A2DB20E93E3C00C97C39 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		4971A2E620E93E3C00C97C39 /* Collection Views */ = {
 			isa = PBXGroup;
 			children = (
+				4943999720E9A2E70035A84C /* View */,
 				4943999220E99EDF0035A84C /* Extensions */,
 				49C90DBD20E99CE90074EE48 /* Controller */,
 				4971A2E720E93E3C00C97C39 /* AppDelegate.swift */,
@@ -168,6 +179,7 @@
 				4971A2E820E93E3C00C97C39 /* AppDelegate.swift in Sources */,
 				49C90DBC20E99CE40074EE48 /* ManualCollectionView.swift in Sources */,
 				4943999620E9A01B0035A84C /* ImageCollectionView.swift in Sources */,
+				4943999920E9A2F80035A84C /* ImageView.swift in Sources */,
 				49B87F5020E9690C009ED7C4 /* AnotherCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
