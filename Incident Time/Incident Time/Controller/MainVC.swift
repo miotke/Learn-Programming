@@ -16,7 +16,8 @@ class MainVC: UIViewController {
     @IBOutlet weak var addDayButton: UIButton!
     @IBOutlet weak var resetDayButton: UIButton!
     
-    var numberOfDaysSinceIncident = 0
+    var numberOfDaysSinceIncident = 10
+    var baseLoop = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,15 +48,21 @@ class MainVC: UIViewController {
         numberOfDaysSinceIncident += 1
         return numberOfDaysSinceIncident
     }
+    
+//    func loop() {
+//        for i in baseLoop {
+//            incidentNumber + 1
+//        }
+//    }
 
     // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        incidentNumber.text = String(numberOfDaysSinceIncident + 1)
+        incidentNumber.text = String(baseLoop)
         print(" +1 ")
     }
     
     @IBAction func resetDayButtonWasPressed(_ sender: Any) {
-
+        incidentNumber.text = String(0)
         print("Reset to 0")
     }
 }
