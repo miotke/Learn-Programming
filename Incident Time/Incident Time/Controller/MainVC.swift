@@ -49,14 +49,14 @@ class MainVC: UIViewController {
         return numberOfDaysSinceIncident
     }
     
-    
     let numbers = 0
 
     // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        for i in 0 ... numbers + 1 {
-            print("\(i)")
+        for i in numbers ... 1 {
+            incidentNumber.text = String(i + 1)
         }
+        print("+")
     }
     
     @IBAction func resetDayButtonWasPressed(_ sender: Any) {
