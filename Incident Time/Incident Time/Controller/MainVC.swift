@@ -29,6 +29,11 @@ class MainVC: UIViewController {
         numberOfDaysSinceIncident = 0
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        numberOfDaysSinceIncident = 0
+    }
+    
     func setupView() {
         titleLabel.text = "Days since last incident"
         titleLabel.textAlignment = .center
