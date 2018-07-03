@@ -10,11 +10,13 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    // Outlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var incidentNumber: UILabel!
     @IBOutlet weak var addDayButton: UIButton!
     @IBOutlet weak var resetDayButton: UIButton!
     
+    var numberOfDaysNumber = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class MainVC: UIViewController {
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: "Avenir Next", size: 30)
         
-        incidentNumber.text = "0"
+        incidentNumber.text = String(numberOfDaysNumber)
         incidentNumber.textAlignment = .center
         incidentNumber.font = UIFont(name: "Avenir Next", size: 100)
         
@@ -41,12 +43,15 @@ class MainVC: UIViewController {
         resetDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
     }
 
+    // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        print("Add 1 day")
+        numberOfDaysNumber += 1
+        print("+ 1")
     }
     
     @IBAction func resetDayButtonWasPressed(_ sender: Any) {
-        print("Rest to 0 days")
+
+        print("Reset to 0")
     }
 }
 
