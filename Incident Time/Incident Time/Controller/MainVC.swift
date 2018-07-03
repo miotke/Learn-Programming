@@ -44,9 +44,11 @@ class MainVC: UIViewController {
         incidentNumber.font = UIFont(name: "Avenir Next", size: 100)
         
         addDayButton.setTitle("+", for: .normal)
-        addDayButton.setTitleColor(UIColor.green, for: .normal)
+        addDayButton.setTitleColor(UIColor.white, for: .normal)
         addDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
-        
+        addDayButton.backgroundColor = UIColor.green
+        addDayButton.layer.cornerRadius = 0.5 * addDayButton.bounds.size.width
+
         resetDayButton.setTitle("Reset", for: .normal)
         resetDayButton.setTitleColor(UIColor.red, for: .normal)
         resetDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
