@@ -16,14 +16,17 @@ class MainVC: UIViewController {
     @IBOutlet weak var addDayButton: UIButton!
     @IBOutlet weak var resetDayButton: UIButton!
     
-    var numberOfDaysSinceIncident = 0
-    var baseLoop = 10
+    var numberOfDaysSinceIncident: Int = 0 {
+        didSet {
+            incidentNumber.text = "\(numberOfDaysSinceIncident)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
-        
+        numberOfDaysSinceIncident = 0
     }
     
     func setupView() {
@@ -48,14 +51,10 @@ class MainVC: UIViewController {
         numberOfDaysSinceIncident += 1
         return numberOfDaysSinceIncident
     }
-    
-    let numbers = 0
 
     // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        for i in numbers ... 1 {
-            incidentNumber.text = String(i + 1)
-        }
+        numberOfDaysSinceIncident += 1
         print("+")
     }
     
