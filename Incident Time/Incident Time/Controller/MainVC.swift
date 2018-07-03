@@ -16,14 +16,22 @@ class MainVC: UIViewController {
     @IBOutlet weak var addDayButton: UIButton!
     @IBOutlet weak var resetDayButton: UIButton!
     
-    var numberOfDaysSinceIncident = 0
-    var baseLoop = 10
+    var numberOfDaysSinceIncident: Int = 0 {
+        didSet {
+            incidentNumber.text = "\(numberOfDaysSinceIncident)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
-        
+        numberOfDaysSinceIncident = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        numberOfDaysSinceIncident = 0
     }
     
     func setupView() {
@@ -36,9 +44,11 @@ class MainVC: UIViewController {
         incidentNumber.font = UIFont(name: "Avenir Next", size: 100)
         
         addDayButton.setTitle("+", for: .normal)
-        addDayButton.setTitleColor(UIColor.green, for: .normal)
+        addDayButton.setTitleColor(UIColor.white, for: .normal)
         addDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
-        
+        addDayButton.backgroundColor = UIColor.green
+        addDayButton.layer.cornerRadius = 0.5 * addDayButton.bounds.size.width
+
         resetDayButton.setTitle("Reset", for: .normal)
         resetDayButton.setTitleColor(UIColor.red, for: .normal)
         resetDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
@@ -48,14 +58,10 @@ class MainVC: UIViewController {
         numberOfDaysSinceIncident += 1
         return numberOfDaysSinceIncident
     }
-    
-    let numbers = 0
 
     // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        for i in numbers ... 1 {
-            incidentNumber.text = String(i + 1)
-        }
+        numberOfDaysSinceIncident += 1
         print("+")
     }
     
