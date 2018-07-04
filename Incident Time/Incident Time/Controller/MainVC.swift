@@ -55,6 +55,7 @@ class MainVC: UIViewController {
     }
     
     func increaseDay(numberOfDays: Int) -> Int {
+        incidentNumber.text = String(0)
         numberOfDaysSinceIncident += 1
         return numberOfDaysSinceIncident
     }
