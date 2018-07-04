@@ -29,20 +29,15 @@ class MainVC: UIViewController {
         numberOfDaysSinceIncident = 0
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        numberOfDaysSinceIncident = 0
-    }
-    
     func setupView() {
         titleLabel.text = "Days since last incident"
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: "Avenir Next", size: 30)
-        
+
         incidentNumber.text = String(numberOfDaysSinceIncident)
         incidentNumber.textAlignment = .center
         incidentNumber.font = UIFont(name: "Avenir Next", size: 100)
-        
+
         addDayButton.setTitle("+", for: .normal)
         addDayButton.setTitleColor(UIColor.white, for: .normal)
         addDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
@@ -55,7 +50,6 @@ class MainVC: UIViewController {
     }
     
     func increaseDay(numberOfDays: Int) -> Int {
-        incidentNumber.text = String(0)
         numberOfDaysSinceIncident += 1
         return numberOfDaysSinceIncident
     }
@@ -67,7 +61,8 @@ class MainVC: UIViewController {
     }
     
     @IBAction func resetDayButtonWasPressed(_ sender: Any) {
-        incidentNumber.text = String(0)
+        self.numberOfDaysSinceIncident = 0
+        incidentNumber.text = String(numberOfDaysSinceIncident)
         print("Reset to 0")
     }
 }
