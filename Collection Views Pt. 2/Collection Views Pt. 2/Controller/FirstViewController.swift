@@ -8,6 +8,8 @@
 
 import UIKit
 
+var reuseIdentifier = "cell"
+
 class FirstViewController: UIViewController {
     
     // Outlets
@@ -28,17 +30,24 @@ class FirstViewController: UIViewController {
         
         view.backgroundColor = UIColor.black
     }
+    
 }
 
 extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FirstCollectionViewCell
+        cell.label = "Text"
+        return cell
     }
-    
-    
 }
 
