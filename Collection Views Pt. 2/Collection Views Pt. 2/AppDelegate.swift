@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Dogs
+//  Collection Views Pt. 2
 //
-//  Created by Andrew Miotke on 6/28/18.
+//  Created by Andrew Miotke on 7/5/18.
 //  Copyright © 2018 Andrew Miotke. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
