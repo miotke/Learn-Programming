@@ -19,6 +19,7 @@
 		4971A2FA20E9402900C97C39 /* CollectionViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971A2F920E9402900C97C39 /* CollectionViewCollection.swift */; };
 		49B87F5020E9690C009ED7C4 /* AnotherCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B87F4F20E9690C009ED7C4 /* AnotherCollectionViewController.swift */; };
 		49C90DBC20E99CE40074EE48 /* ManualCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C90DBB20E99CE40074EE48 /* ManualCollectionView.swift */; };
+		4CB735A720EE7BE200CD07A0 /* RenoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB735A620EE7BE200CD07A0 /* RenoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4971A2F920E9402900C97C39 /* CollectionViewCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCollection.swift; sourceTree = "<group>"; };
 		49B87F4F20E9690C009ED7C4 /* AnotherCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCollectionViewController.swift; sourceTree = "<group>"; };
 		49C90DBB20E99CE40074EE48 /* ManualCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualCollectionView.swift; sourceTree = "<group>"; };
+		4CB735A620EE7BE200CD07A0 /* RenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				49C90DBB20E99CE40074EE48 /* ManualCollectionView.swift */,
 				4943999520E9A01B0035A84C /* ImageCollectionView.swift */,
 				4943999A20E9A7460035A84C /* GusViewController.swift */,
+				4CB735A620EE7BE200CD07A0 /* RenoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				4971A2FA20E9402900C97C39 /* CollectionViewCollection.swift in Sources */,
 				4943999420E99EF80035A84C /* ManualCollectionViewExtension.swift in Sources */,
 				4971A2E820E93E3C00C97C39 /* AppDelegate.swift in Sources */,
+				4CB735A720EE7BE200CD07A0 /* RenoViewController.swift in Sources */,
 				4943999D20E9A7C70035A84C /* GusHeadCollectionViewCell.swift in Sources */,
 				49C90DBC20E99CE40074EE48 /* ManualCollectionView.swift in Sources */,
 				4943999620E9A01B0035A84C /* ImageCollectionView.swift in Sources */,
@@ -333,7 +337,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Collection Views/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +356,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Collection Views/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
