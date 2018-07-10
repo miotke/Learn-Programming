@@ -13,6 +13,4 @@ class FirstCollectionViewCell: UICollectionViewCell {
     // Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
-
-    
 }

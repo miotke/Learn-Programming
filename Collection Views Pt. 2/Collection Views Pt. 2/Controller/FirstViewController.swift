@@ -19,6 +19,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupFirstView()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
     func setupFirstView() {
@@ -39,14 +42,15 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FirstCollectionViewCell
-        cell.label = "Text"
+        cell.label.text = "CV Label 1"
+        cell.label.textAlignment = .center
+        cell.label.textColor = UIColor.white
+        cell.backgroundColor = UIColor.blue
         return cell
     }
 }
