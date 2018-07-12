@@ -43,6 +43,7 @@ class SecondViewController: UIViewController {
         label.textAlignment = .center
         label.backgroundColor = UIColor.black
         label.font = UIFont(name: "Avenir Next", size: 25)
+        collectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
 
