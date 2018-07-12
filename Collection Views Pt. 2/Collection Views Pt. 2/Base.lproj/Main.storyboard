@@ -164,7 +164,7 @@
                                             <constraint firstAttribute="trailing" secondItem="HnG-gp-agJ" secondAttribute="trailing" id="ciP-wu-flY"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="image" destination="am5-9f-Axw" id="YJZ-iz-GUD"/>
+                                            <outlet property="gusHeadImage" destination="am5-9f-Axw" id="z5h-jv-FyR"/>
                                             <outlet property="label" destination="HnG-gp-agJ" id="HOk-3d-vv6"/>
                                         </connections>
                                     </collectionViewCell>

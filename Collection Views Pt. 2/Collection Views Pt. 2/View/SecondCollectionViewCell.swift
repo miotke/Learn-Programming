@@ -11,6 +11,6 @@ import UIKit
 class SecondCollectionViewCell: UICollectionViewCell {
     
     // Outlets
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var gusHeadImage: UIImageView!
     @IBOutlet weak var label: UILabel!
 }

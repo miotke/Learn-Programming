@@ -58,7 +58,8 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellID, for: indexPath) as! SecondCollectionViewCell
         collectionCell.label.text = "Collection Label!"
-        collectionCell.image = UIImage(named: "gus-head-8")!
+        collectionCell.gusHeadImage.image = UIImage(named: "gus-head-8")
+        
         return collectionCell
     }
     
@@ -68,7 +69,7 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
