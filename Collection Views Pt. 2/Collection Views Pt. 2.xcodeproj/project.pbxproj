@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491107AE20FC446A00A52495 /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491107AD20FC446A00A52495 /* ThirdCollectionViewCell.swift */; };
 		49C812A220FC2F4600701D30 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C812A120FC2F4600701D30 /* ThirdViewController.swift */; };
 		4C42216620EEEE50008726E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42216520EEEE50008726E1 /* AppDelegate.swift */; };
 		4C42216820EEEE50008726E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42216720EEEE50008726E1 /* FirstViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491107AD20FC446A00A52495 /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		49C812A120FC2F4600701D30 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4C42216220EEEE50008726E1 /* Collection Views Pt. 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection Views Pt. 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42216520EEEE50008726E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				4CF69B8720EEF12600349F0F /* FirstCollectionViewCell.swift */,
 				4C73F95720F56EF600FC06B6 /* SecondCollectionViewCell.swift */,
+				491107AD20FC446A00A52495 /* ThirdCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491107AE20FC446A00A52495 /* ThirdCollectionViewCell.swift in Sources */,
 				4C73F95620F56B7000FC06B6 /* SecondViewController.swift in Sources */,
 				4CF69B8820EEF12600349F0F /* FirstCollectionViewCell.swift in Sources */,
 				4C73F95820F56EF600FC06B6 /* SecondCollectionViewCell.swift in Sources */,
