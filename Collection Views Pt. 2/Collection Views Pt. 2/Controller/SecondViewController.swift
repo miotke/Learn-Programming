@@ -13,6 +13,8 @@ var collectionCellID = "cell"
 
 class SecondViewController: UIViewController {
     
+    var gusLabel = ["Gus 1", "Gus 2", "Gus 3", "Gus 4", "Gus 5", "Gus 6", "Gus 7", "Gus 8", "Gus 9", "Gus 10]
+    
     // Outlets
     @IBOutlet weak var label: UILabel!
         @IBOutlet weak var collectionView: UICollectionView!
@@ -70,12 +72,13 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return gusLabel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCell = tableView.dequeueReusableCell(withIdentifier: tableCellID, for: indexPath)
-        tableCell.textLabel?.text = "Table Cell"
+        tableCell.textLabel?.text = gusLabel[indexPath.row]
+        
         return tableCell
     }
 }
