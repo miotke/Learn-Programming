@@ -13,7 +13,7 @@ var collectionCellID = "cell"
 
 class SecondViewController: UIViewController {
     
-    var gusLabel = ["Gus 1", "Gus 2", "Gus 3", "Gus 4", "Gus 5", "Gus 6", "Gus 7", "Gus 8", "Gus 9", "Gus 10]
+    var gusLabel = ["Gus 1", "Gus 2", "Gus 3", "Gus 4", "Gus 5", "Gus 6", "Gus 7", "Gus 8", "Gus 9", "Gus 10"]
     
     // Outlets
     @IBOutlet weak var label: UILabel!
@@ -49,18 +49,19 @@ class SecondViewController: UIViewController {
     }
 }
 
+// Collection View
 extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return gusLabel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellID, for: indexPath) as! SecondCollectionViewCell
-        collectionCell.label.text = "Collection Label!"
+        collectionCell.label.text = gusLabel[indexPath.row]
         collectionCell.gusHeadImage.image = UIImage(named: "gus-head-8")
         
         return collectionCell
@@ -69,7 +70,7 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
 }
 
-
+// Table View
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gusLabel.count
