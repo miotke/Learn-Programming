@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C812A220FC2F4600701D30 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C812A120FC2F4600701D30 /* ThirdViewController.swift */; };
 		4C42216620EEEE50008726E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42216520EEEE50008726E1 /* AppDelegate.swift */; };
 		4C42216820EEEE50008726E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42216720EEEE50008726E1 /* FirstViewController.swift */; };
 		4C42216B20EEEE50008726E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42216920EEEE50008726E1 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49C812A120FC2F4600701D30 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4C42216220EEEE50008726E1 /* Collection Views Pt. 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection Views Pt. 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42216520EEEE50008726E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C42216720EEEE50008726E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				4C42216720EEEE50008726E1 /* FirstViewController.swift */,
 				4C73F95520F56B7000FC06B6 /* SecondViewController.swift */,
+				49C812A120FC2F4600701D30 /* ThirdViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				4CF69B8820EEF12600349F0F /* FirstCollectionViewCell.swift in Sources */,
 				4C73F95820F56EF600FC06B6 /* SecondCollectionViewCell.swift in Sources */,
 				4C42216820EEEE50008726E1 /* FirstViewController.swift in Sources */,
+				49C812A220FC2F4600701D30 /* ThirdViewController.swift in Sources */,
 				4C42216620EEEE50008726E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

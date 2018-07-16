@@ -8,8 +8,7 @@
 
 import UIKit
 
-var tableCellID = "cell"
-var collectionCellID = "cell"
+var reuseID = "cell"
 
 class SecondViewController: UIViewController {
     
@@ -60,7 +59,7 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellID, for: indexPath) as! SecondCollectionViewCell
+        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as! SecondCollectionViewCell
         collectionCell.label.text = gusLabel[indexPath.row]
         collectionCell.gusHeadImage.image = UIImage(named: "gus-head-8")
         
@@ -77,7 +76,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: tableCellID, for: indexPath)
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath)
         tableCell.textLabel?.text = gusLabel[indexPath.row]
         
         return tableCell
