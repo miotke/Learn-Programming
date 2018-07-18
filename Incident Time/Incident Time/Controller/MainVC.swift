@@ -40,7 +40,7 @@ class MainVC: UIViewController {
 
         addDayButton.setTitle("+", for: .normal)
         addDayButton.setTitleColor(UIColor.white, for: .normal)
-        addDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
+        addDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 40)
         addDayButton.backgroundColor = UIColor.green
         addDayButton.layer.cornerRadius = 0.5 * addDayButton.bounds.size.width
 
