@@ -8,15 +8,21 @@
 
 import UIKit
 
+let cvID = "cell"
+
 class FourthViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupView()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     func setupView() {
@@ -26,4 +32,23 @@ class FourthViewController: UIViewController {
         label.backgroundColor = UIColor.brown
         label.textColor = UIColor.green
     }
+}
+
+
+extension FourthViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cvID, for: indexPath) as! FourthCollectionViewCell
+        collectionViewCell.imageView.image = UIImage(named: "gus-head-7")
+        return collectionViewCell
+    }
+    
+    
 }

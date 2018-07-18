@@ -308,19 +308,28 @@
                                     <constraint firstAttribute="height" constant="569" id="5y0-lQ-6JB"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yGl-FU-HfP">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="135" height="108"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xcr-Oj-AmT">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Xcr-Oj-AmT" customClass="FourthCollectionViewCell" customModule="Collection_Views_Pt__2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-Iz-4Kk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="108"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="1zX-Iz-4Kk" id="3eA-hc-HVF"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -344,6 +353,7 @@
                         <viewLayoutGuide key="safeArea" id="rjt-95-v1f"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="jvg-4G-2Nz" id="Nhy-mL-INx"/>
                         <outlet property="label" destination="ae0-21-w2X" id="6pL-kH-A18"/>
                     </connections>
                 </viewController>
