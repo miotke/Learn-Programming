@@ -10,9 +10,56 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // Outlets
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var cvButton1: UIButton!
+    @IBOutlet weak var cvButton2: UIButton!
+    @IBOutlet weak var cvButton3: UIButton!
+    @IBOutlet weak var cvButton4: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupView()
     }
+
+    func setupView() {
+        label.text = "Choose a Collection View"
+        label.textAlignment = .center
+        label.font = UIFont(name: "Avenir Next", size: 30)
+        label.backgroundColor = UIColor.black
+        label.textColor = UIColor.white
+
+        cvButton1.setTitle("CV 1", for: .normal)
+        cvButton1.backgroundColor = UIColor.black
+        cvButton1.titleColor(for: .normal) = UIColor.white
+
+        cvButton2.setTitle("CV 2", for: .normal)
+        cvButton2.backgroundColor = UIColor.black
+        cvButton2.titleColor(for: .normal) = UIColor.white
+
+        cvButton3.setTitle("CV 3", for: .normal)
+        cvButton3.backgroundColor = UIColor.black
+        cvButton3.titleColor(for: .normal) = UIColor.white
+
+        cvButton4.setTitle("CV 4", for: .normal)
+        cvButton4.backgroundColor = UIColor.black
+        cvButton4.titleColor(for: .normal) = UIColor.white
+
+
+    }
+
+    // Actions
+    @IBAction func cvButton1WasPressed(_ sender: Any) {
+    }
+
+    @IBAction func cvButton2WasPressed(_ sender: Any) {
+    }
+
+    @IBAction func cvButton3WasPressed(_ sender: Any) {
+    }
+
+    @IBAction func cvButton4WasPressed(_ sender: Any) {
+    }
+
 }
