@@ -16,6 +16,7 @@
 		4C42217020EEEE51008726E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42216E20EEEE51008726E1 /* LaunchScreen.storyboard */; };
 		4C73F95620F56B7000FC06B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73F95520F56B7000FC06B6 /* SecondViewController.swift */; };
 		4C73F95820F56EF600FC06B6 /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73F95720F56EF600FC06B6 /* SecondCollectionViewCell.swift */; };
+		4CB4326D20FEC59100EF6F5B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4326C20FEC59100EF6F5B /* FourthViewController.swift */; };
 		4CF69B8820EEF12600349F0F /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF69B8720EEF12600349F0F /* FirstCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		4C42217120EEEE51008726E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C73F95520F56B7000FC06B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4C73F95720F56EF600FC06B6 /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CB4326C20FEC59100EF6F5B /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		4CF69B8720EEF12600349F0F /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				4C42216720EEEE50008726E1 /* FirstViewController.swift */,
 				4C73F95520F56B7000FC06B6 /* SecondViewController.swift */,
 				49C812A120FC2F4600701D30 /* ThirdViewController.swift */,
+				4CB4326C20FEC59100EF6F5B /* FourthViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				4C73F95620F56B7000FC06B6 /* SecondViewController.swift in Sources */,
 				4CF69B8820EEF12600349F0F /* FirstCollectionViewCell.swift in Sources */,
 				4C73F95820F56EF600FC06B6 /* SecondCollectionViewCell.swift in Sources */,
+				4CB4326D20FEC59100EF6F5B /* FourthViewController.swift in Sources */,
 				4C42216820EEEE50008726E1 /* FirstViewController.swift in Sources */,
 				49C812A220FC2F4600701D30 /* ThirdViewController.swift in Sources */,
 				4C42216620EEEE50008726E1 /* AppDelegate.swift in Sources */,
