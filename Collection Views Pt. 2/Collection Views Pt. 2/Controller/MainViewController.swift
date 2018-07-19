@@ -51,15 +51,19 @@ class MainViewController: UIViewController {
 
     // Actions
     @IBAction func cvButton1WasPressed(_ sender: Any) {
+       performSegue(withIdentifier: "firstCV", sender: nil)
     }
 
     @IBAction func cvButton2WasPressed(_ sender: Any) {
+        performSegue(withIdentifier: "secondCV", sender: nil)
     }
 
     @IBAction func cvButton3WasPressed(_ sender: Any) {
+        performSegue(withIdentifier: "thirdCV", sender: nil)
     }
 
     @IBAction func cvButton4WasPressed(_ sender: Any) {
+        performSegue(withIdentifier: "fourthCV", sender: nil)
     }
 
 }

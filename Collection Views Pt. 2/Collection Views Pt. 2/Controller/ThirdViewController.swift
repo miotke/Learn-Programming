@@ -14,6 +14,7 @@ class ThirdViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,6 +42,11 @@ class ThirdViewController: UIViewController {
         label.font = UIFont(name: "Avenir Next", size: 25)
         collectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
+    
+    // Actions
+    @IBAction func dismissButtonWasPressed(_ sender: Any) {
+    }
+    
 }
 
 // Collection View

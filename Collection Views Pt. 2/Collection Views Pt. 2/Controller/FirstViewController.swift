@@ -14,6 +14,7 @@ class FirstViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -34,6 +35,9 @@ class FirstViewController: UIViewController {
         view.backgroundColor = UIColor.black
     }
     
+    // Actions
+    @IBAction func dismissButtonPressed(_ sender: Any) {
+    }
 }
 
 extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {

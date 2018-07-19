@@ -32,6 +32,11 @@ class FourthViewController: UIViewController {
         label.backgroundColor = UIColor.brown
         label.textColor = UIColor.green
     }
+    
+    // Actions
+    @IBAction func dismissButtonWasPressed(_ sender: Any) {
+    }
+    
 }
 
 

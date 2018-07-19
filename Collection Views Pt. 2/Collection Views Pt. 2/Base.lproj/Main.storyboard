@@ -24,8 +24,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-i2-8EH">
+                                <rect key="frame" x="313" y="15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNU-KF-xo1"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qMq-k8-cTF">
-                                <rect key="frame" x="0.0" y="40.5" width="375" height="626.5"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="626.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fnu-Xq-lze">
                                     <size key="itemSize" width="217" height="200"/>
@@ -72,11 +79,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="E8m-i2-8EH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="1PR-Wq-wzS"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="top" secondItem="cHj-i6-rRU" secondAttribute="bottom" id="4iP-eO-BSj"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5t6-qq-y9I"/>
                             <constraint firstItem="cHj-i6-rRU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5vK-zG-Fnb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cHj-i6-rRU" secondAttribute="trailing" constant="16" id="73p-Ed-duX"/>
                             <constraint firstItem="cHj-i6-rRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GHo-gi-rzq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E8m-i2-8EH" secondAttribute="trailing" constant="16" id="dRG-Qg-OWN"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="top" secondItem="cHj-i6-rRU" secondAttribute="bottom" id="f3Y-uu-a1K"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hax-za-30F"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uGJ-G7-Inx"/>
@@ -85,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="qMq-k8-cTF" id="emV-Ia-ECd"/>
+                        <outlet property="dismissButton" destination="E8m-i2-8EH" id="X1Y-8h-igF"/>
                         <outlet property="label" destination="cHj-i6-rRU" id="uVX-0T-7T3"/>
                     </connections>
                 </viewController>
@@ -117,6 +127,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton1WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="xd7-02-i7D"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="firstCV" id="xwL-Z9-LO9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-qC-BAO">
@@ -124,6 +135,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton2WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="j3k-5p-8p0"/>
+                                            <segue destination="jru-Xr-pn1" kind="show" identifier="secondCV" id="iXe-wQ-eaI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -140,6 +152,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton3WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="ksb-FY-MG3"/>
+                                            <segue destination="8y3-vF-1iy" kind="show" identifier="thirdCV" id="fef-MI-gbe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-NP-HtP">
@@ -147,6 +160,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton4WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="Sdg-Bo-qGl"/>
+                                            <segue destination="bLk-fK-Y9U" kind="show" identifier="fourthCV" id="NJX-oD-UT7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -263,6 +277,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-kr-I6X">
+                                <rect key="frame" x="313" y="30" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonWasPressed:" destination="jru-Xr-pn1" eventType="touchUpInside" id="BNp-4k-yng"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -273,14 +294,18 @@
                             <constraint firstItem="IKq-lB-TaL" firstAttribute="top" secondItem="IFq-Bb-laR" secondAttribute="top" id="XB4-kn-abm"/>
                             <constraint firstItem="IKq-lB-TaL" firstAttribute="leading" secondItem="IFq-Bb-laR" secondAttribute="leading" id="Y2Z-aV-p0s"/>
                             <constraint firstItem="pSX-fP-Cyl" firstAttribute="top" secondItem="IKq-lB-TaL" secondAttribute="bottom" id="aUi-1b-SrD"/>
+                            <constraint firstItem="pSX-fP-Cyl" firstAttribute="top" secondItem="ycV-kr-I6X" secondAttribute="bottom" constant="10" id="bRf-P6-jIp"/>
                             <constraint firstItem="9ZG-64-S47" firstAttribute="bottom" secondItem="IFq-Bb-laR" secondAttribute="bottom" id="dfp-Hg-n7U"/>
                             <constraint firstItem="9ZG-64-S47" firstAttribute="top" secondItem="pSX-fP-Cyl" secondAttribute="bottom" constant="1" id="fIp-gH-MOz"/>
+                            <constraint firstItem="ycV-kr-I6X" firstAttribute="top" secondItem="IFq-Bb-laR" secondAttribute="top" constant="10" id="hbb-4T-yqU"/>
+                            <constraint firstItem="IFq-Bb-laR" firstAttribute="trailing" secondItem="ycV-kr-I6X" secondAttribute="trailing" constant="16" id="qVk-5U-SUd"/>
                             <constraint firstItem="pSX-fP-Cyl" firstAttribute="leading" secondItem="IFq-Bb-laR" secondAttribute="leading" id="yNP-Hu-QBo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IFq-Bb-laR"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="pSX-fP-Cyl" id="nJU-HF-4Mi"/>
+                        <outlet property="dismissButton" destination="ycV-kr-I6X" id="gra-X7-7xQ"/>
                         <outlet property="label" destination="IKq-lB-TaL" id="cSj-va-PXo"/>
                         <outlet property="tableView" destination="9ZG-64-S47" id="uRI-k4-645"/>
                     </connections>
@@ -360,10 +385,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zru-Za-DsD">
+                                <rect key="frame" x="313" y="22" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonWasPressed:" destination="8y3-vF-1iy" eventType="touchUpInside" id="vll-cu-aXu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LeV-z7-Yng" firstAttribute="bottom" secondItem="Vob-9E-bW5" secondAttribute="bottom" id="D3V-uz-xMq"/>
+                            <constraint firstItem="Zru-Za-DsD" firstAttribute="top" secondItem="Vob-9E-bW5" secondAttribute="top" constant="2" id="GAc-WL-XHu"/>
                             <constraint firstItem="lXg-Xb-Xh2" firstAttribute="trailing" secondItem="Vob-9E-bW5" secondAttribute="trailing" id="IJX-h9-tnj"/>
                             <constraint firstItem="LeV-z7-Yng" firstAttribute="top" secondItem="mJk-Hc-qvQ" secondAttribute="bottom" id="OHh-Tl-NSs"/>
                             <constraint firstItem="mJk-Hc-qvQ" firstAttribute="leading" secondItem="Vob-9E-bW5" secondAttribute="leading" id="VEO-yc-pvq"/>
@@ -371,6 +404,8 @@
                             <constraint firstItem="lXg-Xb-Xh2" firstAttribute="top" secondItem="Vob-9E-bW5" secondAttribute="top" id="XYr-ck-hXO"/>
                             <constraint firstItem="mJk-Hc-qvQ" firstAttribute="trailing" secondItem="Vob-9E-bW5" secondAttribute="trailing" id="ZZE-wM-KY0"/>
                             <constraint firstItem="LeV-z7-Yng" firstAttribute="trailing" secondItem="Vob-9E-bW5" secondAttribute="trailing" id="boY-Yz-5Zg"/>
+                            <constraint firstItem="mJk-Hc-qvQ" firstAttribute="top" secondItem="Zru-Za-DsD" secondAttribute="bottom" constant="3" id="cXq-Ch-ZgS"/>
+                            <constraint firstItem="Vob-9E-bW5" firstAttribute="trailing" secondItem="Zru-Za-DsD" secondAttribute="trailing" constant="16" id="dYK-SS-QVt"/>
                             <constraint firstItem="mJk-Hc-qvQ" firstAttribute="top" secondItem="lXg-Xb-Xh2" secondAttribute="bottom" id="vcU-Wl-hhH"/>
                             <constraint firstItem="LeV-z7-Yng" firstAttribute="leading" secondItem="Vob-9E-bW5" secondAttribute="leading" id="wgJ-fc-h0K"/>
                         </constraints>
@@ -378,6 +413,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="mJk-Hc-qvQ" id="Qvl-aA-xlL"/>
+                        <outlet property="dismissButton" destination="Zru-Za-DsD" id="an3-bS-wsz"/>
                         <outlet property="label" destination="lXg-Xb-Xh2" id="mhf-BZ-XR8"/>
                         <outlet property="tableView" destination="LeV-z7-Yng" id="c4w-r3-qUb"/>
                     </connections>
@@ -432,13 +468,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-iD-fgJ">
+                                <rect key="frame" x="164" y="68" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonWasPressed:" destination="bLk-fK-Y9U" eventType="touchUpInside" id="X2V-0x-BI8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jvg-4G-2Nz" firstAttribute="top" secondItem="ae0-21-w2X" secondAttribute="bottom" id="6mj-YC-4yf"/>
                             <constraint firstItem="ae0-21-w2X" firstAttribute="leading" secondItem="rjt-95-v1f" secondAttribute="leading" id="8D0-70-U2v"/>
+                            <constraint firstItem="jvg-4G-2Nz" firstAttribute="top" secondItem="XUW-iD-fgJ" secondAttribute="bottom" id="CXh-6i-gBz"/>
                             <constraint firstItem="jvg-4G-2Nz" firstAttribute="trailing" secondItem="rjt-95-v1f" secondAttribute="trailing" id="HLK-0V-7Ab"/>
+                            <constraint firstItem="XUW-iD-fgJ" firstAttribute="leading" secondItem="rjt-95-v1f" secondAttribute="leading" constant="164" id="MJf-fz-20z"/>
                             <constraint firstItem="jvg-4G-2Nz" firstAttribute="leading" secondItem="rjt-95-v1f" secondAttribute="leading" id="ln9-S0-lml"/>
+                            <constraint firstItem="rjt-95-v1f" firstAttribute="trailing" secondItem="XUW-iD-fgJ" secondAttribute="trailing" constant="165" id="mbs-lG-Jrk"/>
                             <constraint firstItem="ae0-21-w2X" firstAttribute="trailing" secondItem="rjt-95-v1f" secondAttribute="trailing" id="mis-G7-iuc"/>
                             <constraint firstItem="jvg-4G-2Nz" firstAttribute="bottom" secondItem="rjt-95-v1f" secondAttribute="bottom" id="oFn-p0-OVk"/>
                             <constraint firstItem="ae0-21-w2X" firstAttribute="top" secondItem="rjt-95-v1f" secondAttribute="top" id="ouW-6r-k1I"/>
