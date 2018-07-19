@@ -39,7 +39,7 @@ class FirstViewController: UIViewController {
     
     // Actions
     @IBAction func dismissButtonPressed(_ sender: Any) {
-        dismissButtonPressed(self)
+        dismiss(animated: true, completion: nil)
     }
 }
 

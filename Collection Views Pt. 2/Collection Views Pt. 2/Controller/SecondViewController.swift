@@ -52,6 +52,7 @@ class SecondViewController: UIViewController {
     
     // Actions
     @IBAction func dismissButtonWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
