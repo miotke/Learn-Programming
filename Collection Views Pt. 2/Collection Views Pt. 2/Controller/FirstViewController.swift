@@ -33,10 +33,13 @@ class FirstViewController: UIViewController {
         label.textColor = UIColor.orange
         
         view.backgroundColor = UIColor.black
+        
+        dismissButton.setTitle("Dismiss", for: .normal)
     }
     
     // Actions
     @IBAction func dismissButtonPressed(_ sender: Any) {
+        dismissButtonPressed(self)
     }
 }
 

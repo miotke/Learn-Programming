@@ -18,21 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-i6-rRU">
-                                <rect key="frame" x="16" y="20" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-i2-8EH">
-                                <rect key="frame" x="313" y="15" width="46" height="30"/>
+                                <rect key="frame" x="43" y="15" width="316" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="dismissButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNU-KF-xo1"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qMq-k8-cTF">
-                                <rect key="frame" x="0.0" y="40" width="375" height="626.5"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="636.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fnu-Xq-lze">
                                     <size key="itemSize" width="217" height="200"/>
@@ -76,18 +70,23 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-i6-rRU">
+                                <rect key="frame" x="0.0" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E8m-i2-8EH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="1PR-Wq-wzS"/>
-                            <constraint firstItem="qMq-k8-cTF" firstAttribute="top" secondItem="cHj-i6-rRU" secondAttribute="bottom" id="4iP-eO-BSj"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5t6-qq-y9I"/>
-                            <constraint firstItem="cHj-i6-rRU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5vK-zG-Fnb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cHj-i6-rRU" secondAttribute="trailing" constant="16" id="73p-Ed-duX"/>
-                            <constraint firstItem="cHj-i6-rRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GHo-gi-rzq"/>
+                            <constraint firstItem="cHj-i6-rRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="767-5E-JOC"/>
+                            <constraint firstItem="qMq-k8-cTF" firstAttribute="top" secondItem="cHj-i6-rRU" secondAttribute="bottom" constant="1" id="TbJ-Bd-KOQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E8m-i2-8EH" secondAttribute="trailing" constant="16" id="dRG-Qg-OWN"/>
-                            <constraint firstItem="qMq-k8-cTF" firstAttribute="top" secondItem="cHj-i6-rRU" secondAttribute="bottom" id="f3Y-uu-a1K"/>
+                            <constraint firstItem="E8m-i2-8EH" firstAttribute="leading" secondItem="cHj-i6-rRU" secondAttribute="trailing" constant="1" id="fte-ch-VCc"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hax-za-30F"/>
+                            <constraint firstItem="cHj-i6-rRU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="lLj-R1-vTa"/>
                             <constraint firstItem="qMq-k8-cTF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uGJ-G7-Inx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -493,6 +492,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="jvg-4G-2Nz" id="Nhy-mL-INx"/>
+                        <outlet property="dismissButton" destination="XUW-iD-fgJ" id="eeR-2t-WzG"/>
                         <outlet property="label" destination="ae0-21-w2X" id="6pL-kH-A18"/>
                     </connections>
                 </viewController>

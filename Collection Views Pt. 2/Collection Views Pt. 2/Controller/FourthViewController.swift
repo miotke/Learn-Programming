@@ -14,6 +14,7 @@ class FourthViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -31,10 +32,13 @@ class FourthViewController: UIViewController {
         label.font = UIFont(name: "Avenir Next", size: 30)
         label.backgroundColor = UIColor.brown
         label.textColor = UIColor.green
+        
+        dismissButton.setTitle("Dismiss", for: .normal)
     }
     
     // Actions
     @IBAction func dismissButtonWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
