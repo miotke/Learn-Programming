@@ -119,19 +119,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AR4-48-Q2a">
-                                <rect key="frame" x="50" y="283.5" width="100" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AR4-48-Q2a">
+                                <rect key="frame" x="73" y="283" width="100" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reJ-7v-Qyf">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reJ-7v-Qyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton1WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="xd7-02-i7D"/>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="firstCV" id="xwL-Z9-LO9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-qC-BAO">
-                                        <rect key="frame" x="0.0" y="70" width="100" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-qC-BAO">
+                                        <rect key="frame" x="0.0" y="65" width="100" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton2WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="j3k-5p-8p0"/>
@@ -140,19 +140,15 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="hRO-HC-fvB"/>
-                                    <constraint firstAttribute="width" constant="100" id="i7b-VG-YGf"/>
+                                    <constraint firstAttribute="height" constant="100" id="Gqt-uF-1U9"/>
+                                    <constraint firstAttribute="width" constant="100" id="OgU-qq-na1"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-fA-MEI">
-                                <rect key="frame" x="225" y="283.5" width="100" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-fA-MEI">
+                                <rect key="frame" x="201" y="283" width="100" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA5-N9-LGY">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="HIg-Xi-LMH"/>
-                                            <constraint firstAttribute="width" constant="100" id="qnV-n4-aea"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton3WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="ksb-FY-MG3"/>
@@ -160,7 +156,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-NP-HtP">
-                                        <rect key="frame" x="0.0" y="70" width="100" height="30"/>
+                                        <rect key="frame" x="0.0" y="65" width="100" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="cvButton4WasPressed:" destination="xkP-pp-247" eventType="touchUpInside" id="Sdg-Bo-qGl"/>
@@ -168,22 +164,36 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jhD-jQ-9tO"/>
+                                    <constraint firstAttribute="height" constant="100" id="mX2-J6-KQI"/>
+                                </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-sT-sG2">
+                                <rect key="frame" x="16" y="413" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kwO-i5-QwS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tDj-lw-G26" firstAttribute="bottom" secondItem="AR4-48-Q2a" secondAttribute="bottom" constant="283.5" id="8HL-Vc-DNO"/>
-                            <constraint firstItem="tDj-lw-G26" firstAttribute="bottom" secondItem="jhd-fA-MEI" secondAttribute="bottom" constant="283.5" id="Feg-5F-LAX"/>
-                            <constraint firstItem="jhd-fA-MEI" firstAttribute="top" secondItem="hwq-sa-Vpc" secondAttribute="bottom" constant="207.5" id="GOI-oY-2es"/>
-                            <constraint firstItem="jhd-fA-MEI" firstAttribute="centerY" secondItem="k1V-7h-2b5" secondAttribute="centerY" id="LYC-Rc-lvV"/>
-                            <constraint firstItem="AR4-48-Q2a" firstAttribute="centerY" secondItem="k1V-7h-2b5" secondAttribute="centerY" id="Lae-ha-X9c"/>
-                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="top" secondItem="tDj-lw-G26" secondAttribute="top" id="Vz2-OO-0HQ"/>
-                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="leading" secondItem="tDj-lw-G26" secondAttribute="leading" id="YV9-Wc-Wah"/>
-                            <constraint firstItem="AR4-48-Q2a" firstAttribute="leading" secondItem="tDj-lw-G26" secondAttribute="leading" constant="50" id="bQW-vR-acZ"/>
-                            <constraint firstItem="jhd-fA-MEI" firstAttribute="leading" secondItem="AR4-48-Q2a" secondAttribute="trailing" constant="75" id="cSD-t0-85r"/>
-                            <constraint firstItem="AR4-48-Q2a" firstAttribute="top" secondItem="hwq-sa-Vpc" secondAttribute="bottom" constant="207.5" id="eZe-fG-Ppt"/>
-                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="trailing" secondItem="tDj-lw-G26" secondAttribute="trailing" id="sQ1-Gs-2Xh"/>
-                            <constraint firstItem="tDj-lw-G26" firstAttribute="trailing" secondItem="jhd-fA-MEI" secondAttribute="trailing" constant="50" id="yys-gY-EOD"/>
+                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="trailing" secondItem="tDj-lw-G26" secondAttribute="trailing" id="0xy-Es-4XS"/>
+                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="top" secondItem="tDj-lw-G26" secondAttribute="top" id="CRz-Wb-byI"/>
+                            <constraint firstItem="tDj-lw-G26" firstAttribute="trailing" secondItem="jhd-fA-MEI" secondAttribute="trailing" constant="74" id="G7v-Sp-fup"/>
+                            <constraint firstItem="AR4-48-Q2a" firstAttribute="centerY" secondItem="k1V-7h-2b5" secondAttribute="centerY" id="Ke0-Tf-AFE"/>
+                            <constraint firstItem="AR4-48-Q2a" firstAttribute="top" secondItem="hwq-sa-Vpc" secondAttribute="bottom" constant="207" id="Lu6-oQ-Xxr"/>
+                            <constraint firstItem="ypw-sT-sG2" firstAttribute="centerX" secondItem="k1V-7h-2b5" secondAttribute="centerX" id="MTg-dw-qk0"/>
+                            <constraint firstItem="ypw-sT-sG2" firstAttribute="top" secondItem="AR4-48-Q2a" secondAttribute="bottom" constant="30" id="Nt5-fF-E0k"/>
+                            <constraint firstItem="ypw-sT-sG2" firstAttribute="leading" secondItem="tDj-lw-G26" secondAttribute="leading" constant="16" id="ZgT-61-khg"/>
+                            <constraint firstItem="jhd-fA-MEI" firstAttribute="top" secondItem="hwq-sa-Vpc" secondAttribute="bottom" constant="207" id="b7W-Vx-SaW"/>
+                            <constraint firstItem="jhd-fA-MEI" firstAttribute="centerY" secondItem="k1V-7h-2b5" secondAttribute="centerY" id="cBC-EB-qbE"/>
+                            <constraint firstItem="hwq-sa-Vpc" firstAttribute="leading" secondItem="tDj-lw-G26" secondAttribute="leading" id="gYV-lG-fKb"/>
+                            <constraint firstItem="AR4-48-Q2a" firstAttribute="leading" secondItem="tDj-lw-G26" secondAttribute="leading" constant="73" id="k3v-gf-gT0"/>
+                            <constraint firstItem="tDj-lw-G26" firstAttribute="trailing" secondItem="ypw-sT-sG2" secondAttribute="trailing" constant="16" id="rRK-T2-0Xf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tDj-lw-G26"/>
                     </view>
@@ -192,6 +202,7 @@
                         <outlet property="cvButton2" destination="LyB-qC-BAO" id="IKJ-j9-RGc"/>
                         <outlet property="cvButton3" destination="SA5-N9-LGY" id="WXJ-dT-iCv"/>
                         <outlet property="cvButton4" destination="fJT-NP-HtP" id="9Pw-2W-edb"/>
+                        <outlet property="descriptionLabel" destination="ypw-sT-sG2" id="KL0-gA-V2l"/>
                         <outlet property="label" destination="hwq-sa-Vpc" id="6ZT-Qa-iHd"/>
                     </connections>
                 </viewController>

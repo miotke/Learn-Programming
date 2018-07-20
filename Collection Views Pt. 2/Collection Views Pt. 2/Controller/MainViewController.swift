@@ -16,11 +16,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var cvButton2: UIButton!
     @IBOutlet weak var cvButton3: UIButton!
     @IBOutlet weak var cvButton4: UIButton!
-
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+        description()
     }
 
     func setupView() {
@@ -45,8 +47,13 @@ class MainViewController: UIViewController {
         cvButton4.setTitle("CV 4", for: .normal)
         cvButton4.backgroundColor = UIColor.black
         cvButton4.setTitleColor(UIColor.white, for: .normal)
-
-
+    }
+    
+    func description() {
+        descriptionLabel.text = "Showing UICollectionViews and UITableViews"
+        descriptionLabel.textAlignment = .center
+        descriptionLabel.font = UIFont(name: "Avenir Next", size: 15)
+        
     }
 
     // Actions
