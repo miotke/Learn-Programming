@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: "Avenir Next", size: 27)
         
-        totalAmountLabel.text = "How much was the total bill?"
+        totalAmountLabel.text = "Check Total?"
         totalAmountLabel.textAlignment = .center
         totalAmountLabel.font = UIFont(name: "Avenir Next", size: 25)
         
