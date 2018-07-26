@@ -38,10 +38,11 @@ class ViewController: UIViewController {
         
         calculateButton.setTitle("Calculate", for: .normal)
     }
+    
 
     // Actions
     @IBAction func calculateButtonWasPressed(_ sender: Any) {
-        print("Tapped")
+        
     }
     
 }
