@@ -1,5 +1,5 @@
 //
-//  SecondaryViewController.swift
+//  DetailViewController.swift
 //  Protocols&Delegates
 //
 //  Created by Andrew Miotke on 8/19/18.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SecondaryViewController: UIViewController {
+class DetailViewController: UIViewController {
 
+    // Outlets
+    @IBOutlet weak var detailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
