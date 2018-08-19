@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol ChangeLabel {
+    func didTapButton(<#parameters#>) -> <#return type#> {
+    <#function body#>
+    }
+}
+
 class MainViewController: UIViewController {
     
     // Outlets
