@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -129,6 +129,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="cancelButtonWasTapped:" destination="UJG-kY-Tn5" eventType="touchUpInside" id="u8j-LK-kMm"/>
                                     <action selector="signInWithGoogleTapped:" destination="UJG-kY-Tn5" eventType="touchUpInside" id="F4o-mw-1tu"/>
                                 </connections>
                             </button>
@@ -153,6 +154,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="KwF-F6-bYY"/>
                     <connections>
+                        <outlet property="cancelButton" destination="5c3-cF-Ugc" id="720-9j-SlM"/>
                         <outlet property="loginLabel" destination="DMJ-8Q-9nn" id="zpv-8q-Dvr"/>
                         <outlet property="signInWithEmail" destination="zbR-kg-XxN" id="pcL-ep-OZG"/>
                         <outlet property="signInWithGoogle" destination="bQt-jB-uFr" id="TWV-dG-TYT"/>
