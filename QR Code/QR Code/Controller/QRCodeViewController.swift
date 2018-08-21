@@ -14,6 +14,7 @@ class QRCodeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var QRCode: UIView!
     @IBOutlet weak var explainationLabel: UILabel!
+    @IBOutlet weak var toLoginView: UIButton!
     
 
     override func viewDidLoad() {
@@ -32,5 +33,10 @@ class QRCodeViewController: UIViewController {
         explainationLabel.textAlignment = .center
         explainationLabel.font = UIFont(name: "Avenir Next", size: 20)
     }
+    
+    // Actions
+    @IBAction func toLoginViewButtonWasTapped(_ sender: Any) {
+    }
+    
 }
 
