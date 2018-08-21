@@ -33,10 +33,15 @@ class QRCodeViewController: UIViewController {
         explainationLabel.text = "The above QR code will allow you to receive various discounts at checkout."
         explainationLabel.textAlignment = .center
         explainationLabel.font = UIFont(name: "Avenir Next", size: 20)
+        
+        toLoginView.setTitle("Log into account", for: .normal)
+        toLoginView.titleLabel?.textAlignment = .center
+        toLoginView.titleLabel?.font = UIFont(name: "Avenir Next", size: 20)
     }
     
     // Actions
     @IBAction func toLoginViewButtonWasTapped(_ sender: Any) {
+        print("Tapped")
     }
     
 }

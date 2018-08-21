@@ -137,17 +137,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="amC-K6-Nn8" firstAttribute="bottom" secondItem="5c3-cF-Ugc" secondAttribute="bottom" constant="40" id="0SD-eT-uRs"/>
-                            <constraint firstItem="bQt-jB-uFr" firstAttribute="top" secondItem="zbR-kg-XxN" secondAttribute="bottom" constant="15" id="B0c-um-kmx"/>
-                            <constraint firstItem="zbR-kg-XxN" firstAttribute="centerX" secondItem="cJ3-F9-0Yh" secondAttribute="centerX" id="Cdy-Mq-aDH"/>
                             <constraint firstItem="amC-K6-Nn8" firstAttribute="trailing" secondItem="5c3-cF-Ugc" secondAttribute="trailing" constant="16" id="KCd-4g-QWE"/>
                             <constraint firstItem="5c3-cF-Ugc" firstAttribute="leading" secondItem="amC-K6-Nn8" secondAttribute="leading" constant="16" id="Niy-QT-I9B"/>
                             <constraint firstItem="DMJ-8Q-9nn" firstAttribute="leading" secondItem="cJ3-F9-0Yh" secondAttribute="leading" constant="16" id="ONS-Pn-inC"/>
                             <constraint firstItem="bQt-jB-uFr" firstAttribute="leading" secondItem="amC-K6-Nn8" secondAttribute="leading" constant="16" id="TCa-uW-GUv"/>
                             <constraint firstItem="DMJ-8Q-9nn" firstAttribute="top" secondItem="amC-K6-Nn8" secondAttribute="top" constant="30" id="Ved-PL-D3R"/>
+                            <constraint firstItem="zbR-kg-XxN" firstAttribute="top" secondItem="DMJ-8Q-9nn" secondAttribute="bottom" constant="262" id="bRs-0m-XHs"/>
                             <constraint firstItem="amC-K6-Nn8" firstAttribute="trailing" secondItem="bQt-jB-uFr" secondAttribute="trailing" constant="16" id="fPF-mK-7LK"/>
-                            <constraint firstItem="zbR-kg-XxN" firstAttribute="centerY" secondItem="cJ3-F9-0Yh" secondAttribute="centerY" id="gD9-oT-Bk9"/>
-                            <constraint firstItem="zbR-kg-XxN" firstAttribute="leading" secondItem="amC-K6-Nn8" secondAttribute="leading" constant="16" id="sS7-BL-XUM"/>
-                            <constraint firstItem="amC-K6-Nn8" firstAttribute="trailing" secondItem="zbR-kg-XxN" secondAttribute="trailing" constant="16" id="xSl-rx-PVL"/>
+                            <constraint firstItem="bQt-jB-uFr" firstAttribute="top" secondItem="zbR-kg-XxN" secondAttribute="bottom" constant="15" id="fp1-ee-tbT"/>
+                            <constraint firstItem="5c3-cF-Ugc" firstAttribute="top" secondItem="bQt-jB-uFr" secondAttribute="bottom" constant="192" id="u7O-XX-oOt"/>
+                            <constraint firstItem="amC-K6-Nn8" firstAttribute="trailing" secondItem="zbR-kg-XxN" secondAttribute="trailing" constant="16" id="vSp-fC-hwM"/>
+                            <constraint firstItem="zbR-kg-XxN" firstAttribute="leading" secondItem="amC-K6-Nn8" secondAttribute="leading" constant="16" id="z9V-gx-4cH"/>
                             <constraint firstItem="amC-K6-Nn8" firstAttribute="trailing" secondItem="DMJ-8Q-9nn" secondAttribute="trailing" constant="16" id="zBu-cb-fAw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="amC-K6-Nn8"/>
