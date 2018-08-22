@@ -8,10 +8,8 @@
 
 import UIKit
 
-protocol ChangeLabel {
-    func didTapButton(<#parameters#>) -> <#return type#> {
-    <#function body#>
-    }
+protocol ChangeLabelDelegate {
+    func didTapButton(title: String)
 }
 
 class MainViewController: UIViewController {
@@ -40,6 +38,8 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func button1WasTapped(_ sender: Any) {
+        print("button 1 was tapped")
+        
     }
     
     @IBAction func button2WasTapped(_ sender: Any) {
@@ -50,5 +50,9 @@ class MainViewController: UIViewController {
     
     @IBAction func button4WasTapped(_ sender: Any) {
     }
+}
+
+extension DetailViewController: ChangeLabelDelegate {
+    
 }
 
