@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
         button4.setTitle("Button 4", for: .normal)
     }
     
-    var setTitle = ChangeLabelDelegate!
+    var setTitle: ChangeLabelDelegate!
 
     @IBAction func button1WasTapped(_ sender: Any) {
         print("button 1 was tapped")
