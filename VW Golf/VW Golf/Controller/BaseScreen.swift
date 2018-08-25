@@ -24,11 +24,6 @@ class BaseScreen: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func setInitialView() {
         carModelLabel.text = "Volkswagen GTI"
         carImage.image = UIImage(named: "gti")

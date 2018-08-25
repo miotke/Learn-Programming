@@ -37,20 +37,33 @@ class MainViewController: UIViewController {
         button4.setTitle("Button 4", for: .normal)
     }
     
-    var setTitle: ChangeLabelDelegate!
+    var setTitleDelegate: ChangeLabelDelegate!
+    
+    func moveToDetailVC() {
+        let detailVC = storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
+//        detailVC.setTitleDelegate = self as? ChangeLabelDelegate
+        present(detailVC, animated: true, completion: nil)
+    }
 
     @IBAction func button1WasTapped(_ sender: Any) {
         print("button 1 was tapped")
-        setTitle.didTapButton(title: "Button 1")
+        setTitleDelegate?.didTapButton(title: "Button 1")
+        moveToDetailVC()
     }
     
     @IBAction func button2WasTapped(_ sender: Any) {
+        print("Button 2 was tapped")
+        moveToDetailVC()
     }
     
     @IBAction func button3WasTapped(_ sender: Any) {
+        print("button 3 was tapped")
+        moveToDetailVC()
     }
     
     @IBAction func button4WasTapped(_ sender: Any) {
+        print("button 4 was tapped")
+        moveToDetailVC()
     }
 }
 
