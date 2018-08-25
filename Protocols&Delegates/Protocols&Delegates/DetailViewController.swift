@@ -12,10 +12,13 @@ class DetailViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var backToMainVCButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        backToMainVCButton.setTitle("Dismiss", for: .normal)
+        backToMainVCButton.titleLabel?.textAlignment = .center
         
     }
     

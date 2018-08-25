@@ -127,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="Kgg-SW-2jo"/>
                     </view>
                     <connections>
+                        <outlet property="backToMainVCButton" destination="8kV-ZU-eS1" id="Wll-Jf-ArL"/>
                         <outlet property="detailLabel" destination="fut-co-1kv" id="MaP-Yg-GoQ"/>
                     </connections>
                 </viewController>
