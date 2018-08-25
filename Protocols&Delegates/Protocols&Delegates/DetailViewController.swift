@@ -18,4 +18,8 @@ class DetailViewController: UIViewController {
 
         
     }
+    
+    @IBAction func backToMainVC(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

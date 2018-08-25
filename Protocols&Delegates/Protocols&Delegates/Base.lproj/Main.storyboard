@@ -92,7 +92,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Adt-zE-aIW">
             <objects>
-                <viewController id="3us-NI-SA5" customClass="DetailViewController" customModule="Protocols_Delegates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="3us-NI-SA5" customClass="DetailViewController" customModule="Protocols_Delegates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ih0-1q-lKZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,11 +103,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kV-ZU-eS1">
+                                <rect key="frame" x="15.5" y="550" width="344" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="1cM-9O-x3m"/>
+                                    <constraint firstAttribute="height" constant="71" id="v1o-cT-BSv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backToMainVC:" destination="3us-NI-SA5" eventType="touchUpInside" id="84Q-qa-nWL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8kV-ZU-eS1" firstAttribute="top" secondItem="fut-co-1kv" secondAttribute="bottom" constant="449.5" id="Ay5-SY-GXs"/>
+                            <constraint firstItem="8kV-ZU-eS1" firstAttribute="centerX" secondItem="Ih0-1q-lKZ" secondAttribute="centerX" id="EzW-ea-RGG"/>
                             <constraint firstItem="Kgg-SW-2jo" firstAttribute="trailing" secondItem="fut-co-1kv" secondAttribute="trailing" constant="16" id="TQK-4M-eYb"/>
                             <constraint firstItem="fut-co-1kv" firstAttribute="leading" secondItem="Kgg-SW-2jo" secondAttribute="leading" constant="16" id="Udy-Dm-Uef"/>
+                            <constraint firstItem="Kgg-SW-2jo" firstAttribute="bottom" secondItem="8kV-ZU-eS1" secondAttribute="bottom" constant="46" id="dtY-NP-XVR"/>
                             <constraint firstItem="fut-co-1kv" firstAttribute="top" secondItem="Kgg-SW-2jo" secondAttribute="top" constant="60" id="kTR-tL-rVG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kgg-SW-2jo"/>
