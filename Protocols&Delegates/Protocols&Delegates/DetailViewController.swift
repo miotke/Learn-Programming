@@ -17,7 +17,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         detailLabel.textAlignment = .center
         
         // Styling only in viewDidLoad because it was faster than writing a full method
