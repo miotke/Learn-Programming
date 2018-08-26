@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C24F0FC212B915D00834D07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24F0FB212B915D00834D07 /* LoginViewController.swift */; };
+		4CB2B2FB213267C30049D1A4 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2B2FA213267C30049D1A4 /* QRCodeView.swift */; };
+		4CB2B2FD2132680C0049D1A4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2B2FC2132680C0049D1A4 /* LoginView.swift */; };
 		4CE02523212B51BA00BEDB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE02522212B51BA00BEDB5D /* AppDelegate.swift */; };
 		4CE02525212B51BA00BEDB5D /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE02524212B51BA00BEDB5D /* QRCodeViewController.swift */; };
 		4CE02528212B51BA00BEDB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE02526212B51BA00BEDB5D /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		0266203E1CD8FFAFC2C02022 /* Pods-QR Code.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QR Code.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QR Code/Pods-QR Code.debug.xcconfig"; sourceTree = "<group>"; };
 		4C24F0FB212B915D00834D07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4CB2B2FA213267C30049D1A4 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		4CB2B2FC2132680C0049D1A4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4CE0251F212B51BA00BEDB5D /* QR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE02522212B51BA00BEDB5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE02524212B51BA00BEDB5D /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4CB2B2F9213267A90049D1A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CB2B2FA213267C30049D1A4 /* QRCodeView.swift */,
+				4CB2B2FC2132680C0049D1A4 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4CE02516212B51BA00BEDB5D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		4CE02521212B51BA00BEDB5D /* QR Code */ = {
 			isa = PBXGroup;
 			children = (
+				4CB2B2F9213267A90049D1A4 /* View */,
 				4C24F0FD212B916600834D07 /* Controller */,
 				4CE02522212B51BA00BEDB5D /* AppDelegate.swift */,
 				4CE02526212B51BA00BEDB5D /* Main.storyboard */,
@@ -215,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB2B2FB213267C30049D1A4 /* QRCodeView.swift in Sources */,
 				4C24F0FC212B915D00834D07 /* LoginViewController.swift in Sources */,
 				4CE02525212B51BA00BEDB5D /* QRCodeViewController.swift in Sources */,
+				4CB2B2FD2132680C0049D1A4 /* LoginView.swift in Sources */,
 				4CE02523212B51BA00BEDB5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
