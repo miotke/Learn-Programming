@@ -13,6 +13,7 @@
 		4CAACDCD215EF0A100374DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAACDCC215EF0A100374DED /* Assets.xcassets */; };
 		4CAACDD0215EF0A100374DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAACDCE215EF0A100374DED /* LaunchScreen.storyboard */; };
 		4CAACDD8215EF36700374DED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAACDD7215EF36700374DED /* DetailViewController.swift */; };
+		4CDC27A0215FEE080083B3A0 /* ArrayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC279F215FEE080083B3A0 /* ArrayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4CAACDCF215EF0A100374DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CAACDD1215EF0A100374DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CAACDD7215EF36700374DED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4CDC279F215FEE080083B3A0 /* ArrayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAACDC5215EF0A000374DED /* AppDelegate.swift */,
+				4CDC279F215FEE080083B3A0 /* ArrayData.swift */,
 				4CAACDC7215EF0A000374DED /* ViewController.swift */,
 				4CAACDD7215EF36700374DED /* DetailViewController.swift */,
 				4CAACDC9215EF0A000374DED /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				4CAACDD8215EF36700374DED /* DetailViewController.swift in Sources */,
 				4CAACDC8215EF0A000374DED /* ViewController.swift in Sources */,
 				4CAACDC6215EF0A000374DED /* AppDelegate.swift in Sources */,
+				4CDC27A0215FEE080083B3A0 /* ArrayData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

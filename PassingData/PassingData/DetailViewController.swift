@@ -13,11 +13,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var detailLabel: UILabel!
     
+    var arrayDetail: ArrayData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton.setTitle("Back", for: .normal)
-        detailLabel.textAlignment = .center
         
+        detailLabel.textAlignment = .center
     }
     
     @IBAction func backButton(_ sender: Any) {

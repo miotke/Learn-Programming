@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var textArray = ["cell 1", "cell 2", "cell 3", "cell 4", "cell 5", "cell 6", "cell 7", "cell 8", "cell 9", "cell 10"]
-    
+    var getTextArray = ArrayData()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = "Table Views That Pass Data"
@@ -33,26 +33,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return textArray.count
+        return getTextArray.anotherArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = textArray[indexPath.row]
+        cell.textLabel?.text = getTextArray.anotherArray[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cellTitle = textArray[indexPath.row]
+        let cellTitle = getTextArray.anotherArray[indexPath.row]
         performSegue(withIdentifier: toDetailViewController, sender: cellTitle)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == toDetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let selectedCell = textArray[indexPath.row]
+                let selectedCell = getTextArray.anotherArray[indexPath.row]
                 if let destination = segue.destination as? DetailViewController {
-                    destination.detailLabel.text = selectedCell
+//                    destination.arrayDetail = selectedCell
                 }
             }
         }
