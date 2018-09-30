@@ -18,7 +18,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton.setTitle("Back", for: .normal)
-        
+//        detailLabel.text = arrayDetail?.anotherArray
         detailLabel.textAlignment = .center
     }
     

@@ -35,13 +35,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return getTextArray.anotherArray.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = getTextArray.anotherArray[indexPath.row]
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellTitle = getTextArray.anotherArray[indexPath.row]
         performSegue(withIdentifier: toDetailViewController, sender: cellTitle)
@@ -52,7 +52,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let selectedCell = getTextArray.anotherArray[indexPath.row]
                 if let destination = segue.destination as? DetailViewController {
-//                    destination.arrayDetail = selectedCell
+                    destination.getTextArray = selectedCell
                 }
             }
         }
