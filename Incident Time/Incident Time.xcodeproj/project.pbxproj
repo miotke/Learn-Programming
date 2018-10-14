@@ -54,8 +54,7 @@
 		4C8FF74820EAF3C40050EA3A /* Incident Time */ = {
 			isa = PBXGroup;
 			children = (
-				4C96B17A20EC55530025FBA7 /* View */,
-				4C8FF75B20EAF4030050EA3A /* Controller */,
+				4C8FF74B20EAF3C40050EA3A /* MainVC.swift */,
 				4C8FF74920EAF3C40050EA3A /* AppDelegate.swift */,
 				4C8FF74D20EAF3C40050EA3A /* Main.storyboard */,
 				4C8FF75020EAF3C50050EA3A /* Assets.xcassets */,
@@ -63,21 +62,6 @@
 				4C8FF75520EAF3C60050EA3A /* Info.plist */,
 			);
 			path = "Incident Time";
-			sourceTree = "<group>";
-		};
-		4C8FF75B20EAF4030050EA3A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4C8FF74B20EAF3C40050EA3A /* MainVC.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4C96B17A20EC55530025FBA7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

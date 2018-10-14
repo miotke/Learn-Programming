@@ -15,7 +15,10 @@ class MainViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var textField: UITextField!
+    
+    var textFromLabel = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +26,31 @@ class MainViewController: UIViewController {
     }
     
     func setupView() {
-        label.text = "Move the text below to another VC"
+        label.text = "\(textFromLabel)"
         label.textAlignment = .center
-        
+        saveButton.setTitle("Change Label Text", for: .normal)
         button.setTitle("Move to next VC", for: .normal)
+    }
+    
+    func setLabelText() {
+        if let textInput = textField.text {
+            label.text = textInput
+            textFromLabel = textInput
+        } else {
+            print("☠️ No Text Available")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! SecondViewController
-        destVC.textFromFirstViewController = 
+        destVC.textFromFirstViewController = textFromLabel
     }
 
     // MARK: Actions
+    @IBAction func saveButton(_ sender: Any) {
+        setLabelText()
+    }
+    
     @IBAction func button(_ sender: Any) {
         performSegue(withIdentifier: moveToSecondViewController, sender: self)
     }

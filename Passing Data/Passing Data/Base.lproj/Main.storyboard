@@ -45,16 +45,29 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3d-H0-Zzq"/>
-                                    <segue destination="e9A-BU-H3a" kind="presentation" identifier="ToSecondViewController" id="IBb-kF-qbC"/>
+                                    <segue destination="e9A-BU-H3a" kind="presentation" identifier="ToSecondViewController" id="Vez-Rp-Mhn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbS-ay-L4A">
+                                <rect key="frame" x="114.5" y="322" width="146" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="42B-Eu-Gdo"/>
+                                    <constraint firstAttribute="width" constant="146" id="xyd-6S-Q32"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1Q-9m-UUF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="39Z-F0-SL1" firstAttribute="top" secondItem="hgQ-YF-drF" secondAttribute="bottom" constant="114" id="C4A-oo-5gI"/>
                             <constraint firstItem="rex-Ye-1YW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="H8Y-MC-8S0"/>
                             <constraint firstItem="hgQ-YF-drF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jtf-K6-Yja"/>
+                            <constraint firstItem="YbS-ay-L4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NWJ-5x-9Jd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="39Z-F0-SL1" secondAttribute="bottom" constant="183" id="TBd-el-hDU"/>
+                            <constraint firstItem="YbS-ay-L4A" firstAttribute="top" secondItem="hgQ-YF-drF" secondAttribute="bottom" constant="22" id="rWI-OD-RLI"/>
+                            <constraint firstItem="39Z-F0-SL1" firstAttribute="top" secondItem="YbS-ay-L4A" secondAttribute="bottom" constant="22" id="tAR-Vn-oM1"/>
                             <constraint firstItem="39Z-F0-SL1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdl-ZG-0Sx"/>
                             <constraint firstItem="hgQ-YF-drF" firstAttribute="top" secondItem="rex-Ye-1YW" secondAttribute="bottom" constant="90" id="xF6-VA-IgO"/>
                             <constraint firstItem="rex-Ye-1YW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zAZ-4I-bDq"/>
@@ -64,6 +77,7 @@
                     <connections>
                         <outlet property="button" destination="39Z-F0-SL1" id="3uX-nO-WqR"/>
                         <outlet property="label" destination="rex-Ye-1YW" id="Hkk-ov-YZO"/>
+                        <outlet property="saveButton" destination="YbS-ay-L4A" id="LNW-Ba-Tfx"/>
                         <outlet property="textField" destination="hgQ-YF-drF" id="1lN-gn-jdp"/>
                     </connections>
                 </viewController>
