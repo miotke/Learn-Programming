@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         diceImage1.image = UIImage(named: diceArray[randomDiceIndex1])
         diceImage2.image = UIImage(named: diceArray[randomDiceIndex2])
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        updateDiceImage()
+    }
 
     // MARK: Actions
     @IBAction func rollButtonWasTapped(_ sender: Any) {

@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="zXG-Uk-Y8E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="zXG-Uk-Y8E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cOQ-Eb-Rci">
                                 <rect key="frame" x="32" y="45" width="311" height="128"/>
@@ -58,6 +57,8 @@
                             <constraint firstItem="11I-My-dgj" firstAttribute="top" secondItem="GqO-cP-rhp" secondAttribute="bottom" constant="119" id="9P9-0x-vyH"/>
                             <constraint firstItem="cOQ-Eb-Rci" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="BFe-TP-F6J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="11I-My-dgj" secondAttribute="bottom" constant="96" id="PMz-yC-EhV"/>
+                            <constraint firstItem="zXG-Uk-Y8E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ru4-a9-APK"/>
+                            <constraint firstItem="zXG-Uk-Y8E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UuK-LQ-nBM"/>
                             <constraint firstItem="11I-My-dgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="WEO-e3-lZp"/>
                             <constraint firstItem="cOQ-Eb-Rci" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ZiM-Oz-Lto"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scU-a5-ULD" secondAttribute="trailing" constant="40" id="dW7-jQ-f6f"/>
@@ -65,6 +66,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="11I-My-dgj" secondAttribute="trailing" constant="113" id="fWg-bV-C8l"/>
                             <constraint firstItem="GqO-cP-rhp" firstAttribute="top" secondItem="cOQ-Eb-Rci" secondAttribute="bottom" constant="100" id="lLx-WQ-aln"/>
                             <constraint firstItem="scU-a5-ULD" firstAttribute="leading" secondItem="GqO-cP-rhp" secondAttribute="trailing" constant="55" id="ucz-i7-pbL"/>
+                            <constraint firstItem="zXG-Uk-Y8E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zHK-xg-AFk"/>
+                            <constraint firstItem="zXG-Uk-Y8E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zNX-Bj-kLV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
