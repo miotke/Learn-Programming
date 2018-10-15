@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         displayedEightBall = Int.random(in: 0 ... 4)
         imageView.image = UIImage(named: magicEightBallOptions[displayedEightBall])
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        getRandomEightBall()
+    }
 
     // MARK: Actions
     @IBAction func askButton(_ sender: Any) {
