@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C8FF74A20EAF3C40050EA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8FF74920EAF3C40050EA3A /* AppDelegate.swift */; };
-		4C8FF74C20EAF3C40050EA3A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8FF74B20EAF3C40050EA3A /* MainVC.swift */; };
-		4C8FF74F20EAF3C40050EA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8FF74D20EAF3C40050EA3A /* Main.storyboard */; };
-		4C8FF75120EAF3C50050EA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8FF75020EAF3C50050EA3A /* Assets.xcassets */; };
-		4C8FF75420EAF3C50050EA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8FF75220EAF3C50050EA3A /* LaunchScreen.storyboard */; };
+		4CBE034D21741E640074D341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE034C21741E640074D341 /* AppDelegate.swift */; };
+		4CBE034F21741E640074D341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE034E21741E640074D341 /* ViewController.swift */; };
+		4CBE035221741E640074D341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE035021741E640074D341 /* Main.storyboard */; };
+		4CBE035421741E650074D341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE035321741E650074D341 /* Assets.xcassets */; };
+		4CBE035721741E650074D341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE035521741E650074D341 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C8FF74620EAF3C40050EA3A /* Incident Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incident Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8FF74920EAF3C40050EA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C8FF74B20EAF3C40050EA3A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		4C8FF74E20EAF3C40050EA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C8FF75020EAF3C50050EA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C8FF75320EAF3C50050EA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C8FF75520EAF3C60050EA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBE034921741E640074D341 /* Magic 8 Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8 Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBE034C21741E640074D341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CBE034E21741E640074D341 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CBE035121741E640074D341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CBE035321741E650074D341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CBE035621741E650074D341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CBE035821741E650074D341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C8FF74320EAF3C40050EA3A /* Frameworks */ = {
+		4CBE034621741E640074D341 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C8FF73D20EAF3C40050EA3A = {
+		4CBE034021741E640074D341 = {
 			isa = PBXGroup;
 			children = (
-				4C8FF74820EAF3C40050EA3A /* Incident Time */,
-				4C8FF74720EAF3C40050EA3A /* Products */,
+				4CBE034B21741E640074D341 /* Magic 8 Ball */,
+				4CBE034A21741E640074D341 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C8FF74720EAF3C40050EA3A /* Products */ = {
+		4CBE034A21741E640074D341 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C8FF74620EAF3C40050EA3A /* Incident Time.app */,
+				4CBE034921741E640074D341 /* Magic 8 Ball.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C8FF74820EAF3C40050EA3A /* Incident Time */ = {
+		4CBE034B21741E640074D341 /* Magic 8 Ball */ = {
 			isa = PBXGroup;
 			children = (
-				4C8FF74B20EAF3C40050EA3A /* MainVC.swift */,
-				4C8FF74920EAF3C40050EA3A /* AppDelegate.swift */,
-				4C8FF74D20EAF3C40050EA3A /* Main.storyboard */,
-				4C8FF75020EAF3C50050EA3A /* Assets.xcassets */,
-				4C8FF75220EAF3C50050EA3A /* LaunchScreen.storyboard */,
-				4C8FF75520EAF3C60050EA3A /* Info.plist */,
+				4CBE034C21741E640074D341 /* AppDelegate.swift */,
+				4CBE034E21741E640074D341 /* ViewController.swift */,
+				4CBE035021741E640074D341 /* Main.storyboard */,
+				4CBE035321741E650074D341 /* Assets.xcassets */,
+				4CBE035521741E650074D341 /* LaunchScreen.storyboard */,
+				4CBE035821741E650074D341 /* Info.plist */,
 			);
-			path = "Incident Time";
+			path = "Magic 8 Ball";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C8FF74520EAF3C40050EA3A /* Incident Time */ = {
+		4CBE034821741E640074D341 /* Magic 8 Ball */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C8FF75820EAF3C60050EA3A /* Build configuration list for PBXNativeTarget "Incident Time" */;
+			buildConfigurationList = 4CBE035B21741E650074D341 /* Build configuration list for PBXNativeTarget "Magic 8 Ball" */;
 			buildPhases = (
-				4C8FF74220EAF3C40050EA3A /* Sources */,
-				4C8FF74320EAF3C40050EA3A /* Frameworks */,
-				4C8FF74420EAF3C40050EA3A /* Resources */,
+				4CBE034521741E640074D341 /* Sources */,
+				4CBE034621741E640074D341 /* Frameworks */,
+				4CBE034721741E640074D341 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Incident Time";
-			productName = "Incident Time";
-			productReference = 4C8FF74620EAF3C40050EA3A /* Incident Time.app */;
+			name = "Magic 8 Ball";
+			productName = "Magic 8 Ball";
+			productReference = 4CBE034921741E640074D341 /* Magic 8 Ball.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C8FF73E20EAF3C40050EA3A /* Project object */ = {
+		4CBE034121741E640074D341 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Andrew Miotke";
 				TargetAttributes = {
-					4C8FF74520EAF3C40050EA3A = {
-						CreatedOnToolsVersion = 9.4.1;
+					4CBE034821741E640074D341 = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 4C8FF74120EAF3C40050EA3A /* Build configuration list for PBXProject "Incident Time" */;
+			buildConfigurationList = 4CBE034421741E640074D341 /* Build configuration list for PBXProject "Magic 8 Ball" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C8FF73D20EAF3C40050EA3A;
-			productRefGroup = 4C8FF74720EAF3C40050EA3A /* Products */;
+			mainGroup = 4CBE034021741E640074D341;
+			productRefGroup = 4CBE034A21741E640074D341 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C8FF74520EAF3C40050EA3A /* Incident Time */,
+				4CBE034821741E640074D341 /* Magic 8 Ball */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C8FF74420EAF3C40050EA3A /* Resources */ = {
+		4CBE034721741E640074D341 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8FF75420EAF3C50050EA3A /* LaunchScreen.storyboard in Resources */,
-				4C8FF75120EAF3C50050EA3A /* Assets.xcassets in Resources */,
-				4C8FF74F20EAF3C40050EA3A /* Main.storyboard in Resources */,
+				4CBE035721741E650074D341 /* LaunchScreen.storyboard in Resources */,
+				4CBE035421741E650074D341 /* Assets.xcassets in Resources */,
+				4CBE035221741E640074D341 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C8FF74220EAF3C40050EA3A /* Sources */ = {
+		4CBE034521741E640074D341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8FF74C20EAF3C40050EA3A /* MainVC.swift in Sources */,
-				4C8FF74A20EAF3C40050EA3A /* AppDelegate.swift in Sources */,
+				4CBE034F21741E640074D341 /* ViewController.swift in Sources */,
+				4CBE034D21741E640074D341 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C8FF74D20EAF3C40050EA3A /* Main.storyboard */ = {
+		4CBE035021741E640074D341 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C8FF74E20EAF3C40050EA3A /* Base */,
+				4CBE035121741E640074D341 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4C8FF75220EAF3C50050EA3A /* LaunchScreen.storyboard */ = {
+		4CBE035521741E650074D341 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C8FF75320EAF3C50050EA3A /* Base */,
+				4CBE035621741E650074D341 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C8FF75620EAF3C60050EA3A /* Debug */ = {
+		4CBE035921741E650074D341 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,8 +213,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -222,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		4C8FF75720EAF3C60050EA3A /* Release */ = {
+		4CBE035A21741E650074D341 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,8 +268,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -276,38 +278,38 @@
 			};
 			name = Release;
 		};
-		4C8FF75920EAF3C60050EA3A /* Debug */ = {
+		4CBE035C21741E650074D341 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G2N5CQ5Q4Z;
-				INFOPLIST_FILE = "Incident Time/Info.plist";
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Magic 8 Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "andrewmiotke.Incident-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Magic-8-Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4C8FF75A20EAF3C60050EA3A /* Release */ = {
+		4CBE035D21741E650074D341 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G2N5CQ5Q4Z;
-				INFOPLIST_FILE = "Incident Time/Info.plist";
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Magic 8 Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "andrewmiotke.Incident-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Magic-8-Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -315,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C8FF74120EAF3C40050EA3A /* Build configuration list for PBXProject "Incident Time" */ = {
+		4CBE034421741E640074D341 /* Build configuration list for PBXProject "Magic 8 Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C8FF75620EAF3C60050EA3A /* Debug */,
-				4C8FF75720EAF3C60050EA3A /* Release */,
+				4CBE035921741E650074D341 /* Debug */,
+				4CBE035A21741E650074D341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C8FF75820EAF3C60050EA3A /* Build configuration list for PBXNativeTarget "Incident Time" */ = {
+		4CBE035B21741E650074D341 /* Build configuration list for PBXNativeTarget "Magic 8 Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C8FF75920EAF3C60050EA3A /* Debug */,
-				4C8FF75A20EAF3C60050EA3A /* Release */,
+				4CBE035C21741E650074D341 /* Debug */,
+				4CBE035D21741E650074D341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C8FF73E20EAF3C40050EA3A /* Project object */;
+	rootObject = 4CBE034121741E640074D341 /* Project object */;
 }
