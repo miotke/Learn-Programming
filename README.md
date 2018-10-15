@@ -9,4 +9,5 @@ This is a repo where I will keep all of the work I've done while learning Swift.
 
 
 
-Current App That I'm working on: Dicee
+Current App That I'm working on: Magic 8 ball
+Section: 6
