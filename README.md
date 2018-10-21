@@ -8,6 +8,6 @@ This is a repo where I will keep all of the work I've done while learning Swift.
 * The _Angela Yu_ folder is the folder that I will be working through the Angela Yu course on Udemey 
 
 
+Section: 7
 
-Current App That I'm working on: Magic 8 ball
-Section: 6
+Section Header: Programming in Swift 4 for Beginners
