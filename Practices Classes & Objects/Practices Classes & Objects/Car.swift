@@ -19,9 +19,24 @@ enum FuelType {
     case diesel
 }
 
+enum Transmission {
+    case manual
+    case automatic
+}
+
 class Car {
-    var color = "Black"
+    var color = "Blue"
     var numberOfSeats = 4
     var drivetrain = Drivetrain.allWheelDrive
     var fuelType = FuelType.gas
+    var transmission = Transmission.automatic
+    
+    convenience init(customerColor: String, customerNumberOfSeats: Int, customerDrivetrain: Drivetrain, customerFuelType: FuelType, customerTransmission: Transmission) {
+        self.init()
+        color = customerColor
+        numberOfSeats = customerNumberOfSeats
+        drivetrain = customerDrivetrain
+        fuelType = customerFuelType
+        transmission = customerTransmission
+    }
 }
