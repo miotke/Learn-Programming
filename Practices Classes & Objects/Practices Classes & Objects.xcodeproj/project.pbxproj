@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C72D15021A0AD4500604D64 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72D14F21A0AD4500604D64 /* Brewery.swift */; };
 		4CC35F86219A891800B3083F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC35F85219A891800B3083F /* main.swift */; };
 		4CC35F8D219A894000B3083F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC35F8C219A894000B3083F /* Car.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C72D14F21A0AD4500604D64 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		4CC35F82219A891800B3083F /* Practices Classes & Objects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practices Classes & Objects"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC35F85219A891800B3083F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CC35F8C219A894000B3083F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				4CC35F85219A891800B3083F /* main.swift */,
 				4CC35F8C219A894000B3083F /* Car.swift */,
+				4C72D14F21A0AD4500604D64 /* Brewery.swift */,
 			);
 			path = "Practices Classes & Objects";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC35F8D219A894000B3083F /* Car.swift in Sources */,
+				4C72D15021A0AD4500604D64 /* Brewery.swift in Sources */,
 				4CC35F86219A891800B3083F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
