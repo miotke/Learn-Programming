@@ -11,6 +11,8 @@ import Foundation
 let car = Car()
 let customerCar = Car(customerColor: "Green", customerNumberOfSeats: 2, customerDrivetrain: .allWheelDrive, customerFuelType: .gas, customerTransmission: .manual)
 
+let brewery = Brewery()
+
 
 print("Default Car 🚙")
 print(car.color)
@@ -26,4 +28,10 @@ print(customerCar.numberOfSeats)
 print(customerCar.drivetrain)
 print(customerCar.fuelType)
 print(customerCar.transmission)
+
+print("\n")
+print(brewery.breweryName)
+print(brewery.dateEstablished)
+print(brewery.breweryDescription)
+print(brewery.popularBeerType)
 
