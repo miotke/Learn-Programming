@@ -23,6 +23,8 @@ print(customerCar.color)
 print(customerCar.numberOfSeats)
 print(customerCar.typeOfCar)
 print("\n")
+mySelfDrivingCar.destination = "Tacoma!"
+mySelfDrivingCar.numberOfPassengers = 40
 mySelfDrivingCar.drive()
 print(customerSelfDrivingCar.color)
 print(customerSelfDrivingCar.numberOfSeats)
