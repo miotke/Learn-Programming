@@ -31,4 +31,9 @@ class Car {
         numberOfSeats = customerChosenNumberOfSeats
         typeOfCar = customerChosenCarType
     }
+    
+    
+    func drive() {
+        print("Car is moving")
+    }
 }
