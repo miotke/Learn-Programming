@@ -7,18 +7,17 @@
 //
 
 import UIKit
+import CoreLocation
 
-
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     //Constants
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "14a51d10dce7ef641850def0b5b4fe42"
-    /***Get your own App ID at https://openweathermap.org/appid ****/
     
 
     //TODO: Declare instance variables here
-    
+    let locationManager = CLLocationManager()
 
     
     //Pre-linked IBOutlets
@@ -32,9 +31,9 @@ class WeatherViewController: UIViewController {
         
         
         //TODO:Set up the location manager here.
-    
-        
-        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.requestWhenInUseAuthorization()
     }
     
     
@@ -100,5 +99,3 @@ class WeatherViewController: UIViewController {
     
     
 }
-
-
