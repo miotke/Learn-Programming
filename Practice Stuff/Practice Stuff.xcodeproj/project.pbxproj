@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4CBD764921B99CAE0080A128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD764821B99CAE0080A128 /* AppDelegate.swift */; };
-		4CBD764B21B99CAE0080A128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD764A21B99CAE0080A128 /* ViewController.swift */; };
+		4CBD764B21B99CAE0080A128 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD764A21B99CAE0080A128 /* MainViewController.swift */; };
 		4CBD764E21B99CAE0080A128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD764C21B99CAE0080A128 /* Main.storyboard */; };
 		4CBD765021B99CAF0080A128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD764F21B99CAF0080A128 /* Assets.xcassets */; };
 		4CBD765321B99CAF0080A128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD765121B99CAF0080A128 /* LaunchScreen.storyboard */; };
 		4CBD765E21B99CB00080A128 /* Practice_StuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD765D21B99CB00080A128 /* Practice_StuffTests.swift */; };
 		4CBD766921B99CB00080A128 /* Practice_StuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD766821B99CB00080A128 /* Practice_StuffUITests.swift */; };
+		4CBD767B21B9A1220080A128 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD767A21B9A1220080A128 /* Buttons.swift */; };
+		4CBD767D21B9A7360080A128 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD767C21B9A7360080A128 /* Labels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4CBD764521B99CAE0080A128 /* Practice Stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practice Stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBD764821B99CAE0080A128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CBD764A21B99CAE0080A128 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CBD764A21B99CAE0080A128 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CBD764D21B99CAE0080A128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBD764F21B99CAF0080A128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBD765221B99CAF0080A128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		4CBD766421B99CB00080A128 /* Practice StuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice StuffUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBD766821B99CB00080A128 /* Practice_StuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_StuffUITests.swift; sourceTree = "<group>"; };
 		4CBD766A21B99CB00080A128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBD767A21B9A1220080A128 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		4CBD767C21B9A7360080A128 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		4CBD764721B99CAE0080A128 /* Practice Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				4CBD767E21B9A73C0080A128 /* View */,
 				4CBD764821B99CAE0080A128 /* AppDelegate.swift */,
-				4CBD764A21B99CAE0080A128 /* ViewController.swift */,
+				4CBD764A21B99CAE0080A128 /* MainViewController.swift */,
 				4CBD764C21B99CAE0080A128 /* Main.storyboard */,
 				4CBD764F21B99CAF0080A128 /* Assets.xcassets */,
 				4CBD765121B99CAF0080A128 /* LaunchScreen.storyboard */,
@@ -123,6 +128,15 @@
 				4CBD766A21B99CB00080A128 /* Info.plist */,
 			);
 			path = "Practice StuffUITests";
+			sourceTree = "<group>";
+		};
+		4CBD767E21B9A73C0080A128 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CBD767A21B9A1220080A128 /* Buttons.swift */,
+				4CBD767C21B9A7360080A128 /* Labels.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBD764B21B99CAE0080A128 /* ViewController.swift in Sources */,
+				4CBD764B21B99CAE0080A128 /* MainViewController.swift in Sources */,
+				4CBD767D21B9A7360080A128 /* Labels.swift in Sources */,
 				4CBD764921B99CAE0080A128 /* AppDelegate.swift in Sources */,
+				4CBD767B21B9A1220080A128 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
