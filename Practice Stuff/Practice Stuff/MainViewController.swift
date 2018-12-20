@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     func setupLabelViews() {
         labels.createWelcomeLabel()
         labels.createGoodbyeLabel()
+        labels.createOtherLabel()
         view.addSubview(labels)
     }
 }
