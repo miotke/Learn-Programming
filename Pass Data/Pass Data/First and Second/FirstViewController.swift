@@ -8,13 +8,13 @@
 
 import UIKit
 
+let identifier = "PassingData"
 
 class FirstViewController: UIViewController, CanReceive {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    let identifier = "PassingData"
     
     override func viewDidLoad() {
         super.viewDidLoad()
