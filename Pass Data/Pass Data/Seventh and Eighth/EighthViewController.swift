@@ -8,20 +8,25 @@
 
 import UIKit
 
+protocol TakeData {
+    func takeData(data: String)
+}
+
 class EighthViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textLabel: UITextField!
     
     var data = ""
+    var delegate: TakeData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         label.text = data
     }
     
     @IBAction func button(_ sender: Any) {
+        delegate?.takeData(data: textLabel.text!)
         dismiss(animated: true, completion: nil)
     }
 }

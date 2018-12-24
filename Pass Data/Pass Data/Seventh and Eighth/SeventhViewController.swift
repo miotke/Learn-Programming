@@ -8,22 +8,26 @@
 
 import UIKit
 
-class SeventhViewController: UIViewController {
-    
+class SeventhViewController: UIViewController, TakeData {
+
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textLabel: UITextField!
-    
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    func takeData(data: String) {
+        label.text = data
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == identifier {
             let eighthVC = segue.destination as! EighthViewController
             eighthVC.data = textLabel.text!
+            
+            eighthVC.delegate = self
         }
     }
     
