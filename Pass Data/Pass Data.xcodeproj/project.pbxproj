@@ -16,6 +16,8 @@
 		4C30CB7921D053A2003F34AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30CB7821D053A2003F34AE /* SecondViewController.swift */; };
 		4C30CB7B21D05AF7003F34AE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30CB7A21D05AF7003F34AE /* ThirdViewController.swift */; };
 		4C30CB7D21D05B05003F34AE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30CB7C21D05B05003F34AE /* FourthViewController.swift */; };
+		4C82214421D05FA1003E911E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82214321D05FA1003E911E /* FifthViewController.swift */; };
+		4C82214621D05FAF003E911E /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82214521D05FAF003E911E /* SixthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4C30CB7821D053A2003F34AE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4C30CB7A21D05AF7003F34AE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4C30CB7C21D05B05003F34AE /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		4C82214321D05FA1003E911E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		4C82214521D05FAF003E911E /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		4C30CB6221D0520D003F34AE /* Pass Data */ = {
 			isa = PBXGroup;
 			children = (
+				4C82214221D05F8A003E911E /* Fifth and Sixth */,
 				4C30CB7F21D05B25003F34AE /* Third and Fourth */,
 				4C30CB7E21D05B19003F34AE /* First and Second */,
 				4C30CB6321D0520D003F34AE /* AppDelegate.swift */,
@@ -90,6 +95,15 @@
 				4C30CB7C21D05B05003F34AE /* FourthViewController.swift */,
 			);
 			path = "Third and Fourth";
+			sourceTree = "<group>";
+		};
+		4C82214221D05F8A003E911E /* Fifth and Sixth */ = {
+			isa = PBXGroup;
+			children = (
+				4C82214321D05FA1003E911E /* FifthViewController.swift */,
+				4C82214521D05FAF003E911E /* SixthViewController.swift */,
+			);
+			path = "Fifth and Sixth";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +180,11 @@
 				4C30CB7D21D05B05003F34AE /* FourthViewController.swift in Sources */,
 				4C30CB7921D053A2003F34AE /* SecondViewController.swift in Sources */,
 				4C30CB6621D0520D003F34AE /* FirstViewController.swift in Sources */,
+				4C82214621D05FAF003E911E /* SixthViewController.swift in Sources */,
 				4C30CB7B21D05AF7003F34AE /* ThirdViewController.swift in Sources */,
 				4C30CB6421D0520D003F34AE /* AppDelegate.swift in Sources */,
 				4C30CB6C21D0520D003F34AE /* Pass_Data.xcdatamodeld in Sources */,
+				4C82214421D05FA1003E911E /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
