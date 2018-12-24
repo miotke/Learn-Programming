@@ -26,5 +26,12 @@ class Labels: UILabel {
         goodbyeLabel.backgroundColor = UIColor.purple
         addSubview(goodbyeLabel)
     }
+    
+    func createOtherLabel() {
+        let otherLabel = UILabel(frame: CGRect(x: 100, y: 650, width: 200, height: 50))
+        otherLabel.text = "Other Label"
+        otherLabel.backgroundColor = UIColor.blue
+        addSubview(otherLabel)
+    }
 
 }
