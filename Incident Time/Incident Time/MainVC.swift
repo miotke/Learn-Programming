@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class MainVC: UIViewController {
 
@@ -15,18 +16,21 @@ class MainVC: UIViewController {
     @IBOutlet weak var incidentNumber: UILabel!
     @IBOutlet weak var addDayButton: UIButton!
     @IBOutlet weak var resetDayButton: UIButton!
+    @IBOutlet weak var lottieView: LOTAnimationView!
     
-    var numberOfDaysSinceIncident: Int = 0 {
-        didSet {
-            incidentNumber.text = "\(numberOfDaysSinceIncident)"
-        }
-    }
+    let logic = Logic()
+    
+//    var numberOfDaysSinceIncident: Int = 0 {
+//        didSet {
+//            incidentNumber.text = "\(numberOfDaysSinceIncident)"
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        logic.playAnimation()
         setupView()
-        numberOfDaysSinceIncident = 0
+        logic.numberOfDaysSinceIncident = 0
     }
     
     func setupView() {
@@ -34,7 +38,7 @@ class MainVC: UIViewController {
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: "Avenir Next", size: 30)
 
-        incidentNumber.text = String(numberOfDaysSinceIncident)
+        incidentNumber.text = String(logic.numberOfDaysSinceIncident)
         incidentNumber.textAlignment = .center
         incidentNumber.font = UIFont(name: "Avenir Next", size: 100)
 
@@ -49,21 +53,37 @@ class MainVC: UIViewController {
         resetDayButton.titleLabel?.font = UIFont(name: "Avenir Next", size: 30)
     }
     
-    func increaseDay(numberOfDays: Int) -> Int {
-        numberOfDaysSinceIncident += 1
-        return numberOfDaysSinceIncident
-    }
+//    func increaseDay(numberOfDays: Int) -> Int {
+//        numberOfDaysSinceIncident += 1
+//        return numberOfDaysSinceIncident
+//    }
+//
+//    func incrementNumberByOne() {
+//        lottieView.isHidden = true
+//        numberOfDaysSinceIncident += 1
+//        print("+")
+//    }
+//
+//    func resetCounter() {
+//        self.numberOfDaysSinceIncident = 0
+//        incidentNumber.text = String(numberOfDaysSinceIncident)
+//        lottieView.isHidden = false
+//        print("Reset to 0")
+//    }
+//
+//    func playAnimation() {
+//        lottieView.setAnimation(named: "coffee")
+//        lottieView.play()
+//        lottieView.loopAnimation = true
+//    }
 
     // Actions
     @IBAction func addDayButtonWasPressed(_ sender: Any) {
-        numberOfDaysSinceIncident += 1
-        print("+")
+        logic.incrementNumberByOne()
     }
     
     @IBAction func resetDayButtonWasPressed(_ sender: Any) {
-        self.numberOfDaysSinceIncident = 0
-        incidentNumber.text = String(numberOfDaysSinceIncident)
-        print("Reset to 0")
+        logic.resetCounter()
     }
 }
 
