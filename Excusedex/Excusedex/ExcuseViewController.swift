@@ -18,7 +18,6 @@ class ExcuseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
         setupNavigationController()
@@ -49,11 +48,11 @@ extension ExcuseViewController {
     
     func setupNavigationController() {
         self.navigationItem.title = "Excusedex"
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(settingsButtonTapped))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "settings"), style: .plain, target: self, action: #selector(settingsButtonTapped))
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
     @objc func settingsButtonTapped() {
-        
+            print("button tapped")
     }
 }
