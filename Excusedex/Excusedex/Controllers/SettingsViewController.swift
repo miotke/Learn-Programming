@@ -13,6 +13,13 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        setupNavigationController()
+    }
+}
+
+extension SettingsViewController {
+    
+    func setupNavigationController() {
+        self.navigationItem.title = "Settings"
     }
 }

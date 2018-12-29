@@ -22,6 +22,11 @@ class ExcuseViewController: UIViewController {
         tableView.dataSource = self
         setupNavigationController()
     }
+    
+    func copyText() {
+        var text = ""
+        UIPasteboard.general.string = text
+    }
 }
 
 
@@ -38,8 +43,14 @@ extension ExcuseViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = excuses.excuses[indexPath.row]
-
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let getExuse = excuses.excuses[indexPath.row]
+        let exuseToPaste = getExuse
+        UIPasteboard.general.string = getExuse
+        print(exuseToPaste)
     }
 }
 
@@ -52,12 +63,12 @@ extension ExcuseViewController {
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToSettingsViewController" {
-            let toSettingsViewController = segue.destination as! SettingsViewController
-            toSettingsViewController.view.backgroundColor = UIColor.black
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "ToSettingsViewController" {
+//            let toSettingsViewController = segue.destination as! SettingsViewController
+//            toSettingsViewController.view.backgroundColor = UIColor.black
+//        }
+//    }
     
     @objc func settingsButtonTapped() {
         print("button tapped")
