@@ -62,14 +62,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wdN-jv-cOw"/>
+                    <navigationItem key="navigationItem" id="wdN-jv-cOw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="QVM-4x-HUr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nY3-c3-ab4">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <action selector="button:" destination="BYZ-38-t0r" id="7Sf-cA-f4a"/>
+                                <segue destination="o51-9B-e8i" kind="show" identifier="ToSettingsViewController" id="i45-Ec-Uat"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="lha-LH-hwB" id="G5s-rO-V2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="134"/>
+            <point key="canvasLocation" x="942" y="-210"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="x5u-17-JaO">
+            <objects>
+                <viewController id="o51-9B-e8i" customClass="SettingsViewController" customModule="Excusedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRY-IQ-GwY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jGF-YD-dxb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGD-Qp-qgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="559"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5nV-S2-KrO">
@@ -87,7 +114,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ie4-9I-yib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="134"/>
+            <point key="canvasLocation" x="113" y="141"/>
         </scene>
     </scenes>
 </document>

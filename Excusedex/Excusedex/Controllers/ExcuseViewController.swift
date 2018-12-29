@@ -52,7 +52,15 @@ extension ExcuseViewController {
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToSettingsViewController" {
+            let toSettingsViewController = segue.destination as! SettingsViewController
+            toSettingsViewController.view.backgroundColor = UIColor.black
+        }
+    }
+    
     @objc func settingsButtonTapped() {
-            print("button tapped")
+        print("button tapped")
+        performSegue(withIdentifier: "ToSettingsViewController", sender: self)
     }
 }

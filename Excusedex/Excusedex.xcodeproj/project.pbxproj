@@ -15,6 +15,7 @@
 		4C072A2221CECCAF00DCB0DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C072A2021CECCAF00DCB0DE /* LaunchScreen.storyboard */; };
 		4C072A2C21CED24C00DCB0DE /* ExcusesStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */; };
 		4C1CBE1321CEF75500048AA9 /* SetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CBE1221CEF75500048AA9 /* SetupCell.swift */; };
+		4C3B6EF421D7EE2F0053C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B6EF321D7EE2F0053C900 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4C072A2321CECCAF00DCB0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcusesStrings.swift; sourceTree = "<group>"; };
 		4C1CBE1221CEF75500048AA9 /* SetupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCell.swift; sourceTree = "<group>"; };
+		4C3B6EF321D7EE2F0053C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,10 @@
 		4C072A1321CECCAE00DCB0DE /* Excusedex */ = {
 			isa = PBXGroup;
 			children = (
+				4C3B6EF521D7F6C40053C900 /* Controllers */,
+				4C3B6EF221D7ED910053C900 /* View */,
 				4C3B6EF021D7ECB90053C900 /* Constants */,
 				4C072A1421CECCAE00DCB0DE /* AppDelegate.swift */,
-				4C072A1621CECCAE00DCB0DE /* ExcuseViewController.swift */,
-				4C1CBE1221CEF75500048AA9 /* SetupCell.swift */,
-				4C072A1821CECCAE00DCB0DE /* Main.storyboard */,
 				4C072A1E21CECCAF00DCB0DE /* Assets.xcassets */,
 				4C072A2021CECCAF00DCB0DE /* LaunchScreen.storyboard */,
 				4C072A2321CECCAF00DCB0DE /* Info.plist */,
@@ -79,6 +80,24 @@
 				4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		4C3B6EF221D7ED910053C900 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CBE1221CEF75500048AA9 /* SetupCell.swift */,
+				4C072A1821CECCAE00DCB0DE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C3B6EF521D7F6C40053C900 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C072A1621CECCAE00DCB0DE /* ExcuseViewController.swift */,
+				4C3B6EF321D7EE2F0053C900 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +176,7 @@
 				4C072A1D21CECCAE00DCB0DE /* Excusedex.xcdatamodeld in Sources */,
 				4C072A1721CECCAE00DCB0DE /* ExcuseViewController.swift in Sources */,
 				4C072A1521CECCAE00DCB0DE /* AppDelegate.swift in Sources */,
+				4C3B6EF421D7EE2F0053C900 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
