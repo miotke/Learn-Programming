@@ -52,10 +52,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-cr-ToZ" customClass="SuccessPopup" customModule="Excusedex" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="AgG-Z2-thP"/>
+                                    <constraint firstAttribute="width" constant="200" id="ESF-Fw-62T"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Xgf-cr-ToZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3L8-EK-GBx"/>
                             <constraint firstItem="lha-LH-hwB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Uki-y2-QAi"/>
+                            <constraint firstItem="Xgf-cr-ToZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YD5-pf-ebd"/>
                             <constraint firstItem="lha-LH-hwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YRt-gk-X7x"/>
                             <constraint firstItem="lha-LH-hwB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fTO-iC-AXS"/>
                             <constraint firstItem="lha-LH-hwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k1z-K7-qML"/>
@@ -90,13 +100,27 @@
                     <view key="view" contentMode="scaleToFill" id="TRY-IQ-GwY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq8-C3-Mtc" customClass="SuccessPopup" customModule="Excusedex" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="D6A-KU-gRh"/>
+                                    <constraint firstAttribute="height" constant="200" id="oMJ-fj-mH2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gq8-C3-Mtc" firstAttribute="centerX" secondItem="TRY-IQ-GwY" secondAttribute="centerX" id="7cG-z0-Ff7"/>
+                            <constraint firstItem="Gq8-C3-Mtc" firstAttribute="centerY" secondItem="TRY-IQ-GwY" secondAttribute="centerY" id="Uhq-sk-bha"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jGF-YD-dxb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGD-Qp-qgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453.5999999999999" y="558.17091454272872"/>
+            <point key="canvasLocation" x="1778" y="-210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5nV-S2-KrO">

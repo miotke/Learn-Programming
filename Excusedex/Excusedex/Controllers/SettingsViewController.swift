@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationController()
-        self.view.backgroundColor = colors.black
+        
     }
 }
 

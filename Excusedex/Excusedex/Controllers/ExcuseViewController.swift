@@ -16,6 +16,7 @@ class ExcuseViewController: UIViewController {
     let setupCell = SetupCell()
     let excuses = Exuses()
     let colors = Colors()
+    let successPopup = SuccessPopup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,7 @@ extension ExcuseViewController: UITableViewDelegate, UITableViewDataSource {
         let getExuse = excuses.excuses[indexPath.row]
         _ = getExuse
         UIPasteboard.general.string = getExuse
+        
     }
 }
 
