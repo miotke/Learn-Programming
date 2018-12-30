@@ -16,6 +16,7 @@
 		4C072A2C21CED24C00DCB0DE /* ExcusesStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */; };
 		4C1CBE1321CEF75500048AA9 /* SetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CBE1221CEF75500048AA9 /* SetupCell.swift */; };
 		4C3B6EF421D7EE2F0053C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B6EF321D7EE2F0053C900 /* SettingsViewController.swift */; };
+		4C4A78E621D93C170017C832 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A78E521D93C170017C832 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcusesStrings.swift; sourceTree = "<group>"; };
 		4C1CBE1221CEF75500048AA9 /* SetupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCell.swift; sourceTree = "<group>"; };
 		4C3B6EF321D7EE2F0053C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4C4A78E521D93C170017C832 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4C072A2B21CED24C00DCB0DE /* ExcusesStrings.swift */,
+				4C4A78E521D93C170017C832 /* Colors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				4C072A2C21CED24C00DCB0DE /* ExcusesStrings.swift in Sources */,
 				4C1CBE1321CEF75500048AA9 /* SetupCell.swift in Sources */,
 				4C072A1D21CECCAE00DCB0DE /* Excusedex.xcdatamodeld in Sources */,
+				4C4A78E621D93C170017C832 /* Colors.swift in Sources */,
 				4C072A1721CECCAE00DCB0DE /* ExcuseViewController.swift in Sources */,
 				4C072A1521CECCAE00DCB0DE /* AppDelegate.swift in Sources */,
 				4C3B6EF421D7EE2F0053C900 /* SettingsViewController.swift in Sources */,

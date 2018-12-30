@@ -90,23 +90,7 @@
                     <view key="view" contentMode="scaleToFill" id="TRY-IQ-GwY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PWq-RO-DeF">
-                                <rect key="frame" x="56" y="247" width="263" height="173"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="8rc-2M-gVo"/>
-                                    <constraint firstAttribute="height" constant="173" id="BBz-8V-ov2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="PWq-RO-DeF" firstAttribute="centerX" secondItem="TRY-IQ-GwY" secondAttribute="centerX" id="8cs-Qf-ji2"/>
-                            <constraint firstItem="PWq-RO-DeF" firstAttribute="centerY" secondItem="TRY-IQ-GwY" secondAttribute="centerY" id="aI9-8v-Y0e"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jGF-YD-dxb"/>
                     </view>
                 </viewController>

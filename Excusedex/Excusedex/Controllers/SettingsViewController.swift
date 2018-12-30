@@ -9,11 +9,14 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    let colors = Colors()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavigationController()
+        self.view.backgroundColor = colors.black
     }
 }
 

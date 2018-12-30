@@ -15,17 +15,13 @@ class ExcuseViewController: UIViewController {
     
     let setupCell = SetupCell()
     let excuses = Exuses()
+    let colors = Colors()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         setupNavigationController()
-    }
-    
-    func copyText() {
-        var text = ""
-        UIPasteboard.general.string = text
     }
 }
 
@@ -48,9 +44,8 @@ extension ExcuseViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let getExuse = excuses.excuses[indexPath.row]
-        let exuseToPaste = getExuse
+        _ = getExuse
         UIPasteboard.general.string = getExuse
-        print(exuseToPaste)
     }
 }
 
@@ -60,18 +55,10 @@ extension ExcuseViewController {
     func setupNavigationController() {
         self.navigationItem.title = "Excusedex"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "settings"), style: .plain, target: self, action: #selector(settingsButtonTapped))
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        self.navigationItem.rightBarButtonItem?.tintColor = colors.pink
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "ToSettingsViewController" {
-//            let toSettingsViewController = segue.destination as! SettingsViewController
-//            toSettingsViewController.view.backgroundColor = UIColor.black
-//        }
-//    }
-    
     @objc func settingsButtonTapped() {
-        print("button tapped")
         performSegue(withIdentifier: "ToSettingsViewController", sender: self)
     }
 }
