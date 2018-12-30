@@ -63,7 +63,6 @@ extension ExcuseViewController: UITableViewDelegate, UITableViewDataSource {
             self.successPopup.isHidden = true
         }
     }
-    
 }
 
 // MARK: Extensions - Navigation Controller
