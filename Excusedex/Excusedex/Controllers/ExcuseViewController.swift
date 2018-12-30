@@ -7,22 +7,24 @@
 //
 
 import UIKit
+import Lottie
 
 class ExcuseViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var successPopup: LOTAnimationView!
     
     let setupCell = SetupCell()
     let excuses = Exuses()
     let colors = Colors()
-    let successPopup = SuccessPopup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         setupNavigationController()
+        successPopup.isHidden = true
     }
 }
 
@@ -48,7 +50,20 @@ extension ExcuseViewController: UITableViewDelegate, UITableViewDataSource {
         _ = getExuse
         UIPasteboard.general.string = getExuse
         
+        setupSuccessView()
     }
+    
+    func setupSuccessView() {
+        successPopup.backgroundColor = colors.clear
+        successPopup.isHidden = false
+        successPopup.setAnimation(named: "Check Mark Success Data")
+        successPopup.play()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
+            self.successPopup.isHidden = true
+        }
+    }
+    
 }
 
 // MARK: Extensions - Navigation Controller

@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Lottie
 
 class SettingsViewController: UIViewController {
     
+    
+    @IBOutlet weak var lottieView: LOTAnimationView!
     let colors = Colors()
 
     override func viewDidLoad() {
@@ -17,6 +20,8 @@ class SettingsViewController: UIViewController {
 
         setupNavigationController()
         
+        lottieView.setAnimation(named: "loading_success")
+        lottieView.play()
     }
 }
 
