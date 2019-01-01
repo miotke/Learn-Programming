@@ -12,5 +12,8 @@ Section: 13
 
 Section Header: 169
 
+
+## Concepts Folder
+The concepts folder contains a app ideas that I start before putting them in their own repo.
 ### Character Builder
 This is a pencil/paper RPG charactor builder and tracker app
