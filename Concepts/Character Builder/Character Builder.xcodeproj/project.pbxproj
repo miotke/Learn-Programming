@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4CD5772821DC2EEA00900FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5772721DC2EEA00900FBB /* AppDelegate.swift */; };
-		4CD5772A21DC2EEA00900FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5772921DC2EEA00900FBB /* ViewController.swift */; };
+		4CD5772A21DC2EEA00900FBB /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5772921DC2EEA00900FBB /* SelectionViewController.swift */; };
 		4CD5772D21DC2EEA00900FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5772B21DC2EEA00900FBB /* Main.storyboard */; };
 		4CD5773021DC2EEA00900FBB /* Character_Builder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5772E21DC2EEA00900FBB /* Character_Builder.xcdatamodeld */; };
 		4CD5773221DC2EEB00900FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5773121DC2EEB00900FBB /* Assets.xcassets */; };
 		4CD5773521DC2EEB00900FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5773321DC2EEB00900FBB /* LaunchScreen.storyboard */; };
 		4CD5774021DC2EEB00900FBB /* Character_BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5773F21DC2EEB00900FBB /* Character_BuilderTests.swift */; };
 		4CD5774B21DC2EEB00900FBB /* Character_BuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5774A21DC2EEB00900FBB /* Character_BuilderUITests.swift */; };
+		4CD5775D21DC30D200900FBB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5775C21DC30D200900FBB /* Colors.swift */; };
+		4CD5775F21DC350E00900FBB /* SelectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5775E21DC350E00900FBB /* SelectionTitle.swift */; };
+		4CE5473821DC3663008E5434 /* CreateCharacterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5473721DC3663008E5434 /* CreateCharacterButton.swift */; };
+		4CE5473A21DC3673008E5434 /* SelectCharacterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5473921DC3673008E5434 /* SelectCharacterButton.swift */; };
+		4CE5473C21DC369E008E5434 /* SelectionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5473B21DC369E008E5434 /* SelectionContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		4CD5772421DC2EEA00900FBB /* Character Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Character Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD5772721DC2EEA00900FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CD5772921DC2EEA00900FBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CD5772921DC2EEA00900FBB /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		4CD5772C21DC2EEA00900FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CD5772F21DC2EEA00900FBB /* Character_Builder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Character_Builder.xcdatamodel; sourceTree = "<group>"; };
 		4CD5773121DC2EEB00900FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		4CD5774621DC2EEB00900FBB /* Character BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Character BuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD5774A21DC2EEB00900FBB /* Character_BuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character_BuilderUITests.swift; sourceTree = "<group>"; };
 		4CD5774C21DC2EEB00900FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD5775C21DC30D200900FBB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4CD5775E21DC350E00900FBB /* SelectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTitle.swift; sourceTree = "<group>"; };
+		4CE5473721DC3663008E5434 /* CreateCharacterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCharacterButton.swift; sourceTree = "<group>"; };
+		4CE5473921DC3673008E5434 /* SelectCharacterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterButton.swift; sourceTree = "<group>"; };
+		4CE5473B21DC369E008E5434 /* SelectionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,10 @@
 		4CD5772621DC2EEA00900FBB /* Character Builder */ = {
 			isa = PBXGroup;
 			children = (
-				4CD5772721DC2EEA00900FBB /* AppDelegate.swift */,
-				4CD5772921DC2EEA00900FBB /* ViewController.swift */,
-				4CD5772B21DC2EEA00900FBB /* Main.storyboard */,
-				4CD5773121DC2EEB00900FBB /* Assets.xcassets */,
-				4CD5773321DC2EEB00900FBB /* LaunchScreen.storyboard */,
-				4CD5773621DC2EEB00900FBB /* Info.plist */,
-				4CD5772E21DC2EEA00900FBB /* Character_Builder.xcdatamodeld */,
+				4CD5775B21DC30C600900FBB /* Constants */,
+				4CD5775A21DC301500900FBB /* Supporting Files */,
+				4CD5775921DC300B00900FBB /* Controllers */,
+				4CD5775821DC300000900FBB /* Views */,
 			);
 			path = "Character Builder";
 			sourceTree = "<group>";
@@ -126,6 +133,46 @@
 				4CD5774C21DC2EEB00900FBB /* Info.plist */,
 			);
 			path = "Character BuilderUITests";
+			sourceTree = "<group>";
+		};
+		4CD5775821DC300000900FBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5772B21DC2EEA00900FBB /* Main.storyboard */,
+				4CD5775E21DC350E00900FBB /* SelectionTitle.swift */,
+				4CE5473B21DC369E008E5434 /* SelectionContainerView.swift */,
+				4CE5473721DC3663008E5434 /* CreateCharacterButton.swift */,
+				4CE5473921DC3673008E5434 /* SelectCharacterButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CD5775921DC300B00900FBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5772921DC2EEA00900FBB /* SelectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4CD5775A21DC301500900FBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5773121DC2EEB00900FBB /* Assets.xcassets */,
+				4CD5773321DC2EEB00900FBB /* LaunchScreen.storyboard */,
+				4CD5773621DC2EEB00900FBB /* Info.plist */,
+				4CD5772E21DC2EEA00900FBB /* Character_Builder.xcdatamodeld */,
+				4CD5772721DC2EEA00900FBB /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD5775B21DC30C600900FBB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5775C21DC30D200900FBB /* Colors.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD5772A21DC2EEA00900FBB /* ViewController.swift in Sources */,
+				4CD5775F21DC350E00900FBB /* SelectionTitle.swift in Sources */,
+				4CE5473821DC3663008E5434 /* CreateCharacterButton.swift in Sources */,
+				4CD5772A21DC2EEA00900FBB /* SelectionViewController.swift in Sources */,
+				4CE5473C21DC369E008E5434 /* SelectionContainerView.swift in Sources */,
+				4CD5775D21DC30D200900FBB /* Colors.swift in Sources */,
+				4CE5473A21DC3673008E5434 /* SelectCharacterButton.swift in Sources */,
 				4CD5773021DC2EEA00900FBB /* Character_Builder.xcdatamodeld in Sources */,
 				4CD5772821DC2EEA00900FBB /* AppDelegate.swift in Sources */,
 			);
@@ -438,7 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = "Character Builder/Info.plist";
+				INFOPLIST_FILE = "Character Builder/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Character-Builder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -456,7 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = "Character Builder/Info.plist";
+				INFOPLIST_FILE = "Character Builder/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Character-Builder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SelectionViewController" customModule="Character_Builder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXU-4k-tes" customClass="SelectionContainerView" customModule="Character_Builder" customModuleProvider="target">
+                                <rect key="frame" x="134" y="262" width="500" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-ub-ANz">
+                                        <rect key="frame" x="16" y="150" width="468" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi8-nY-x14" customClass="CreateCharacterButton" customModule="Character_Builder" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="468" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="createCharacterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vav-MS-TIn"/>
+                                                    <segue destination="qTk-ur-oYW" kind="show" identifier="ToCreateCharacterSegue" id="3j4-cX-ZgR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lln-1a-s3I" customClass="SelectCharacterButton" customModule="Character_Builder" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="115" width="468" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="selectCharacterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GX1-ft-IDD"/>
+                                                    <segue destination="JSs-Wr-HB1" kind="show" identifier="ToSelectCharacterSegue" id="VRQ-mf-QZY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="DBY-p2-n9f"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6eT-ub-ANz" secondAttribute="trailing" constant="16" id="27J-H7-Dcv"/>
+                                    <constraint firstItem="6eT-ub-ANz" firstAttribute="centerX" secondItem="wXU-4k-tes" secondAttribute="centerX" id="H0P-zA-KKJ"/>
+                                    <constraint firstItem="6eT-ub-ANz" firstAttribute="leading" secondItem="wXU-4k-tes" secondAttribute="leading" constant="16" id="b6F-1h-wyO"/>
+                                    <constraint firstItem="6eT-ub-ANz" firstAttribute="centerY" secondItem="wXU-4k-tes" secondAttribute="centerY" id="xo5-SQ-f31"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-qO-juX" customClass="SelectionTitle" customModule="Character_Builder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="736" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="4Ci-xR-xg5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wXU-4k-tes" secondAttribute="bottom" constant="262" id="2OK-wI-W8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YQS-qO-juX" secondAttribute="trailing" constant="16" id="9Sc-Qz-WRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wXU-4k-tes" secondAttribute="trailing" constant="134" id="PxD-rZ-346"/>
+                            <constraint firstItem="YQS-qO-juX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RWS-uJ-Npc"/>
+                            <constraint firstItem="YQS-qO-juX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X7w-Vc-ZWh"/>
+                            <constraint firstItem="wXU-4k-tes" firstAttribute="top" secondItem="YQS-qO-juX" secondAttribute="bottom" constant="112" id="jxM-s8-PU4"/>
+                            <constraint firstItem="wXU-4k-tes" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="o7j-jD-OS6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="createCharacterButton" destination="fi8-nY-x14" id="IKz-S3-7Jr"/>
+                        <outlet property="selectCharacterButton" destination="Lln-1a-s3I" id="TeV-RW-UXo"/>
+                        <outlet property="selectionButtonContainerView" destination="wXU-4k-tes" id="jCP-AF-hUJ"/>
+                        <outlet property="selectionTitle" destination="YQS-qO-juX" id="x7K-6Z-MQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.5625" y="17.578125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XFV-eA-zjy">
+            <objects>
+                <viewController id="qTk-ur-oYW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dKE-hX-AQU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KWq-NQ-eHm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiQ-oV-Rtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-316"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eJQ-aa-8Cp">
+            <objects>
+                <viewController id="JSs-Wr-HB1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g50-Dy-GKY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PV7-Pf-sYo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRg-h7-Dym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="408"/>
+        </scene>
+    </scenes>
+</document>
