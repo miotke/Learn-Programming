@@ -13,6 +13,8 @@ class SelectCharacterViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var tableview: UITableView!
     
+    let characterArray = ["Maggie", "Gus", "Kevin", "Jane", "Rory", "Andrew", "Jeffery", "Kramer", "Polly"]
+    
     // MARK: Constants
     let colors = Colors()
     let characterCells = SelectCharacterCell()
@@ -25,8 +27,6 @@ class SelectCharacterViewController: UIViewController {
         tableview.delegate = self
         tableview.dataSource = self
     }
-
-    // MARK: Actions
 }
 
 // MARK: Extensions - Tableview
@@ -41,6 +41,7 @@ extension SelectCharacterViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        characterCells.setData()
         return cell
     }
     

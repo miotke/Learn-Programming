@@ -109,7 +109,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="k2p-jv-xhJ" customClass="SelectCharacterCell" customModule="Character_Builder" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="736" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k2p-jv-xhJ" id="0Q8-Ut-Fc0" customClass="SelectCharacterCell" customModule="Character_Builder" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k2p-jv-xhJ" id="0Q8-Ut-Fc0">
                                             <rect key="frame" x="0.0" y="0.0" width="736" height="134.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -124,7 +124,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-T5-Vy5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-T5-Vy5">
                                                     <rect key="frame" x="138" y="89" width="101" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,7 +144,7 @@
                                             <outlet property="characterAvatar" destination="q1i-53-rWP" id="DfQ-XF-pMb"/>
                                             <outlet property="characterClass" destination="X4K-wL-8GZ" id="dUN-VW-FvV"/>
                                             <outlet property="characterLevel" destination="Nl8-T5-Vy5" id="4zs-K6-dN4"/>
-                                            <outlet property="characterNameLabel" destination="ZPh-y5-0XS" id="bHO-cS-lbi"/>
+                                            <outlet property="characterNameLabel" destination="ZPh-y5-0XS" id="WON-Vp-juQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
