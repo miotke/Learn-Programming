@@ -22,10 +22,6 @@ class SelectCharacterCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-    
-    func setData() {
-        self.characterNameLabel.text = "llkjalsdkj"
-    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
