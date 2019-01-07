@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class ActivityViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet weak var tableview: UITableView!
@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
 }
 
 // MARK: Extensions - Table view
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -37,7 +37,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: Extensions - Navigation Controller
-extension MainViewController {
+extension ActivityViewController {
     func setupNavigationController() {
         self.navigationItem.title = "Activity"
     }
