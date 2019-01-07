@@ -20,6 +20,7 @@
 		4C73651721E2D97F00CD6939 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73651621E2D97F00CD6939 /* ActivityCell.swift */; };
 		4C73651A21E2DDDC00CD6939 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73651921E2DDDC00CD6939 /* CoreDataManager.swift */; };
 		4C73651D21E2E02100CD6939 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73651C21E2E02100CD6939 /* ProfileViewController.swift */; };
+		4C73652221E2E3C100CD6939 /* AddCannabisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73652121E2E3C100CD6939 /* AddCannabisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,8 @@
 		4C6AE63621E295A50083A8F8 /* HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		4C73651621E2D97F00CD6939 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		4C73651921E2DDDC00CD6939 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		4C73651C21E2E02100CD6939 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controller/ProfileViewController.swift; sourceTree = "<group>"; };
+		4C73651C21E2E02100CD6939 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C73652121E2E3C100CD6939 /* AddCannabisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCannabisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		4C6AE5FE21E294B40083A8F8 /* Seed */ = {
 			isa = PBXGroup;
 			children = (
+				4C73651F21E2E3A600CD6939 /* Add Cannabis */,
 				4C73651B21E2E00000CD6939 /* Profile */,
 				4C73651821E2DDC900CD6939 /* Core Data Manager */,
 				4CFEE99221E2D4210028CE25 /* Activity */,
@@ -185,9 +188,34 @@
 		4C73651B21E2E00000CD6939 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				4C73651C21E2E02100CD6939 /* ProfileViewController.swift */,
+				4C73651E21E2E1B800CD6939 /* Controller */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		4C73651E21E2E1B800CD6939 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C73651C21E2E02100CD6939 /* ProfileViewController.swift */,
+			);
+			name = Controller;
+			path = C;
+			sourceTree = "<group>";
+		};
+		4C73651F21E2E3A600CD6939 /* Add Cannabis */ = {
+			isa = PBXGroup;
+			children = (
+				4C73652021E2E3B600CD6939 /* Controller */,
+			);
+			path = "Add Cannabis";
+			sourceTree = "<group>";
+		};
+		4C73652021E2E3B600CD6939 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C73652121E2E3C100CD6939 /* AddCannabisViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4CFEE99221E2D4210028CE25 /* Activity */ = {
@@ -348,6 +376,7 @@
 			files = (
 				4C6AE63721E295A50083A8F8 /* HideKeyboard.swift in Sources */,
 				4C6AE60221E294B40083A8F8 /* ActivityViewController.swift in Sources */,
+				4C73652221E2E3C100CD6939 /* AddCannabisViewController.swift in Sources */,
 				4C73651721E2D97F00CD6939 /* ActivityCell.swift in Sources */,
 				4C6AE63421E2951E0083A8F8 /* Colors.swift in Sources */,
 				4C6AE60021E294B40083A8F8 /* AppDelegate.swift in Sources */,

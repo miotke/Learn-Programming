@@ -40,5 +40,11 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
 extension ActivityViewController {
     func setupNavigationController() {
         self.navigationItem.title = "Activity"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toAddCannabisViewController))
+    }
+    
+    @objc func toAddCannabisViewController() {
+        performSegue(withIdentifier: "toAddCannabisViewController", sender: self)
     }
 }
