@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sIT-HN-ES3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Track-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FuelTrackingViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUi-7C-sqd" customClass="ViewTitleLabel" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="W7V-ZC-msI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-LX-Yfd" customClass="SaveButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="v7c-0B-ALF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveTrackingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsW-jF-FRi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IQQ-po-mlY">
+                                <rect key="frame" x="16" y="140" width="343" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-q4-avq">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0JU-HL-Uvt" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28.5" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0JU-HL-Uvt" secondAttribute="trailing" constant="16" id="ctD-V8-RQH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-oi-X01">
+                                <rect key="frame" x="16" y="243.5" width="343" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orr-hO-qiG">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-Ri-wRA" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28.5" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wc9-Ri-wRA" secondAttribute="trailing" constant="16" id="YzA-x8-fj7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O5S-56-dYP">
+                                <rect key="frame" x="16" y="347" width="343" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkk-7m-T9L">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-GV-acM" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28.5" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c5y-GV-acM" secondAttribute="trailing" constant="16" id="wLv-oK-qXD"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-dx-LaX">
+                                <rect key="frame" x="16" y="450.5" width="343" height="78.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-Ae-Wyh">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="B13-U8-rpP">
+                                        <rect key="frame" x="0.0" y="28.5" width="310" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vgy-d3-ckh">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-9D-8j5" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="Ibd-sT-pEP"/>
+                                                            <constraint firstAttribute="height" constant="50" id="uYS-N1-fAD"/>
+                                                        </constraints>
+                                                        <state key="normal" title="87"/>
+                                                        <connections>
+                                                            <action selector="eightySevenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oe-lL-Ixq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYK-qV-9wq" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                        <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="KX1-WR-ieA"/>
+                                                            <constraint firstAttribute="height" constant="50" id="gzP-K7-x12"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="eightyNineButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPp-xb-bqM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-Lg-bLF" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="F9g-On-6s7"/>
+                                                            <constraint firstAttribute="height" constant="50" id="dob-n1-2V4"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="ninetyTwoButtonsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wjf-G5-J84"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plj-0S-F1E" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="BK5-Kz-2gq"/>
+                                                            <constraint firstAttribute="width" constant="50" id="zZw-ic-8kw"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="oneHundredButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJD-qS-O5T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-DW-wni" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                        <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="7rX-dq-3yz"/>
+                                                            <constraint firstAttribute="height" constant="50" id="K6W-Du-jlw"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="dieselButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTH-RV-T11"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Vgy-d3-ckh" firstAttribute="centerX" secondItem="B13-U8-rpP" secondAttribute="centerX" id="7hV-5I-68P"/>
+                                            <constraint firstItem="Vgy-d3-ckh" firstAttribute="centerY" secondItem="B13-U8-rpP" secondAttribute="centerY" id="wT0-J8-mwz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="tNV-wh-cuN"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rH0-dx-LaX" firstAttribute="top" secondItem="O5S-56-dYP" secondAttribute="bottom" constant="45" id="14h-MA-Dgc"/>
+                            <constraint firstItem="O5S-56-dYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Ij-V9-leM"/>
+                            <constraint firstItem="O5S-56-dYP" firstAttribute="top" secondItem="sLf-oi-X01" secondAttribute="bottom" constant="45" id="467-3V-npn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sLf-oi-X01" secondAttribute="trailing" constant="16" id="5vA-sH-G3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qHQ-LX-Yfd" secondAttribute="bottom" id="62d-qm-3Ix"/>
+                            <constraint firstItem="qHQ-LX-Yfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="94j-Hb-wUo"/>
+                            <constraint firstItem="sLf-oi-X01" firstAttribute="top" secondItem="IQQ-po-mlY" secondAttribute="bottom" constant="45" id="HGq-3f-H2B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O5S-56-dYP" secondAttribute="trailing" constant="16" id="IwE-Ld-wj8"/>
+                            <constraint firstItem="rH0-dx-LaX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LrR-IW-n5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rH0-dx-LaX" secondAttribute="trailing" constant="16" id="MCH-vY-Qeu"/>
+                            <constraint firstItem="sLf-oi-X01" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QdR-fz-sLg"/>
+                            <constraint firstItem="IQQ-po-mlY" firstAttribute="top" secondItem="kUi-7C-sqd" secondAttribute="bottom" constant="40" id="RkY-Js-r3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kUi-7C-sqd" secondAttribute="trailing" constant="16" id="WCU-Qt-ydM"/>
+                            <constraint firstItem="qHQ-LX-Yfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y0B-jU-38Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQQ-po-mlY" secondAttribute="trailing" constant="16" id="chB-sj-xAG"/>
+                            <constraint firstItem="kUi-7C-sqd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eeu-Ih-BdF"/>
+                            <constraint firstItem="IQQ-po-mlY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ma9-bO-qjp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qHQ-LX-Yfd" secondAttribute="trailing" id="wHH-ho-0st"/>
+                            <constraint firstItem="kUi-7C-sqd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wOO-Et-qbx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Track" image="gas-station" id="6hJ-he-erO"/>
+                    <connections>
+                        <outlet property="amountOfFuelPurchasedLabel" destination="orr-hO-qiG" id="HTc-XH-U5j"/>
+                        <outlet property="amountOfFuelPurchasedTextView" destination="Wc9-Ri-wRA" id="0WV-Nh-Izn"/>
+                        <outlet property="dieselOctane" destination="2gi-DW-wni" id="IZi-jW-5un"/>
+                        <outlet property="eightyNineOctane" destination="wYK-qV-9wq" id="kci-2p-z0L"/>
+                        <outlet property="eightySevenOctane" destination="7hR-9D-8j5" id="123-Vo-VUU"/>
+                        <outlet property="fuelTrackingTitleLabel" destination="kUi-7C-sqd" id="Q6O-Zx-fNt"/>
+                        <outlet property="milesSinceLastFuelPurchaseLabel" destination="Vkk-7m-T9L" id="YEb-Sd-kth"/>
+                        <outlet property="milesSinceLastFuelPurchaseTextView" destination="c5y-GV-acM" id="gui-kT-t7s"/>
+                        <outlet property="ninetyTwoOctane" destination="YV0-Lg-bLF" id="qgy-vl-dGM"/>
+                        <outlet property="octaneNumberLabel" destination="ZSs-Ae-Wyh" id="Lv0-Ym-5gS"/>
+                        <outlet property="oneHundredOctane" destination="Plj-0S-F1E" id="L9s-sH-JVI"/>
+                        <outlet property="priceOfFuelLabel" destination="kpp-q4-avq" id="x3L-8p-nBh"/>
+                        <outlet property="priceOfFuelTextView" destination="0JU-HL-Uvt" id="pNm-J8-Kul"/>
+                        <outlet property="saveButton" destination="qHQ-LX-Yfd" id="OAN-oi-IRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="857"/>
+        </scene>
+        <!--Track-->
+        <scene sceneID="rNP-Y4-9Lw">
+            <objects>
+                <viewController id="h7w-th-pb4" customClass="FuelTrackingCardViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHN-tW-9ze">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wO-Ln-J3C" customClass="ViewTitleLabel" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5Yc-1r-R94"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7M-aV-1MD" customClass="CardViewStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="25" y="171" width="325" height="325"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1F2-sN-oEr">
+                                        <rect key="frame" x="7.5" y="31" width="310" height="263"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="i2i-n1-pZW">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="150"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lik-NS-aLi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LY-lN-kVY" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-dT-Uf4">
+                                                        <rect key="frame" x="0.0" y="60" width="310" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJn-FK-DxV" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="f8X-Ow-aAb">
+                                                        <rect key="frame" x="0.0" y="120" width="310" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-bH-Faj" customClass="TextFieldStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-5k-doa">
+                                                <rect key="frame" x="0.0" y="180" width="310" height="83"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvg-8H-GbK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="DGg-6o-Vsg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ypT-fL-tKC">
+                                                        <rect key="frame" x="0.0" y="33" width="310" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MBT-Aw-1S1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvw-lb-RKh" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="6Te-S7-TbB"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="ME6-r4-k5b"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="87"/>
+                                                                        <connections>
+                                                                            <action selector="eightySevenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="as7-Q1-HHU"/>
+                                                                            <action selector="eightySevenOctaneButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="Asu-Hi-GWU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNM-wo-jdp" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                        <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="50" id="ATS-za-cqK"/>
+                                                                            <constraint firstAttribute="height" constant="50" id="e7P-R4-XBe"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="eightyNineButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ald-hB-YYV"/>
+                                                                            <action selector="eightyNineOctaneButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="fyg-S2-F7I"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-yJ-z0f" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="50" id="I6t-YT-uCg"/>
+                                                                            <constraint firstAttribute="height" constant="50" id="YRO-k1-ck2"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="ninetyTwoButtonsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rJ-Fi-pTt"/>
+                                                                            <action selector="ninetyTwoOctaneButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="mVC-kY-2Sy"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl7-IA-C4X" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="Ipm-Ay-jBu"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="tix-iN-IMc"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="oneHundredButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lT4-hO-ErO"/>
+                                                                            <action selector="oneHundredOctaneButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="BZF-LM-WBl"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6K-lB-A8F" customClass="OctaneButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                                                        <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="AYB-Ow-Oig"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="sg5-yK-GUF"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="dieselButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4K-fe-lJ3"/>
+                                                                            <action selector="dieselButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="pUp-Oo-34f"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="b4r-bv-gVm"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="i2i-n1-pZW" secondAttribute="trailing" id="3vt-kf-G9v"/>
+                                            <constraint firstItem="i2i-n1-pZW" firstAttribute="leading" secondItem="1F2-sN-oEr" secondAttribute="leading" id="KIW-GC-0zW"/>
+                                            <constraint firstAttribute="trailing" secondItem="WcZ-5k-doa" secondAttribute="trailing" id="StF-bn-Y1F"/>
+                                            <constraint firstItem="WcZ-5k-doa" firstAttribute="leading" secondItem="1F2-sN-oEr" secondAttribute="leading" id="ylF-rB-0Kk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="2LB-dr-GTi"/>
+                                    <constraint firstAttribute="height" constant="325" id="lJd-WB-DeK"/>
+                                    <constraint firstItem="1F2-sN-oEr" firstAttribute="centerX" secondItem="h7M-aV-1MD" secondAttribute="centerX" id="v8L-Iu-YJs"/>
+                                    <constraint firstItem="1F2-sN-oEr" firstAttribute="centerY" secondItem="h7M-aV-1MD" secondAttribute="centerY" id="wJW-3G-MZH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3u-4k-tt1" customClass="SaveButtonStyle" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="573" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DWs-lT-68T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="h7w-th-pb4" eventType="touchUpInside" id="NgO-43-ZEJ"/>
+                                    <action selector="saveTrackingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7nb-ZI-Rkl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-07-JKZ" customClass="LOTAnimationView">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="15j-4F-EBH"/>
+                                    <constraint firstAttribute="height" constant="200" id="SMR-IG-ewJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86384795984455964" green="0.6691411112607778" blue="0.081331524667797001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VS5-07-JKZ" firstAttribute="centerY" secondItem="kHN-tW-9ze" secondAttribute="centerY" id="81Y-jn-VCO"/>
+                            <constraint firstItem="k3u-4k-tt1" firstAttribute="leading" secondItem="ZUV-O1-U4V" secondAttribute="leading" id="AAE-r9-R1A"/>
+                            <constraint firstItem="ZUV-O1-U4V" firstAttribute="trailing" secondItem="k3u-4k-tt1" secondAttribute="trailing" id="ByU-8C-8c8"/>
+                            <constraint firstItem="5wO-Ln-J3C" firstAttribute="leading" secondItem="kHN-tW-9ze" secondAttribute="leading" constant="16" id="W1b-Xs-TMH"/>
+                            <constraint firstItem="ZUV-O1-U4V" firstAttribute="bottom" secondItem="k3u-4k-tt1" secondAttribute="bottom" id="aED-Dg-zIR"/>
+                            <constraint firstItem="h7M-aV-1MD" firstAttribute="centerY" secondItem="kHN-tW-9ze" secondAttribute="centerY" id="fro-K1-oYP"/>
+                            <constraint firstItem="VS5-07-JKZ" firstAttribute="centerX" secondItem="kHN-tW-9ze" secondAttribute="centerX" id="g7J-0G-jWT"/>
+                            <constraint firstItem="5wO-Ln-J3C" firstAttribute="top" secondItem="ZUV-O1-U4V" secondAttribute="top" id="nId-8u-L0U"/>
+                            <constraint firstItem="h7M-aV-1MD" firstAttribute="centerX" secondItem="kHN-tW-9ze" secondAttribute="centerX" id="nQR-Ry-QHK"/>
+                            <constraint firstItem="ZUV-O1-U4V" firstAttribute="trailing" secondItem="5wO-Ln-J3C" secondAttribute="trailing" constant="16" id="pLJ-4T-TbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUV-O1-U4V"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Track" image="gas-station" id="TtS-et-oR7"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="amountOfFuelPurchasedTextField" destination="PJn-FK-DxV" id="FvB-Rt-u0F"/>
+                        <outlet property="dieselButton" destination="y6K-lB-A8F" id="Idl-z9-RAz"/>
+                        <outlet property="eightyNineOctaneButton" destination="bNM-wo-jdp" id="hs3-OT-SME"/>
+                        <outlet property="eightySevenOctaneButton" destination="Nvw-lb-RKh" id="jnZ-B9-G0n"/>
+                        <outlet property="fuelTrackingTitleLabel" destination="5wO-Ln-J3C" id="hkP-y5-LiT"/>
+                        <outlet property="milesSinceFuelSTopTextField" destination="XuU-bH-Faj" id="IaN-h2-C8k"/>
+                        <outlet property="ninetyTwoOctaneButton" destination="jZo-yJ-z0f" id="H11-GY-2fx"/>
+                        <outlet property="octaneNumberLabel" destination="Zvg-8H-GbK" id="l7h-vP-Yr0"/>
+                        <outlet property="oneHundredOctaneButton" destination="rl7-IA-C4X" id="yPZ-Dk-uEE"/>
+                        <outlet property="priceOfFuelTextField" destination="5LY-lN-kVY" id="GqJ-eB-SIA"/>
+                        <outlet property="saveSuccessfulAnimiation" destination="VS5-07-JKZ" id="mNn-Eu-2S3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUl-l9-eA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="134"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zSI-SJ-cFT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sIT-HN-ES3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ELX-bM-7GN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h7w-th-pb4" kind="relationship" relationship="viewControllers" id="Ac9-hJ-MfI"/>
+                        <segue destination="IJv-FQ-lqZ" kind="relationship" relationship="viewControllers" id="W54-Xr-l47"/>
+                        <segue destination="ARg-Sr-oTe" kind="relationship" relationship="viewControllers" id="297-c1-rPa"/>
+                        <segue destination="8Ga-CL-bA2" kind="relationship" relationship="viewControllers" id="Scy-I1-2Aq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCi-Bh-bz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="6QS-rE-Yi2">
+            <objects>
+                <viewController id="IJv-FQ-lqZ" customClass="FuelTrackingHistoryViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPI-KK-lBx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMR-fk-VDG" customClass="ViewTitleLabel" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UJU-cb-fsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-Cd-sdq">
+                                <rect key="frame" x="16" y="100" width="343" height="518"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="123" id="Z2r-iO-3rm" customClass="TableViewCell" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="123"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z2r-iO-3rm" id="M91-zg-uuN">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="122.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggy-tu-0hc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="f1X-ge-xgH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-T3-Kdo">
+                                                    <rect key="frame" x="0.0" y="40" width="343" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="eNU-f1-ZyP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWs-m1-06h">
+                                                    <rect key="frame" x="0.0" y="70" width="343" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="ZXL-5p-dyj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ggy-tu-0hc" firstAttribute="leading" secondItem="M91-zg-uuN" secondAttribute="leading" id="1Aq-BU-deL"/>
+                                                <constraint firstItem="ggy-tu-0hc" firstAttribute="top" secondItem="M91-zg-uuN" secondAttribute="top" id="8MX-wD-5R7"/>
+                                                <constraint firstAttribute="trailing" secondItem="EeY-T3-Kdo" secondAttribute="trailing" id="JFx-Vk-BLs"/>
+                                                <constraint firstAttribute="trailing" secondItem="qWs-m1-06h" secondAttribute="trailing" id="WK0-JJ-VhN"/>
+                                                <constraint firstItem="qWs-m1-06h" firstAttribute="leading" secondItem="M91-zg-uuN" secondAttribute="leading" id="Yz0-s7-nKq"/>
+                                                <constraint firstItem="EeY-T3-Kdo" firstAttribute="leading" secondItem="M91-zg-uuN" secondAttribute="leading" id="cwp-qT-SWU"/>
+                                                <constraint firstItem="qWs-m1-06h" firstAttribute="top" secondItem="EeY-T3-Kdo" secondAttribute="bottom" constant="5" id="giA-iq-83C"/>
+                                                <constraint firstAttribute="trailing" secondItem="ggy-tu-0hc" secondAttribute="trailing" id="jZZ-gS-xFx"/>
+                                                <constraint firstAttribute="bottom" secondItem="qWs-m1-06h" secondAttribute="bottom" constant="27.5" id="slA-WJ-Zdr"/>
+                                                <constraint firstItem="EeY-T3-Kdo" firstAttribute="top" secondItem="ggy-tu-0hc" secondAttribute="bottom" id="zfk-jh-KwQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountSpentLabel" destination="qWs-m1-06h" id="1hk-me-xfc"/>
+                                            <outlet property="dateLabel" destination="ggy-tu-0hc" id="GVJ-8p-s35"/>
+                                            <outlet property="octaneLevelLabel" destination="EeY-T3-Kdo" id="QFK-R2-eJN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eMR-fk-VDG" firstAttribute="leading" secondItem="l8v-jC-N2A" secondAttribute="leading" constant="16" id="1eU-cP-f0x"/>
+                            <constraint firstItem="NSj-Cd-sdq" firstAttribute="leading" secondItem="l8v-jC-N2A" secondAttribute="leading" constant="16" id="3xC-eb-zCJ"/>
+                            <constraint firstItem="NSj-Cd-sdq" firstAttribute="top" secondItem="eMR-fk-VDG" secondAttribute="bottom" id="LMa-mn-CuH"/>
+                            <constraint firstItem="l8v-jC-N2A" firstAttribute="bottom" secondItem="NSj-Cd-sdq" secondAttribute="bottom" id="OtW-xn-HJo"/>
+                            <constraint firstItem="l8v-jC-N2A" firstAttribute="trailing" secondItem="NSj-Cd-sdq" secondAttribute="trailing" constant="16" id="kQQ-0g-hh0"/>
+                            <constraint firstItem="l8v-jC-N2A" firstAttribute="trailing" secondItem="eMR-fk-VDG" secondAttribute="trailing" constant="16" id="kpF-Zn-n7L"/>
+                            <constraint firstItem="eMR-fk-VDG" firstAttribute="top" secondItem="l8v-jC-N2A" secondAttribute="top" id="y3T-ad-WUI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l8v-jC-N2A"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" image="history" id="frw-ev-ls0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fuelTrackingHistoryLabel" destination="eMR-fk-VDG" id="zEZ-aO-o0m"/>
+                        <outlet property="tableView" destination="NSj-Cd-sdq" id="UwO-Vq-Pg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HxR-Yu-lSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-226"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="QVy-iZ-Vuh">
+            <objects>
+                <viewController id="8Ga-CL-bA2" customClass="SettingsViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHN-co-1Qo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-V8-ZMd" customClass="ViewTitleLabel" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BSc-ML-W1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="dMJ-LI-0K7">
+                                <rect key="frame" x="16" y="108" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-nL-zuz">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-WP-fiY" customClass="ViewToSButton" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="0.0" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="lO2-dy-ZhY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="MKF-4q-uJY" kind="show" id="GTu-C7-8LT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2O-dJ-IDx" customClass="StyleResetAllDataButton" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="573" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="A0t-jg-JEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resetAllDataButtonWasPressed:" destination="8Ga-CL-bA2" eventType="touchUpInside" id="YKW-ts-zEh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ky3-Ds-9ao" customClass="LOTAnimationView">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6W3-Pm-yQC"/>
+                                    <constraint firstAttribute="height" constant="200" id="nXd-V2-ipr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ky3-Ds-9ao" firstAttribute="centerX" secondItem="lHN-co-1Qo" secondAttribute="centerX" id="7SP-gH-oGN"/>
+                            <constraint firstItem="l2O-dJ-IDx" firstAttribute="leading" secondItem="GOB-fX-A4Z" secondAttribute="leading" id="9v5-h1-KmV"/>
+                            <constraint firstItem="GOB-fX-A4Z" firstAttribute="trailing" secondItem="l2O-dJ-IDx" secondAttribute="trailing" id="Asp-Uz-lwM"/>
+                            <constraint firstItem="GOB-fX-A4Z" firstAttribute="trailing" secondItem="dMJ-LI-0K7" secondAttribute="trailing" constant="16" id="GNT-fy-72u"/>
+                            <constraint firstItem="ky3-Ds-9ao" firstAttribute="centerY" secondItem="lHN-co-1Qo" secondAttribute="centerY" id="IX3-h4-nMU"/>
+                            <constraint firstItem="dMJ-LI-0K7" firstAttribute="top" secondItem="vaR-V8-ZMd" secondAttribute="bottom" constant="8" id="QRd-fa-9TR"/>
+                            <constraint firstItem="GOB-fX-A4Z" firstAttribute="trailing" secondItem="vaR-V8-ZMd" secondAttribute="trailing" constant="16" id="S9e-tx-Lgk"/>
+                            <constraint firstItem="vaR-V8-ZMd" firstAttribute="leading" secondItem="GOB-fX-A4Z" secondAttribute="leading" constant="16" id="cjJ-bd-opu"/>
+                            <constraint firstItem="dMJ-LI-0K7" firstAttribute="leading" secondItem="GOB-fX-A4Z" secondAttribute="leading" constant="16" id="klD-ow-1mm"/>
+                            <constraint firstItem="vaR-V8-ZMd" firstAttribute="top" secondItem="GOB-fX-A4Z" secondAttribute="top" id="t2R-q1-3sq"/>
+                            <constraint firstItem="l2O-dJ-IDx" firstAttribute="bottom" secondItem="GOB-fX-A4Z" secondAttribute="bottom" id="xyQ-zC-HaP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GOB-fX-A4Z"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="dYD-6J-JV1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="clearDataSuccessAnimation" destination="ky3-Ds-9ao" id="ZHU-SB-PDc"/>
+                        <outlet property="resetAllDataButton" destination="l2O-dJ-IDx" id="dKs-5D-PYw"/>
+                        <outlet property="settingsLabel" destination="vaR-V8-ZMd" id="Ohn-LB-vzL"/>
+                        <outlet property="viewToSLabel" destination="IjP-nL-zuz" id="f1N-L6-ibA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nda-GY-SAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="857"/>
+        </scene>
+        <!--Terms Of Service View Controller-->
+        <scene sceneID="eqb-Aa-8Lz">
+            <objects>
+                <viewController id="MKF-4q-uJY" customClass="TermsOfServiceViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7eW-dO-0Nm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c3p-cJ-5Vh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMr-sk-nDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="1596.2518740629687"/>
+        </scene>
+        <!--Graph-->
+        <scene sceneID="yEf-EV-NMx">
+            <objects>
+                <viewController id="ARg-Sr-oTe" customClass="FuelGraphViewController" customModule="Gas_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kD9-ZB-1jd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-vn-ZCW">
+                                <rect key="frame" x="16" y="108" width="343" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LineChartCell" rowHeight="202" id="uBr-hw-diR" customClass="GraphViewCells" customModule="Gas_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="202"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uBr-hw-diR" id="nH6-if-5lY">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="201.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrH-mr-NgG" customClass="LineChartView" customModule="Charts">
+                                                    <rect key="frame" x="15" y="11" width="313" height="180"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="313" id="Uzn-sx-By4"/>
+                                                        <constraint firstAttribute="height" constant="180" id="wzp-4O-afY"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PrH-mr-NgG" firstAttribute="leading" secondItem="nH6-if-5lY" secondAttribute="leadingMargin" id="DxT-zk-yPU"/>
+                                                <constraint firstItem="PrH-mr-NgG" firstAttribute="bottom" secondItem="nH6-if-5lY" secondAttribute="bottomMargin" id="bQX-Mx-ihN"/>
+                                                <constraint firstItem="PrH-mr-NgG" firstAttribute="trailing" secondItem="nH6-if-5lY" secondAttribute="trailingMargin" id="rIg-2m-Ek7"/>
+                                                <constraint firstItem="PrH-mr-NgG" firstAttribute="top" secondItem="nH6-if-5lY" secondAttribute="topMargin" id="vXh-zy-czh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lineChartView" destination="PrH-mr-NgG" id="CSl-ZF-1Zp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZY-30-N5k" customClass="ViewTitleLabel" customModule="Gas_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="k2c-9X-TTX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a5M-vn-ZCW" firstAttribute="top" secondItem="fZY-30-N5k" secondAttribute="bottom" constant="8" id="CAv-Ji-OOt"/>
+                            <constraint firstItem="9Cf-nK-cux" firstAttribute="trailing" secondItem="fZY-30-N5k" secondAttribute="trailing" constant="16" id="Oyd-Pb-2oG"/>
+                            <constraint firstItem="fZY-30-N5k" firstAttribute="leading" secondItem="9Cf-nK-cux" secondAttribute="leading" constant="16" id="T6v-TE-kmD"/>
+                            <constraint firstItem="9Cf-nK-cux" firstAttribute="trailing" secondItem="a5M-vn-ZCW" secondAttribute="trailing" constant="16" id="i7U-UN-Pjs"/>
+                            <constraint firstItem="a5M-vn-ZCW" firstAttribute="leading" secondItem="9Cf-nK-cux" secondAttribute="leading" constant="16" id="xbP-kH-ChF"/>
+                            <constraint firstItem="a5M-vn-ZCW" firstAttribute="bottom" secondItem="9Cf-nK-cux" secondAttribute="bottom" id="xe5-6M-BIy"/>
+                            <constraint firstItem="fZY-30-N5k" firstAttribute="top" secondItem="9Cf-nK-cux" secondAttribute="top" id="yZT-7y-vnt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Cf-nK-cux"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Graph" image="graph" id="lWV-XK-3On"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="graphViewTitle" destination="fZY-30-N5k" id="sTh-nM-G6S"/>
+                        <outlet property="tableview" destination="a5M-vn-ZCW" id="8nn-GC-i1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRS-3H-BtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="519.49025487256381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gas-station" width="18.75" height="18.75"/>
+        <image name="graph" width="18.75" height="18.75"/>
+        <image name="history" width="18.75" height="18.75"/>
+        <image name="settings" width="18.75" height="18.75"/>
+    </resources>
+</document>
