@@ -1,0 +1,45 @@
+html, body {
+	font-family: 'monterrat', sans-serif;
+	background-color: #272822;
+}
+
+h1 {
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 400;
+	padding-left: 20px;
+	border-left: 2px solid #00f28f;
+}
+
+#displayRestaurant {
+	color: white;
+	font-size: 38px;
+	font-weight: 200;
+	padding-left: 20px;
+	border-left: 2px solid #FFF;
+	margin-top: 5%;
+}
+
+input {
+	background-color: #272822;
+	border-color: #272822;
+	border: 0;
+}
+
+.btn {
+	margin-top: 50%;
+	margin-left: 70%;
+	border: none;
+	background-color: #FFF;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+footer {
+	color: grey;
+	text-align: center;
+	position: fixed;
+	padding-top: 20px;
+	bottom: 0px;
+	width: 100%;
+}
