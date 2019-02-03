@@ -1,5 +1,0 @@
-PART 1: https://kylewbanks.com/blog/react-native-tutorial-part-1-hello-react
-
-PART 2: https://kylewbanks.com/blog/react-native-tutorial-part-2-designing-a-calculator
-
-PART 3: https://kylewbanks.com/blog/react-native-tutorial-part-3-developing-a-calculator
