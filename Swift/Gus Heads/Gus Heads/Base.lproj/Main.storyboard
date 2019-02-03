@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GusVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GusVC" customModule="Gus_Heads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9f-dW-N7P">
+                                <rect key="frame" x="0.0" y="20" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEU-wx-Xqm">
+                                <rect key="frame" x="16" y="66" width="343" height="345"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-0C-p8c">
+                                <rect key="frame" x="87.5" y="576.5" width="200" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXd-ND-yik">
+                                        <rect key="frame" x="79" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSP-W8-ufd">
+                                        <rect key="frame" x="77" y="40.5" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="chooseGusButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiQ-mD-cN4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="R1R-xT-Kk8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nbM-0C-p8c" secondAttribute="bottom" constant="20" id="8wq-uy-7df"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TEU-wx-Xqm" secondAttribute="trailing" constant="16" id="9Xx-rq-mRL"/>
+                            <constraint firstItem="nbM-0C-p8c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aQ-Xg-wLg"/>
+                            <constraint firstItem="X9f-dW-N7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HnT-q5-4ju"/>
+                            <constraint firstItem="X9f-dW-N7P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UeV-rn-Asn"/>
+                            <constraint firstItem="X9f-dW-N7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VEs-UJ-1ZN"/>
+                            <constraint firstItem="TEU-wx-Xqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vus-fz-MUd"/>
+                            <constraint firstItem="TEU-wx-Xqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQM-sz-HPI"/>
+                            <constraint firstItem="TEU-wx-Xqm" firstAttribute="top" secondItem="X9f-dW-N7P" secondAttribute="bottom" constant="8" id="u0Z-pd-86R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseGusButton" destination="nSP-W8-ufd" id="pgK-Dk-00L"/>
+                        <outlet property="chooseGusButtonLabel" destination="cXd-ND-yik" id="3mQ-vK-Tjc"/>
+                        <outlet property="gusImage" destination="TEU-wx-Xqm" id="asc-NR-g45"/>
+                        <outlet property="gusLabel" destination="X9f-dW-N7P" id="Cm8-Uv-lB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Choose Gus HeadVC-->
+        <scene sceneID="F4r-IX-jKL">
+            <objects>
+                <viewController id="1ho-3W-LJy" customClass="ChooseGusHeadVC" customModule="Gus_Heads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XVP-7Z-RA7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-GD-e5J">
+                                <rect key="frame" x="16" y="20" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7Hz-IY-ieh">
+                                <rect key="frame" x="172.5" y="140.5" width="30" height="386"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-mb-iiy">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="66"/>
+                                        <connections>
+                                            <action selector="gus1:" destination="1ho-3W-LJy" eventType="touchUpInside" id="T8S-9g-HMj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-k7-Zxu">
+                                        <rect key="frame" x="0.0" y="116" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="gus2:" destination="1ho-3W-LJy" eventType="touchUpInside" id="qJK-DJ-dIs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bM-E0-jml">
+                                        <rect key="frame" x="0.0" y="196" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="gus3:" destination="1ho-3W-LJy" eventType="touchUpInside" id="yxF-85-1Jd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dST-5D-u6S">
+                                        <rect key="frame" x="0.0" y="276" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="gus4:" destination="1ho-3W-LJy" eventType="touchUpInside" id="Evq-jd-sth"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vti-AW-kRd">
+                                        <rect key="frame" x="0.0" y="356" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="gus5:" destination="1ho-3W-LJy" eventType="touchUpInside" id="cdU-CJ-gRN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bbe-GD-e5J" firstAttribute="leading" secondItem="ztb-xi-Ian" secondAttribute="leading" constant="16" id="12b-j4-OuW"/>
+                            <constraint firstItem="Bbe-GD-e5J" firstAttribute="top" secondItem="ztb-xi-Ian" secondAttribute="top" id="Ehm-Zm-zKi"/>
+                            <constraint firstItem="Bbe-GD-e5J" firstAttribute="top" secondItem="ztb-xi-Ian" secondAttribute="top" id="LuO-4R-QCs"/>
+                            <constraint firstItem="7Hz-IY-ieh" firstAttribute="centerX" secondItem="XVP-7Z-RA7" secondAttribute="centerX" id="aSi-04-6Bb"/>
+                            <constraint firstItem="Bbe-GD-e5J" firstAttribute="leading" secondItem="ztb-xi-Ian" secondAttribute="leading" constant="16" id="fwI-NB-52l"/>
+                            <constraint firstItem="7Hz-IY-ieh" firstAttribute="top" secondItem="Bbe-GD-e5J" secondAttribute="bottom" constant="100" id="gYv-Oc-i46"/>
+                            <constraint firstItem="7Hz-IY-ieh" firstAttribute="centerY" secondItem="XVP-7Z-RA7" secondAttribute="centerY" id="hIR-UI-Loy"/>
+                            <constraint firstItem="ztb-xi-Ian" firstAttribute="trailing" secondItem="Bbe-GD-e5J" secondAttribute="trailing" constant="16" id="pkh-2B-f6g"/>
+                            <constraint firstItem="ztb-xi-Ian" firstAttribute="trailing" secondItem="Bbe-GD-e5J" secondAttribute="trailing" constant="16" id="x1I-Wn-fSB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ztb-xi-Ian"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseGusLabel" destination="Bbe-GD-e5J" id="IgC-XB-2he"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ija-tK-taU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C07D03521E16FAA00E335BF /* GraphViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07D03421E16FAA00E335BF /* GraphViewCells.swift */; };
+		4C07D03821E17C0A00E335BF /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07D03721E17C0A00E335BF /* HideKeyboard.swift */; };
+		4C158DC321C6F06D00BD2843 /* FuelTrackingCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C158DC221C6F06D00BD2843 /* FuelTrackingCardViewController.swift */; };
+		4C158DC521C737FA00BD2843 /* CardViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C158DC421C737FA00BD2843 /* CardViewStyle.swift */; };
+		4C3AEC5B21BC3A6C008673CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC5A21BC3A6C008673CD /* AppDelegate.swift */; };
+		4C3AEC5D21BC3A6C008673CD /* FuelTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC5C21BC3A6C008673CD /* FuelTrackingViewController.swift */; };
+		4C3AEC6021BC3A6C008673CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AEC5E21BC3A6C008673CD /* Main.storyboard */; };
+		4C3AEC6321BC3A6C008673CD /* Gas_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC6121BC3A6C008673CD /* Gas_Tracker.xcdatamodeld */; };
+		4C3AEC6521BC3A6C008673CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AEC6421BC3A6C008673CD /* Assets.xcassets */; };
+		4C3AEC6821BC3A6C008673CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AEC6621BC3A6C008673CD /* LaunchScreen.storyboard */; };
+		4C3AEC7321BC3A6C008673CD /* Gas_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC7221BC3A6C008673CD /* Gas_TrackerTests.swift */; };
+		4C3AEC7E21BC3A6C008673CD /* Gas_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC7D21BC3A6C008673CD /* Gas_TrackerUITests.swift */; };
+		4C3AEC8F21BC4E48008673CD /* OctaneButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC8E21BC4E48008673CD /* OctaneButtonStyle.swift */; };
+		4C3AEC9221BC52DD008673CD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC9121BC52DD008673CD /* CoreDataManager.swift */; };
+		4C3AEC9521BC55FB008673CD /* FuelTrackingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC9421BC55FB008673CD /* FuelTrackingHistoryViewController.swift */; };
+		4C3AEC9721BC574D008673CD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC9621BC574D008673CD /* TableViewCell.swift */; };
+		4C3AEC9921BC59E1008673CD /* FuelGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AEC9821BC59E1008673CD /* FuelGraphViewController.swift */; };
+		4C46226821BD96E000148A15 /* StyleResetAllDataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46226721BD96E000148A15 /* StyleResetAllDataButton.swift */; };
+		4C7B054221E123FD0058EDB3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B054121E123FD0058EDB3 /* Colors.swift */; };
+		4C7B054421E1270C0058EDB3 /* clear_data_cross.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B054321E1270C0058EDB3 /* clear_data_cross.json */; };
+		4CB44C9621E190A100D88533 /* ViewToSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB44C9521E190A100D88533 /* ViewToSButton.swift */; };
+		4CB44C9821E191C900D88533 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB44C9721E191C900D88533 /* TermsOfServiceViewController.swift */; };
+		4CB7FA7921BD94C000A41E35 /* GetCurrentDateWhenSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7FA7821BD94C000A41E35 /* GetCurrentDateWhenSaving.swift */; };
+		4CBFCE8421BC9E95007537B1 /* SaveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFCE8321BC9E95007537B1 /* SaveButtonStyle.swift */; };
+		4CBFCE8621BCA1B1007537B1 /* TextViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFCE8521BCA1B1007537B1 /* TextViewStyle.swift */; };
+		4CBFCE8821BCA2C1007537B1 /* ViewTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFCE8721BCA2C1007537B1 /* ViewTitleLabel.swift */; };
+		4CBFCE8A21BCA35C007537B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFCE8921BCA35C007537B1 /* SettingsViewController.swift */; };
+		4CBFCE8C21BCA87D007537B1 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFCE8B21BCA87D007537B1 /* SettingsTests.swift */; };
+		4CC26A8021CFFA8D00816EFD /* save_complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CC26A7F21CFFA8D00816EFD /* save_complete.json */; };
+		5B1F9C35E38A80FA33F0506A /* Pods_Gas_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5F659A7BEA526E414E3BC3 /* Pods_Gas_TrackerTests.framework */; };
+		E276CCD5612C15551CE73E42 /* Pods_Gas_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395E65B0D0C43FBFD5813EEB /* Pods_Gas_TrackerUITests.framework */; };
+		EABA3483BB4C3986E88A2D8E /* Pods_Gas_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52114BBB4385D54A6E814C5A /* Pods_Gas_Tracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C3AEC6F21BC3A6C008673CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3AEC4F21BC3A6B008673CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3AEC5621BC3A6B008673CD;
+			remoteInfo = "Gas Tracker";
+		};
+		4C3AEC7A21BC3A6C008673CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3AEC4F21BC3A6B008673CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3AEC5621BC3A6B008673CD;
+			remoteInfo = "Gas Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		217FE8B3C6343CC0483C819A /* Pods-Gas TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gas TrackerTests/Pods-Gas TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		25817E4E16EF735994D39539 /* Pods-Gas Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gas Tracker/Pods-Gas Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		395E65B0D0C43FBFD5813EEB /* Pods_Gas_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gas_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C07D03421E16FAA00E335BF /* GraphViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewCells.swift; sourceTree = "<group>"; };
+		4C07D03721E17C0A00E335BF /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		4C158DC221C6F06D00BD2843 /* FuelTrackingCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackingCardViewController.swift; sourceTree = "<group>"; };
+		4C158DC421C737FA00BD2843 /* CardViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewStyle.swift; sourceTree = "<group>"; };
+		4C3AEC5721BC3A6C008673CD /* Gas Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gas Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3AEC5A21BC3A6C008673CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C3AEC5C21BC3A6C008673CD /* FuelTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackingViewController.swift; sourceTree = "<group>"; };
+		4C3AEC5F21BC3A6C008673CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C3AEC6221BC3A6C008673CD /* Gas_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gas_Tracker.xcdatamodel; sourceTree = "<group>"; };
+		4C3AEC6421BC3A6C008673CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3AEC6721BC3A6C008673CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C3AEC6921BC3A6C008673CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3AEC6E21BC3A6C008673CD /* Gas TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gas TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3AEC7221BC3A6C008673CD /* Gas_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gas_TrackerTests.swift; sourceTree = "<group>"; };
+		4C3AEC7421BC3A6C008673CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3AEC7921BC3A6C008673CD /* Gas TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gas TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3AEC7D21BC3A6C008673CD /* Gas_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gas_TrackerUITests.swift; sourceTree = "<group>"; };
+		4C3AEC7F21BC3A6C008673CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3AEC8E21BC4E48008673CD /* OctaneButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaneButtonStyle.swift; sourceTree = "<group>"; };
+		4C3AEC9121BC52DD008673CD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4C3AEC9421BC55FB008673CD /* FuelTrackingHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackingHistoryViewController.swift; sourceTree = "<group>"; };
+		4C3AEC9621BC574D008673CD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4C3AEC9821BC59E1008673CD /* FuelGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelGraphViewController.swift; sourceTree = "<group>"; };
+		4C46226721BD96E000148A15 /* StyleResetAllDataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleResetAllDataButton.swift; sourceTree = "<group>"; };
+		4C7B054121E123FD0058EDB3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4C7B054321E1270C0058EDB3 /* clear_data_cross.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clear_data_cross.json; sourceTree = "<group>"; };
+		4CB44C9521E190A100D88533 /* ViewToSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToSButton.swift; sourceTree = "<group>"; };
+		4CB44C9721E191C900D88533 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		4CB7FA7821BD94C000A41E35 /* GetCurrentDateWhenSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentDateWhenSaving.swift; sourceTree = "<group>"; };
+		4CBFCE8321BC9E95007537B1 /* SaveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonStyle.swift; sourceTree = "<group>"; };
+		4CBFCE8521BCA1B1007537B1 /* TextViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewStyle.swift; sourceTree = "<group>"; };
+		4CBFCE8721BCA2C1007537B1 /* ViewTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTitleLabel.swift; sourceTree = "<group>"; };
+		4CBFCE8921BCA35C007537B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4CBFCE8B21BCA87D007537B1 /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		4CC26A7F21CFFA8D00816EFD /* save_complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = save_complete.json; sourceTree = "<group>"; };
+		52114BBB4385D54A6E814C5A /* Pods_Gas_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gas_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5F659A7BEA526E414E3BC3 /* Pods_Gas_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gas_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		768735D6F2DB057B3EECA4DD /* Pods-Gas TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas TrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gas TrackerUITests/Pods-Gas TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F10561C884B2ED485A3D63DB /* Pods-Gas TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gas TrackerTests/Pods-Gas TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F18FEF481125B8B8F9E97894 /* Pods-Gas Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gas Tracker/Pods-Gas Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		FAD012F7C8BC7BB23EEC3FB3 /* Pods-Gas TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas TrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gas TrackerUITests/Pods-Gas TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C3AEC5421BC3A6B008673CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABA3483BB4C3986E88A2D8E /* Pods_Gas_Tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC6B21BC3A6C008673CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1F9C35E38A80FA33F0506A /* Pods_Gas_TrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC7621BC3A6C008673CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E276CCD5612C15551CE73E42 /* Pods_Gas_TrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37C64676DD05886BB0A092BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52114BBB4385D54A6E814C5A /* Pods_Gas_Tracker.framework */,
+				6F5F659A7BEA526E414E3BC3 /* Pods_Gas_TrackerTests.framework */,
+				395E65B0D0C43FBFD5813EEB /* Pods_Gas_TrackerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C07D03621E17BF600E335BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C07D03721E17C0A00E335BF /* HideKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C158DC621C75C4E00BD2843 /* Old UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC5C21BC3A6C008673CD /* FuelTrackingViewController.swift */,
+			);
+			path = "Old UI";
+			sourceTree = "<group>";
+		};
+		4C32EEBF21E17CA7008DE92B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C07D03421E16FAA00E335BF /* GraphViewCells.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C3AEC4E21BC3A6B008673CD = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC5921BC3A6C008673CD /* Gas Tracker */,
+				4C3AEC7121BC3A6C008673CD /* Gas TrackerTests */,
+				4C3AEC7C21BC3A6C008673CD /* Gas TrackerUITests */,
+				4C3AEC5821BC3A6C008673CD /* Products */,
+				793FFCB1A2CF8C257704CF6F /* Pods */,
+				37C64676DD05886BB0A092BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C3AEC5821BC3A6C008673CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC5721BC3A6C008673CD /* Gas Tracker.app */,
+				4C3AEC6E21BC3A6C008673CD /* Gas TrackerTests.xctest */,
+				4C3AEC7921BC3A6C008673CD /* Gas TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C3AEC5921BC3A6C008673CD /* Gas Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B054021E123F00058EDB3 /* Constants */,
+				4CE32A2B21C0BF3100794765 /* Global */,
+				4CE32A2A21C0BEDB00794765 /* Fuel Tracking Settings */,
+				4CE32A2921C0BEC900794765 /* Fuel Tracking Graph */,
+				4CE32A2821C0BEBB00794765 /* Fuel Tracking History */,
+				4CE32A2721C0BEB000794765 /* Fuel Tracking */,
+				4CBFCE8221BC9114007537B1 /* Supporting Files */,
+			);
+			path = "Gas Tracker";
+			sourceTree = "<group>";
+		};
+		4C3AEC7121BC3A6C008673CD /* Gas TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC7221BC3A6C008673CD /* Gas_TrackerTests.swift */,
+				4CBFCE8B21BCA87D007537B1 /* SettingsTests.swift */,
+				4C3AEC7421BC3A6C008673CD /* Info.plist */,
+			);
+			path = "Gas TrackerTests";
+			sourceTree = "<group>";
+		};
+		4C3AEC7C21BC3A6C008673CD /* Gas TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC7D21BC3A6C008673CD /* Gas_TrackerUITests.swift */,
+				4C3AEC7F21BC3A6C008673CD /* Info.plist */,
+			);
+			path = "Gas TrackerUITests";
+			sourceTree = "<group>";
+		};
+		4C3AEC8B21BC3A7D008673CD /* Global View */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC5E21BC3A6C008673CD /* Main.storyboard */,
+				4CBFCE8721BCA2C1007537B1 /* ViewTitleLabel.swift */,
+			);
+			path = "Global View";
+			sourceTree = "<group>";
+		};
+		4C3AEC9021BC52C8008673CD /* Global Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC9121BC52DD008673CD /* CoreDataManager.swift */,
+				4CB7FA7821BD94C000A41E35 /* GetCurrentDateWhenSaving.swift */,
+			);
+			path = "Global Model";
+			sourceTree = "<group>";
+		};
+		4C7B054021E123F00058EDB3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B054121E123FD0058EDB3 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4CBFCE8221BC9114007537B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CC26A8121CFFA9800816EFD /* Lottie Files */,
+				4C3AEC5A21BC3A6C008673CD /* AppDelegate.swift */,
+				4C3AEC6421BC3A6C008673CD /* Assets.xcassets */,
+				4C3AEC6621BC3A6C008673CD /* LaunchScreen.storyboard */,
+				4C3AEC6121BC3A6C008673CD /* Gas_Tracker.xcdatamodeld */,
+				4C3AEC6921BC3A6C008673CD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CC26A8121CFFA9800816EFD /* Lottie Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B054321E1270C0058EDB3 /* clear_data_cross.json */,
+				4CC26A7F21CFFA8D00816EFD /* save_complete.json */,
+			);
+			path = "Lottie Files";
+			sourceTree = "<group>";
+		};
+		4CE32A2721C0BEB000794765 /* Fuel Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				4C158DC621C75C4E00BD2843 /* Old UI */,
+				4CE32A2D21C0BF6700794765 /* View */,
+				4CE32A2C21C0BF5A00794765 /* Controller */,
+			);
+			path = "Fuel Tracking";
+			sourceTree = "<group>";
+		};
+		4CE32A2821C0BEBB00794765 /* Fuel Tracking History */ = {
+			isa = PBXGroup;
+			children = (
+				4CE32A2F21C0BF8600794765 /* View */,
+				4CE32A2E21C0BF7200794765 /* Controller */,
+			);
+			path = "Fuel Tracking History";
+			sourceTree = "<group>";
+		};
+		4CE32A2921C0BEC900794765 /* Fuel Tracking Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4C32EEBF21E17CA7008DE92B /* View */,
+				4CE32A3021C0BF9200794765 /* Controller */,
+			);
+			path = "Fuel Tracking Graph";
+			sourceTree = "<group>";
+		};
+		4CE32A2A21C0BEDB00794765 /* Fuel Tracking Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4CE32A3221C0BFC700794765 /* View */,
+				4CE32A3121C0BF9E00794765 /* Controller */,
+			);
+			path = "Fuel Tracking Settings";
+			sourceTree = "<group>";
+		};
+		4CE32A2B21C0BF3100794765 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				4C07D03621E17BF600E335BF /* Extensions */,
+				4C3AEC9021BC52C8008673CD /* Global Model */,
+				4C3AEC8B21BC3A7D008673CD /* Global View */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		4CE32A2C21C0BF5A00794765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C158DC221C6F06D00BD2843 /* FuelTrackingCardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CE32A2D21C0BF6700794765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFCE8321BC9E95007537B1 /* SaveButtonStyle.swift */,
+				4C3AEC8E21BC4E48008673CD /* OctaneButtonStyle.swift */,
+				4CBFCE8521BCA1B1007537B1 /* TextViewStyle.swift */,
+				4C158DC421C737FA00BD2843 /* CardViewStyle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CE32A2E21C0BF7200794765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC9421BC55FB008673CD /* FuelTrackingHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CE32A2F21C0BF8600794765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC9621BC574D008673CD /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CE32A3021C0BF9200794765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AEC9821BC59E1008673CD /* FuelGraphViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CE32A3121C0BF9E00794765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFCE8921BCA35C007537B1 /* SettingsViewController.swift */,
+				4CB44C9721E191C900D88533 /* TermsOfServiceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CE32A3221C0BFC700794765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C46226721BD96E000148A15 /* StyleResetAllDataButton.swift */,
+				4CB44C9521E190A100D88533 /* ViewToSButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		793FFCB1A2CF8C257704CF6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25817E4E16EF735994D39539 /* Pods-Gas Tracker.debug.xcconfig */,
+				F18FEF481125B8B8F9E97894 /* Pods-Gas Tracker.release.xcconfig */,
+				F10561C884B2ED485A3D63DB /* Pods-Gas TrackerTests.debug.xcconfig */,
+				217FE8B3C6343CC0483C819A /* Pods-Gas TrackerTests.release.xcconfig */,
+				768735D6F2DB057B3EECA4DD /* Pods-Gas TrackerUITests.debug.xcconfig */,
+				FAD012F7C8BC7BB23EEC3FB3 /* Pods-Gas TrackerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C3AEC5621BC3A6B008673CD /* Gas Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3AEC8221BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas Tracker" */;
+			buildPhases = (
+				0DF13E416828B980282836E7 /* [CP] Check Pods Manifest.lock */,
+				4C3AEC5321BC3A6B008673CD /* Sources */,
+				4C3AEC5421BC3A6B008673CD /* Frameworks */,
+				4C3AEC5521BC3A6B008673CD /* Resources */,
+				617B3798290E4D9A80F3CC96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gas Tracker";
+			productName = "Gas Tracker";
+			productReference = 4C3AEC5721BC3A6C008673CD /* Gas Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C3AEC6D21BC3A6C008673CD /* Gas TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3AEC8521BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas TrackerTests" */;
+			buildPhases = (
+				8EBD4E3AB481E3343D28A960 /* [CP] Check Pods Manifest.lock */,
+				4C3AEC6A21BC3A6C008673CD /* Sources */,
+				4C3AEC6B21BC3A6C008673CD /* Frameworks */,
+				4C3AEC6C21BC3A6C008673CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3AEC7021BC3A6C008673CD /* PBXTargetDependency */,
+			);
+			name = "Gas TrackerTests";
+			productName = "Gas TrackerTests";
+			productReference = 4C3AEC6E21BC3A6C008673CD /* Gas TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C3AEC7821BC3A6C008673CD /* Gas TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3AEC8821BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas TrackerUITests" */;
+			buildPhases = (
+				8F4700083A6DF5AB438DC111 /* [CP] Check Pods Manifest.lock */,
+				4C3AEC7521BC3A6C008673CD /* Sources */,
+				4C3AEC7621BC3A6C008673CD /* Frameworks */,
+				4C3AEC7721BC3A6C008673CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3AEC7B21BC3A6C008673CD /* PBXTargetDependency */,
+			);
+			name = "Gas TrackerUITests";
+			productName = "Gas TrackerUITests";
+			productReference = 4C3AEC7921BC3A6C008673CD /* Gas TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C3AEC4F21BC3A6B008673CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Andrew Miotke";
+				TargetAttributes = {
+					4C3AEC5621BC3A6B008673CD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4C3AEC6D21BC3A6C008673CD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4C3AEC5621BC3A6B008673CD;
+					};
+					4C3AEC7821BC3A6C008673CD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4C3AEC5621BC3A6B008673CD;
+					};
+				};
+			};
+			buildConfigurationList = 4C3AEC5221BC3A6B008673CD /* Build configuration list for PBXProject "Gas Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C3AEC4E21BC3A6B008673CD;
+			productRefGroup = 4C3AEC5821BC3A6C008673CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C3AEC5621BC3A6B008673CD /* Gas Tracker */,
+				4C3AEC6D21BC3A6C008673CD /* Gas TrackerTests */,
+				4C3AEC7821BC3A6C008673CD /* Gas TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C3AEC5521BC3A6B008673CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7B054421E1270C0058EDB3 /* clear_data_cross.json in Resources */,
+				4C3AEC6821BC3A6C008673CD /* LaunchScreen.storyboard in Resources */,
+				4C3AEC6521BC3A6C008673CD /* Assets.xcassets in Resources */,
+				4CC26A8021CFFA8D00816EFD /* save_complete.json in Resources */,
+				4C3AEC6021BC3A6C008673CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC6C21BC3A6C008673CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC7721BC3A6C008673CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DF13E416828B980282836E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gas Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		617B3798290E4D9A80F3CC96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gas Tracker/Pods-Gas Tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gas Tracker/Pods-Gas Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBD4E3AB481E3343D28A960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gas TrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4700083A6DF5AB438DC111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gas TrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C3AEC5321BC3A6B008673CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBFCE8421BC9E95007537B1 /* SaveButtonStyle.swift in Sources */,
+				4C3AEC6321BC3A6C008673CD /* Gas_Tracker.xcdatamodeld in Sources */,
+				4C3AEC5D21BC3A6C008673CD /* FuelTrackingViewController.swift in Sources */,
+				4C07D03521E16FAA00E335BF /* GraphViewCells.swift in Sources */,
+				4CB44C9821E191C900D88533 /* TermsOfServiceViewController.swift in Sources */,
+				4C7B054221E123FD0058EDB3 /* Colors.swift in Sources */,
+				4C07D03821E17C0A00E335BF /* HideKeyboard.swift in Sources */,
+				4C158DC321C6F06D00BD2843 /* FuelTrackingCardViewController.swift in Sources */,
+				4C158DC521C737FA00BD2843 /* CardViewStyle.swift in Sources */,
+				4CBFCE8621BCA1B1007537B1 /* TextViewStyle.swift in Sources */,
+				4C3AEC9521BC55FB008673CD /* FuelTrackingHistoryViewController.swift in Sources */,
+				4C46226821BD96E000148A15 /* StyleResetAllDataButton.swift in Sources */,
+				4C3AEC5B21BC3A6C008673CD /* AppDelegate.swift in Sources */,
+				4C3AEC9221BC52DD008673CD /* CoreDataManager.swift in Sources */,
+				4CB7FA7921BD94C000A41E35 /* GetCurrentDateWhenSaving.swift in Sources */,
+				4CBFCE8821BCA2C1007537B1 /* ViewTitleLabel.swift in Sources */,
+				4C3AEC9921BC59E1008673CD /* FuelGraphViewController.swift in Sources */,
+				4C3AEC9721BC574D008673CD /* TableViewCell.swift in Sources */,
+				4C3AEC8F21BC4E48008673CD /* OctaneButtonStyle.swift in Sources */,
+				4CBFCE8A21BCA35C007537B1 /* SettingsViewController.swift in Sources */,
+				4CB44C9621E190A100D88533 /* ViewToSButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC6A21BC3A6C008673CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBFCE8C21BCA87D007537B1 /* SettingsTests.swift in Sources */,
+				4C3AEC7321BC3A6C008673CD /* Gas_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3AEC7521BC3A6C008673CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3AEC7E21BC3A6C008673CD /* Gas_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C3AEC7021BC3A6C008673CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3AEC5621BC3A6B008673CD /* Gas Tracker */;
+			targetProxy = 4C3AEC6F21BC3A6C008673CD /* PBXContainerItemProxy */;
+		};
+		4C3AEC7B21BC3A6C008673CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3AEC5621BC3A6B008673CD /* Gas Tracker */;
+			targetProxy = 4C3AEC7A21BC3A6C008673CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C3AEC5E21BC3A6C008673CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3AEC5F21BC3A6C008673CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C3AEC6621BC3A6C008673CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3AEC6721BC3A6C008673CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C3AEC8021BC3A6C008673CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C3AEC8121BC3A6C008673CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3AEC8321BC3A6C008673CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25817E4E16EF735994D39539 /* Pods-Gas Tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas Tracker/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3AEC8421BC3A6C008673CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18FEF481125B8B8F9E97894 /* Pods-Gas Tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas Tracker/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C3AEC8621BC3A6C008673CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10561C884B2ED485A3D63DB /* Pods-Gas TrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Tracker.app/Gas Tracker";
+			};
+			name = Debug;
+		};
+		4C3AEC8721BC3A6C008673CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217FE8B3C6343CC0483C819A /* Pods-Gas TrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Tracker.app/Gas Tracker";
+			};
+			name = Release;
+		};
+		4C3AEC8921BC3A6C008673CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768735D6F2DB057B3EECA4DD /* Pods-Gas TrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gas Tracker";
+			};
+			name = Debug;
+		};
+		4C3AEC8A21BC3A6C008673CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD012F7C8BC7BB23EEC3FB3 /* Pods-Gas TrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCM6QHD86;
+				INFOPLIST_FILE = "Gas TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Gas-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gas Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C3AEC5221BC3A6B008673CD /* Build configuration list for PBXProject "Gas Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3AEC8021BC3A6C008673CD /* Debug */,
+				4C3AEC8121BC3A6C008673CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3AEC8221BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3AEC8321BC3A6C008673CD /* Debug */,
+				4C3AEC8421BC3A6C008673CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3AEC8521BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3AEC8621BC3A6C008673CD /* Debug */,
+				4C3AEC8721BC3A6C008673CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3AEC8821BC3A6C008673CD /* Build configuration list for PBXNativeTarget "Gas TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3AEC8921BC3A6C008673CD /* Debug */,
+				4C3AEC8A21BC3A6C008673CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C3AEC6121BC3A6C008673CD /* Gas_Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C3AEC6221BC3A6C008673CD /* Gas_Tracker.xcdatamodel */,
+			);
+			currentVersion = 4C3AEC6221BC3A6C008673CD /* Gas_Tracker.xcdatamodel */;
+			path = Gas_Tracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C3AEC4F21BC3A6B008673CD /* Project object */;
+}

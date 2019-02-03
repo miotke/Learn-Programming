@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jn5-hG-eqd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project31" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V1b-Zc-m4F">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miK-ha-cxb">
+                                <rect key="frame" x="5" y="69" width="365" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zWM-FW-3mi"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="miK-ha-cxb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="L5p-FC-bbX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="miK-ha-cxb" secondAttribute="trailing" constant="5" id="LgE-SE-qEg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V1b-Zc-m4F" secondAttribute="trailing" id="Qtr-KZ-Hke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V1b-Zc-m4F" secondAttribute="bottom" id="VNg-X2-amH"/>
+                            <constraint firstItem="V1b-Zc-m4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aqW-v5-p8y"/>
+                            <constraint firstItem="V1b-Zc-m4F" firstAttribute="top" secondItem="miK-ha-cxb" secondAttribute="bottom" constant="5" id="hEF-LN-lzE"/>
+                            <constraint firstItem="V1b-Zc-m4F" firstAttribute="top" secondItem="miK-ha-cxb" secondAttribute="bottom" constant="5" id="rjm-Vd-Mrx"/>
+                            <constraint firstItem="miK-ha-cxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="vRm-mx-DGZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wrY-GC-TdA"/>
+                    <connections>
+                        <outlet property="addressBar" destination="miK-ha-cxb" id="yWd-Ps-sq8"/>
+                        <outlet property="stackView" destination="V1b-Zc-m4F" id="tly-MM-pX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="397.15142428785612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b4K-o5-ZUM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jn5-hG-eqd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CXP-xe-I9e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="y1f-9H-NXY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9se-2s-DpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.59999999999999" y="477.66116941529236"/>
+        </scene>
+    </scenes>
+</document>
