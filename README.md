@@ -6,4 +6,5 @@ More than likely these will be small files so tha I can start getting a feel for
 ### Current Languages
 * C
 * Bash
-* Pyothon
+* Python
+* Swift
