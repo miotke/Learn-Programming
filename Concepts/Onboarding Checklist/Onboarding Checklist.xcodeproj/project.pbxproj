@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C4BEAF8220748E400EA0FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BEAF7220748E400EA0FF2 /* AppDelegate.swift */; };
-		4C4BEAFA220748E400EA0FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4BEAF9220748E400EA0FF2 /* Assets.xcassets */; };
-		4C4BEAFD220748E400EA0FF2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4BEAFB220748E400EA0FF2 /* MainMenu.xib */; };
-		4C4BEB0622074D5F00EA0FF2 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BEB0522074D5F00EA0FF2 /* StatusMenuController.swift */; };
-		4C4BEB082207503400EA0FF2 /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BEB072207503400EA0FF2 /* ChecklistView.swift */; };
+		4C74E450220782A00036F391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74E44F220782A00036F391 /* AppDelegate.swift */; };
+		4C74E452220782A00036F391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C74E451220782A00036F391 /* Assets.xcassets */; };
+		4C74E455220782A00036F391 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C74E453220782A00036F391 /* MainMenu.xib */; };
+		4C74E45E220783430036F391 /* StatusBarMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74E45D220783430036F391 /* StatusBarMenuController.swift */; };
+		4C74E460220785BF0036F391 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74E45F220785BF0036F391 /* CheckboxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C4BEAF4220748E400EA0FF2 /* OnboardingChecklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingChecklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C4BEAF7220748E400EA0FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C4BEAF9220748E400EA0FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C4BEAFC220748E400EA0FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4C4BEAFE220748E400EA0FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C4BEAFF220748E400EA0FF2 /* OnboardingChecklist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnboardingChecklist.entitlements; sourceTree = "<group>"; };
-		4C4BEB0522074D5F00EA0FF2 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
-		4C4BEB072207503400EA0FF2 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
+		4C74E44C220782A00036F391 /* Onboarding Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onboarding Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C74E44F220782A00036F391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C74E451220782A00036F391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C74E454220782A00036F391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C74E456220782A00036F391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C74E457220782A00036F391 /* Onboarding_Checklist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Onboarding_Checklist.entitlements; sourceTree = "<group>"; };
+		4C74E45D220783430036F391 /* StatusBarMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarMenuController.swift; sourceTree = "<group>"; };
+		4C74E45F220785BF0036F391 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C4BEAF1220748E400EA0FF2 /* Frameworks */ = {
+		4C74E449220782A00036F391 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,72 +36,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C4BEAEB220748E400EA0FF2 = {
+		4C74E443220782A00036F391 = {
 			isa = PBXGroup;
 			children = (
-				4C4BEAF6220748E400EA0FF2 /* OnboardingChecklist */,
-				4C4BEAF5220748E400EA0FF2 /* Products */,
+				4C74E44E220782A00036F391 /* Onboarding Checklist */,
+				4C74E44D220782A00036F391 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C4BEAF5220748E400EA0FF2 /* Products */ = {
+		4C74E44D220782A00036F391 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C4BEAF4220748E400EA0FF2 /* OnboardingChecklist.app */,
+				4C74E44C220782A00036F391 /* Onboarding Checklist.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C4BEAF6220748E400EA0FF2 /* OnboardingChecklist */ = {
+		4C74E44E220782A00036F391 /* Onboarding Checklist */ = {
 			isa = PBXGroup;
 			children = (
-				4C4BEAF7220748E400EA0FF2 /* AppDelegate.swift */,
-				4C4BEB0522074D5F00EA0FF2 /* StatusMenuController.swift */,
-				4C4BEB072207503400EA0FF2 /* ChecklistView.swift */,
-				4C4BEAF9220748E400EA0FF2 /* Assets.xcassets */,
-				4C4BEAFB220748E400EA0FF2 /* MainMenu.xib */,
-				4C4BEAFE220748E400EA0FF2 /* Info.plist */,
-				4C4BEAFF220748E400EA0FF2 /* OnboardingChecklist.entitlements */,
+				4C74E44F220782A00036F391 /* AppDelegate.swift */,
+				4C74E45D220783430036F391 /* StatusBarMenuController.swift */,
+				4C74E45F220785BF0036F391 /* CheckboxView.swift */,
+				4C74E451220782A00036F391 /* Assets.xcassets */,
+				4C74E453220782A00036F391 /* MainMenu.xib */,
+				4C74E456220782A00036F391 /* Info.plist */,
+				4C74E457220782A00036F391 /* Onboarding_Checklist.entitlements */,
 			);
-			path = OnboardingChecklist;
+			path = "Onboarding Checklist";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C4BEAF3220748E400EA0FF2 /* OnboardingChecklist */ = {
+		4C74E44B220782A00036F391 /* Onboarding Checklist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C4BEB02220748E400EA0FF2 /* Build configuration list for PBXNativeTarget "OnboardingChecklist" */;
+			buildConfigurationList = 4C74E45A220782A00036F391 /* Build configuration list for PBXNativeTarget "Onboarding Checklist" */;
 			buildPhases = (
-				4C4BEAF0220748E400EA0FF2 /* Sources */,
-				4C4BEAF1220748E400EA0FF2 /* Frameworks */,
-				4C4BEAF2220748E400EA0FF2 /* Resources */,
+				4C74E448220782A00036F391 /* Sources */,
+				4C74E449220782A00036F391 /* Frameworks */,
+				4C74E44A220782A00036F391 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OnboardingChecklist;
-			productName = OnboardingChecklist;
-			productReference = 4C4BEAF4220748E400EA0FF2 /* OnboardingChecklist.app */;
+			name = "Onboarding Checklist";
+			productName = "Onboarding Checklist";
+			productReference = 4C74E44C220782A00036F391 /* Onboarding Checklist.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C4BEAEC220748E400EA0FF2 /* Project object */ = {
+		4C74E444220782A00036F391 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Andrew Miotke";
 				TargetAttributes = {
-					4C4BEAF3220748E400EA0FF2 = {
+					4C74E44B220782A00036F391 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 4C4BEAEF220748E400EA0FF2 /* Build configuration list for PBXProject "OnboardingChecklist" */;
+			buildConfigurationList = 4C74E447220782A00036F391 /* Build configuration list for PBXProject "Onboarding Checklist" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,46 +109,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C4BEAEB220748E400EA0FF2;
-			productRefGroup = 4C4BEAF5220748E400EA0FF2 /* Products */;
+			mainGroup = 4C74E443220782A00036F391;
+			productRefGroup = 4C74E44D220782A00036F391 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C4BEAF3220748E400EA0FF2 /* OnboardingChecklist */,
+				4C74E44B220782A00036F391 /* Onboarding Checklist */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C4BEAF2220748E400EA0FF2 /* Resources */ = {
+		4C74E44A220782A00036F391 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4BEAFA220748E400EA0FF2 /* Assets.xcassets in Resources */,
-				4C4BEAFD220748E400EA0FF2 /* MainMenu.xib in Resources */,
+				4C74E452220782A00036F391 /* Assets.xcassets in Resources */,
+				4C74E455220782A00036F391 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C4BEAF0220748E400EA0FF2 /* Sources */ = {
+		4C74E448220782A00036F391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4BEB082207503400EA0FF2 /* ChecklistView.swift in Sources */,
-				4C4BEB0622074D5F00EA0FF2 /* StatusMenuController.swift in Sources */,
-				4C4BEAF8220748E400EA0FF2 /* AppDelegate.swift in Sources */,
+				4C74E460220785BF0036F391 /* CheckboxView.swift in Sources */,
+				4C74E45E220783430036F391 /* StatusBarMenuController.swift in Sources */,
+				4C74E450220782A00036F391 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C4BEAFB220748E400EA0FF2 /* MainMenu.xib */ = {
+		4C74E453220782A00036F391 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C4BEAFC220748E400EA0FF2 /* Base */,
+				4C74E454220782A00036F391 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C4BEB00220748E400EA0FF2 /* Debug */ = {
+		4C74E458220782A00036F391 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +217,7 @@
 			};
 			name = Debug;
 		};
-		4C4BEB01220748E400EA0FF2 /* Release */ = {
+		4C74E459220782A00036F391 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,39 +271,39 @@
 			};
 			name = Release;
 		};
-		4C4BEB03220748E400EA0FF2 /* Debug */ = {
+		4C74E45B220782A00036F391 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = OnboardingChecklist/OnboardingChecklist.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Onboarding Checklist/Onboarding_Checklist.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = OnboardingChecklist/Info.plist;
+				INFOPLIST_FILE = "Onboarding Checklist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = andrew.OnboardingChecklist;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Onboarding-Checklist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		4C4BEB04220748E400EA0FF2 /* Release */ = {
+		4C74E45C220782A00036F391 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = OnboardingChecklist/OnboardingChecklist.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Onboarding Checklist/Onboarding_Checklist.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = OnboardingChecklist/Info.plist;
+				INFOPLIST_FILE = "Onboarding Checklist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = andrew.OnboardingChecklist;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew.Onboarding-Checklist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -312,25 +312,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C4BEAEF220748E400EA0FF2 /* Build configuration list for PBXProject "OnboardingChecklist" */ = {
+		4C74E447220782A00036F391 /* Build configuration list for PBXProject "Onboarding Checklist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C4BEB00220748E400EA0FF2 /* Debug */,
-				4C4BEB01220748E400EA0FF2 /* Release */,
+				4C74E458220782A00036F391 /* Debug */,
+				4C74E459220782A00036F391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C4BEB02220748E400EA0FF2 /* Build configuration list for PBXNativeTarget "OnboardingChecklist" */ = {
+		4C74E45A220782A00036F391 /* Build configuration list for PBXNativeTarget "Onboarding Checklist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C4BEB03220748E400EA0FF2 /* Debug */,
-				4C4BEB04220748E400EA0FF2 /* Release */,
+				4C74E45B220782A00036F391 /* Debug */,
+				4C74E45C220782A00036F391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C4BEAEC220748E400EA0FF2 /* Project object */;
+	rootObject = 4C74E444220782A00036F391 /* Project object */;
 }

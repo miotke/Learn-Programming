@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Onboarding_Checklist" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="UgI-1o-cnz" customClass="StatusBarMenuController" customModule="Onboarding_Checklist" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxView" destination="aB4-Er-2F0" id="rqM-ur-266"/>
+                <outlet property="statusMenu" destination="0Cm-Dy-kwK" id="mFw-7t-OPb"/>
+            </connections>
+        </customObject>
+        <menu id="0Cm-Dy-kwK">
+            <items>
+                <menuItem title="serviceChecklist" id="gKU-Nz-MfR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="z6W-D4-L94"/>
+                <menuItem title="Quit" id="kNr-Bd-qpO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitButtonClicked:" target="UgI-1o-cnz" id="3j9-wG-Rat"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <customView id="aB4-Er-2F0" customClass="CheckboxView" customModule="Onboarding_Checklist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="14"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vXd-4t-5Xo">
+                    <rect key="frame" x="0.0" y="-2" width="165" height="18"/>
+                    <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ty4-R9-4GA">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="serviceCheckboxButton:" target="aB4-Er-2F0" id="3rD-os-h0t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vXd-4t-5Xo" secondAttribute="trailing" id="G12-km-XNZ"/>
+                <constraint firstItem="vXd-4t-5Xo" firstAttribute="leading" secondItem="aB4-Er-2F0" secondAttribute="leading" constant="2" id="gX2-I0-7qG"/>
+                <constraint firstAttribute="bottom" secondItem="vXd-4t-5Xo" secondAttribute="bottom" id="men-mb-POM"/>
+                <constraint firstItem="vXd-4t-5Xo" firstAttribute="top" secondItem="aB4-Er-2F0" secondAttribute="top" id="vVu-rk-zSk"/>
+            </constraints>
+            <connections>
+                <outlet property="serviceCheckbox" destination="vXd-4t-5Xo" id="vlv-z6-fZt"/>
+            </connections>
+            <point key="canvasLocation" x="353.5" y="152"/>
+        </customView>
+    </objects>
+</document>
