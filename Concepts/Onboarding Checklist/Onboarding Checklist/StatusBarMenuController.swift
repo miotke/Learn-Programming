@@ -13,6 +13,7 @@ class StatusBarMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var checkboxView: CheckboxView!
     
+    
     var checkboxMenuItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
@@ -24,7 +25,7 @@ class StatusBarMenuController: NSObject {
         
         checkboxMenuItem = statusMenu.item(withTitle: "serviceChecklist")
         checkboxMenuItem.view = checkboxView
-        
+
         updateWeather()
     }
     
