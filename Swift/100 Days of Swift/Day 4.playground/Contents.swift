@@ -63,7 +63,7 @@ outerLoop: for o in 1 ... 10 {
         let product = o * w
         print("\(o) * \(w) = \(product)")
         
-        if product == 50 {
+        if product == 500 {
             print("end exiting multiple loops")
             break outerLoop
         }
