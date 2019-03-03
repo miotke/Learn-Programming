@@ -1,3 +1,5 @@
+# This is just a simple calculator that takes arguments for x and y
+
 import argparse
 import sys
 
