@@ -11,3 +11,6 @@ print(q)
 
 i = 3 ** 3
 print(i)
+
+u = 10 + 10 * (23 / 2) ** 8
+print(u)
