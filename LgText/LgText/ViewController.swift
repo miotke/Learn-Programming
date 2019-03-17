@@ -9,12 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let lgTextLabel = LgTextLabel()
 
+    @IBOutlet weak var lgTextField: UITextField!
+    @IBOutlet weak var controlBottomConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        hideKeyboardWhenTappedAround()
+        self.view.backgroundColor = UIColor.black
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+
+    }
+    
+    @objc func keyboardWillShow(_ notification:Notification) {
+        let userInfo:NSDictionary = (notification as NSNotification).userInfo! as NSDictionary
+        let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        let keyboardHeight = keyboardRectangle.height
+        // controlBottomConstraint outlet to the control you want to move up
+        controlBottomConstraint.constant = keyboardHeight + 8
     }
 }
 
