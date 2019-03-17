@@ -21,6 +21,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FxN-tI-PZj" customClass="LgTextField" customModule="LgText" customModuleProvider="target">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
                         </subviews>

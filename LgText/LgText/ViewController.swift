@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var lgTextField: UITextField!
+    
     @IBOutlet weak var controlBottomConstraint: NSLayoutConstraint!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.lgTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
-
     }
     
     deinit {
@@ -38,6 +40,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
+        controlBottomConstraint.constant = 0
+        
         return false
     }
 }
