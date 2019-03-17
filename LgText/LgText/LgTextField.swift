@@ -16,10 +16,9 @@ class LgTextField: UITextField {
     }
     
     func createView() {
-        self.text = "Hello, here is some text"
         self.textAlignment = .center
         self.textColor = UIColor.white
-        self.font = UIFont(name: "System Font", size: 100)
+        self.font = UIFont(name: "System Font", size: 90)
         self.backgroundColor = UIColor.black
     }
 }

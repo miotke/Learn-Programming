@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var lgTextField: UITextField!
     @IBOutlet weak var controlBottomConstraint: NSLayoutConstraint!
@@ -17,9 +17,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         self.view.backgroundColor = UIColor.black
+        self.lgTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
 
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     @objc func keyboardWillShow(_ notification:Notification) {
@@ -29,6 +34,11 @@ class ViewController: UIViewController {
         let keyboardHeight = keyboardRectangle.height
         // controlBottomConstraint outlet to the control you want to move up
         controlBottomConstraint.constant = keyboardHeight + 8
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }
 
