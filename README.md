@@ -7,4 +7,5 @@ More than likely these will be small files so tha I can start getting a feel for
 * C
 * Bash
 * Python
+	* UW Python Certificate: The certificate class I'm taking at the University of Washington
 * Swift
