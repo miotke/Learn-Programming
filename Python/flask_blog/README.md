@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=MwZwr5Tvyxo
 * Currently on video 3
 
 ### Start Virtual Env
-`source ~/python_environments/mechboard_env/bin/activate`
+`source ~/python_environments/flask_blog/bin/activate`
 
 ### Close Virtual Env
 `deactive`
