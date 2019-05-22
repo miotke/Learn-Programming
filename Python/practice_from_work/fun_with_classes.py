@@ -1,11 +1,14 @@
 class Car:
-    def __init__(self, color, number_of_doors):
+    def __init__(self, color, type_of_car, number_of_doors):
         self.color = color
         self.number_of_doors = number_of_doors
-
-    def volkswagen_gti(self):
-        print(f"The GTI is {self.color} with {self.number_of_doors} doors")
+        self.type_of_car = type_of_car
 
 
-c = Car("red", 2)
-c.volkswagen_gti()
+
+class Volkswagen(Car):
+    def __init__(self, bolt_pattern):
+        self.bolt_pattern = bolt_pattern
+
+    def gti():
+        pass
