@@ -10,5 +10,27 @@ class Volkswagen(Car):
     def __init__(self, bolt_pattern):
         self.bolt_pattern = bolt_pattern
 
-    def gti():
+    def gti(self):
         pass
+
+
+class Maths:
+    def __init__(self):
+        self.x = 5
+        self.y = 5
+
+
+    def addition(self):
+        return self.x + self.y
+
+
+    def multiply_stuff(self):
+        z = (self.x * self.y) * (self.x + self.y)
+        return z
+
+    def print_results(self):
+        print(self.addition())
+        print(self.multiply_stuff())
+
+m = Maths()
+m.print_results()
