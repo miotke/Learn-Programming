@@ -1,4 +1,4 @@
-# Learning-Programming
+# Learn-Programming
 
 Contains various projects and code files that I create to learn various languages and programming techniques.
 
