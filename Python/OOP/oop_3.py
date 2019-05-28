@@ -2,6 +2,8 @@
 # Using Corey Schafer's YouTube video course
 # Video 3
 
+# Static and Class methods
+
 import datetime
 
 class Employee:

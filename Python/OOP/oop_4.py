@@ -2,6 +2,8 @@
 # Using Corey Schafer's YouTube video course
 # Video 4
 
+# Inheritance
+
 class Employee:
 
     # class variables
