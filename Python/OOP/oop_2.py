@@ -1,5 +1,7 @@
 # Object Oritented Programming with Python
 # Using Corey Schafer's YouTube video course
+# Video 2
+
 
 class Employee:
     def __init__(self, first, last, pay):
