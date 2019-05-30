@@ -34,3 +34,21 @@ class Maths:
 
 m = Maths()
 m.print_results()
+
+class Elements:
+    """ Playing with variable naming within the __init__ method """
+    def __init__(self, color, doors):
+        self.colors = color
+        self.number_of_doors = doors
+
+    def show_color(self):
+        # self.colors = "red"
+        # self.number_of_doors = 4
+        named_color = f"the color is {self.colors}"
+        named_doors = f"The number of doors is {self.number_of_doors}"
+        print(named_color)
+        print(named_doors)
+
+e = Elements("blue", 2)
+e.show_color()
+

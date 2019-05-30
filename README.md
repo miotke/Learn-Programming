@@ -1,11 +1,14 @@
-# Learning-Programming
-This repo will contain a folder based on language and will hold all of the projects I create while learning that language.
+# Learn-Programming
 
-More than likely these will be small files so tha I can start getting a feel for other things.
+Contains various projects and code files that I create to learn various languages and programming techniques.
 
-### Current Languages
-* C
-* Bash
+
+## Current Work
 * Python
 	* UW Python Certificate: The certificate class I'm taking at the University of Washington
-* Swift
+	
+
+## Contributors
+Both contributors on this repo and my accounts.
+* `miotke` is this account
+* `amiotke` is my work GitHub account
