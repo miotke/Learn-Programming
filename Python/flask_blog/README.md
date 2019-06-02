@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=MwZwr5Tvyxo
 
 ### Close Virtual Env
 `deactive`
+
+### To Run
+`python3 flaskblog.py`
