@@ -1,6 +1,12 @@
-""" More practice with classes and test """
+""" More practice with classes and tests """
 
 class Keyboard:
+
+    switches = {"reds": "Mx Cherry Reds",
+                "browns": "Mx Cherry Browns",
+                "blues": "Mx Cherry Blues",
+                }
+
     def __init__(self, switch_type, keycap_set, keyboard_type):
         self.switch_type = switch_type
         self.keycap_set = keycap_set
@@ -14,4 +20,5 @@ class Keyboard:
 
 
     def generate_keyboard(self):
-        pass
+        for s in self.switches:
+            print(s)
