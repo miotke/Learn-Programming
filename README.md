@@ -1,19 +1,20 @@
-# Learning-Swift
-This is a repo where I will keep all of the work I've done while learning Swift.
-
-* Starting off with the Devslopes Swift 4 course
-* Completed - Hacking with Swift: Book 1
-* Going through Hacking with Swift: Book 1 while on the bus
-* Other projects are self experiments
-* The _Angela Yu_ folder is the folder that I will be working through the Angela Yu course on Udemey 
+# Learn Programming 
 
 
-Section: 13
-
-Section Header: 169
+Contains various projects and code files that I create to learn various languages and programming techniques.
 
 
-# Concepts Folder
-The concepts folder contains a app ideas that I start before putting them in their own repo.
-### Character Builder
-This is a pencil/paper RPG charactor builder and tracker app
+## Current Work
+* Python
+	* UW Python Certificate: The certificate class I'm taking at the University of Washington
+
+
+### History
+This is a combination of two old repos _Learn-Programming_ and _Learning-Swift_. It felt odd to have two repos that essentially had the same purpose. 
+
+
+### Commits Before Merge
+For historic purposes...
+
+* Learn-Programming: 103 commits
+* Learning-Swift: 569 commits
