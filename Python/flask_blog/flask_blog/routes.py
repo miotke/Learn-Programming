@@ -1,5 +1,5 @@
-import secrets
 import os
+import secrets
 from PIL import Image
 from flask import render_template, url_for, flash, redirect, request
 from flask_blog import app, db, bcrypt
@@ -36,7 +36,7 @@ def about():
     return render_template('about.html', title="About")
 
 
-@app.route('/register', methods = ['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
@@ -54,7 +54,7 @@ def register():
     return render_template('register.html', title = 'Register', form = form)
 
 
-@app.route('/login', methods = ['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
@@ -94,7 +94,7 @@ def save_picture(form_picture):
     return picture_fn
 
 
-@app.route('/account', methods = ['GET', 'POST'])
+@app.route('/account', methods=['GET', 'POST'])
 @login_required
 def account():
     form = UpdateAccountForm()
@@ -112,5 +112,5 @@ def account():
         form.username.data = current_user.username
         form.email.data = current_user.email
 
-    image_file = url_for('static', filename='profile_pics' + current_user.image_file)
+    image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title = 'Account', image_file = image_file, form = form)
