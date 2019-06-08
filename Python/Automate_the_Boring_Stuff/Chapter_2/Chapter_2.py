@@ -26,3 +26,9 @@ else:
     print("create an account")
 
 
+computer_type = "Mac"
+
+if computer_type == "Mac":
+    print("That's probably a great computer") 
+else:
+    print("Get rid of that Windows cruft, yo!")
