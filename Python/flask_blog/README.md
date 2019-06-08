@@ -4,7 +4,7 @@ Website for the iOS app that I'm building
 Following this guide to learn Flask
 https://www.youtube.com/watch?v=MwZwr5Tvyxo
 
-* Currently on video 7
+* Currently on video 8
 
 ### Start Virtual Env
 `source ~/python_environments/flask_blog/bin/activate`
