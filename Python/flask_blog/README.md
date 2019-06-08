@@ -13,4 +13,4 @@ https://www.youtube.com/watch?v=MwZwr5Tvyxo
 `deactive`
 
 ### To Run
-`python3 flaskblog.py`
+`python3 run.py`
