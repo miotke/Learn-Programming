@@ -14,4 +14,4 @@ How to set up virtualenvs for Python projects
 * To launch the new virtualenv either `cd` into that directory or type in the whole path
 
   * `source activate`
-  * `source activate ~/python_environments/PROJECT_NAME/bin/activate`
+  * `source ~/python_environments/PROJECT_NAME/bin/activate`
