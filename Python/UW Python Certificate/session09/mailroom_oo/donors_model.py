@@ -23,3 +23,17 @@ class DonorList:
             self.donor_data = {}
         else:
             self.donor_data = {d.norm_name: d for d in donors}
+
+
+    def get_donor(self, donor_name):
+        key = donor_name.strip().lower()
+
+        return self.donor_data.get(key)
+
+
+    def add_donor(self, donor_name):
+        donor_name = donor_name.strip()
+        donor = (donor_name, [])
+        self.donor_data[donor_name.lower()] = donor
+
+        return donor
