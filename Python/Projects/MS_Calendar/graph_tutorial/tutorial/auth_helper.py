@@ -37,3 +37,29 @@ def get_token_from_code(callback_url, expected_state):
     token = aad_auth.fetch_token(token_url, client_secret = settings["app_secret"], authorization_response = callback_url)
 
     return token
+
+
+def store_token(request, token):
+    request.session['oauth_token'] = token
+
+
+def store_user(request, user):
+    request.session['user'] = {
+        'is_authorized': True,
+        'name': user['displayName'],
+        'email': user['mail'] if (user['mail'] != None) else user['userPrincipalName']
+    }
+
+
+def get_token(request):
+    token = request.token['oauth_token']
+
+    return token
+
+
+def remove_user_and_token(request):
+    if 'oatuth_token' in request.session:
+        del request.session['oauth_token']
+
+    if 'user' in request.session:
+        del request.session['user']
