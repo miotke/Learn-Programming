@@ -48,3 +48,10 @@ def callback(request):
     store_user(request, user)
 
     return HttpResponseRedirect(reverse('home'))
+
+
+def sign_out(request):
+    # Clear out the user token
+    remove_user_and_token(request)
+
+    return HttpResponseRedirect(reverse('home'))
