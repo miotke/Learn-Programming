@@ -6,6 +6,7 @@ This needs to be turned into a class
 import sys
 from Restaurants import Restaurants
 
+restaurants = Restaurants()
 
 def main_menu():
     while True:
@@ -13,14 +14,14 @@ def main_menu():
     1: Pick a restaurant
     2: List restaurants
     3: Exit
-        >>>""")
+        >>> """)
         print(f"You selected {answer}\n")
 
         answer = answer.strip()
 
         try:
             answer_dict = {
-                "1": "to stuff",
+                "1": pick_restaurant,
                 "2": list_restaurants,
                 "3": exit_picker
             }
@@ -31,8 +32,11 @@ def main_menu():
             print(f"{answer} is not a valid option, please type 1, 2, or 3")
 
 
+def pick_restaurant():
+    restaurants.pick_restaurant()
+    print("\n")
+
 def list_restaurants():
-    restaurants = Restaurants()
     restaurants.list_restaurants()
 
 
