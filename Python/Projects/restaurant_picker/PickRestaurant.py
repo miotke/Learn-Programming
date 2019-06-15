@@ -1,28 +1,35 @@
 """ Pick a random restaurant from Restaurants and prints it out """
 import sys
+from Restaurants import Restaurants
 
 
 def main_menu():
     while True:
         answer = input(""" -> Pick an option:
-    Pick One:
     1: Pick a restaurant
-    2: Exit
+    2: List restaurants
+    3: Exit
         >>>""")
-        print(f"You selected {answer}")
+        print(f"You selected {answer}\n")
 
         answer = answer.strip()
 
         try:
             answer_dict = {
                 "1": "to stuff",
-                "2": exit_picker
+                "2": list_restaurants,
+                "3": exit_picker
             }
 
             answer_dict.get(answer)()
 
         except TypeError:
-            print(f"{answer} is not a valid option, please type 1 or 2")
+            print(f"{answer} is not a valid option, please type 1, 2, or 3")
+
+
+def list_restaurants():
+    for r in Restaurants.restaurants:
+        print(r)
 
 
 def exit_picker():
