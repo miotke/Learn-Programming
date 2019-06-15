@@ -1,4 +1,8 @@
-""" Pick a random restaurant from Restaurants and prints it out """
+"""
+Pick a random restaurant from Restaurants and prints it out
+
+This needs to be turned into a class
+"""
 import sys
 from Restaurants import Restaurants
 
@@ -28,8 +32,8 @@ def main_menu():
 
 
 def list_restaurants():
-    for r in Restaurants.restaurants:
-        print(r)
+    restaurants = Restaurants()
+    restaurants.list_restaurants()
 
 
 def exit_picker():

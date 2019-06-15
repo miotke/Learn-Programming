@@ -8,5 +8,10 @@ class Restaurants:
                    'Marination',
                    'Home Remedy',
                    'Assembly Hall',
-                   'Shake Shack'
+                   'Shake Shack',
+                   'Chiptole',
     ]
+
+    def list_restaurants(self):
+        for index, r in enumerate(self.restaurants):
+            print(index, r)
