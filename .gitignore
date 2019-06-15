@@ -1,4 +1,14 @@
+# macOS
 .DS_Store
-Swift/.DS_Store
+
+# Python
 env/
 __pycache__/
+
+# Swift, iOS, and Xcode
+Pods/
+./pods
+Podfile.lock
+xcuserdata/
+project.xcworkspace/
+DerivedData/
