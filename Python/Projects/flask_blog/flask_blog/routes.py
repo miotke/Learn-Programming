@@ -12,7 +12,7 @@ from flask_login import login_user, logout_user, current_user, login_required
 @app.route('/home')
 def home():
     posts = Post.query.all()
-    return render_template('index.html', posts=posts)
+    return render_template('home.html', posts=posts)
 
 
 @app.route('/about')
