@@ -20,7 +20,7 @@ Contains various projects and code files that I create to learn various language
 This is a combination of two old repos _Learn-Programming_ and _Learning-Swift_. It felt odd to have two repos that essentially had the same purpose. 
 
 
-## Commits Before Merge
+### Commits Before Merge
 For historical purposes:
 
 * Learn-Programming: 103 commits
