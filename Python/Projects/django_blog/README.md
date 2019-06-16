@@ -1,9 +1,10 @@
 # Flask Blog
 
-Following this guide to learn Flask
-https://www.youtube.com/watch?v=MwZwr5Tvyxo
+Following this guide to learn Django:
+https://www.youtube.com/watch?v=a48xeeo5Vnk&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=2
 
-* Currently on video 8
+
+* Currently on video 2
 
 ### Start Virtual Env
 `source ~/python_environments/django_blog/bin/activate`
@@ -12,4 +13,4 @@ https://www.youtube.com/watch?v=MwZwr5Tvyxo
 `deactive`
 
 ### To Run
-`python3 run.py`
+`python3 manage.py runserver`
