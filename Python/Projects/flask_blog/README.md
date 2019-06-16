@@ -1,5 +1,4 @@
-# Mechboard
-Website for the iOS app that I'm building
+# Flask Blog
 
 Following this guide to learn Flask
 https://www.youtube.com/watch?v=MwZwr5Tvyxo
