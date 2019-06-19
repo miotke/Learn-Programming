@@ -13,9 +13,10 @@ class Restaurants:
                    'Chiptole',
     ]
 
+
     def list_restaurants(self):
-        for index, r in enumerate(self.restaurants):
-            print(index, r)
+        for index, restaurant_name in enumerate(self.restaurants):
+            print(index, restaurant_name)
 
 
     def pick_restaurant(self):
