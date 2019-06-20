@@ -1,5 +1,10 @@
 # Python
 
+### Project Tutorials to Work Through
+* [Django Official Tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+* [Corey Shafer Django Blog](https://www.youtube.com/watch?v=UmljXZIypDc)
+* [Mozila Tutorial - Local Library website](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website)
+
 
 ### Virtualenvs
 How to set up virtualenvs for Python projects
