@@ -15,7 +15,6 @@ def main_menu():
     2: List restaurants
     3: Exit
         >>> """)
-        print(f"You selected {answer}\n")
 
         answer = answer.strip()
 
@@ -33,8 +32,10 @@ def main_menu():
 
 
 def pick_restaurant():
+    print("\n")
     restaurants.pick_restaurant()
     print("\n")
+
 
 def list_restaurants():
     restaurants.list_restaurants()

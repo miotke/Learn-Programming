@@ -1,6 +1,6 @@
-# Learning-Bash
+# Bash
 
-I know very little about bash so I'm using this repo to learn more about it. This will be similar to my Learning-Swift repo. Some of these scripts are written for my current job. 
+I know very little about bash so I'm using this repo to learn more about it. Some of these scripts are written for my current job. 
 
 ### App Impersonation 
 This is a list of scripts I wrote to complete a task that allowed customer service agents impersonate an app on the respective mobile platforms. 
