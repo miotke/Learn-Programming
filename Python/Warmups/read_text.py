@@ -14,7 +14,6 @@ def read_text(filename):
         try:
             data = file.read()
             print(data)
-            data = file.close()
         except SystemExit:
             exit(0)
 
