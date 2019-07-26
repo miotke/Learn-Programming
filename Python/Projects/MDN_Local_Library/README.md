@@ -6,4 +6,4 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local
 
 
 ### Current progress
-At the end of Part 3
+Part 4: `Configure list views`
