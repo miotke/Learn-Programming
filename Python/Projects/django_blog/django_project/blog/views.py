@@ -13,10 +13,13 @@ def home(request):
 
 
 class PostListView(ListView):
+    """ Home page """
+
     model = Post
     template_name = 'blog/home.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
+    paginate_by = 2
 
 
 class PostDetailView(DetailView):
