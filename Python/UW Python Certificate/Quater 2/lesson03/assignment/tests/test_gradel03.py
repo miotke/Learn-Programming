@@ -8,7 +8,8 @@
 
 import pytest
 
-import basic_operations as l
+# import basic_operations as l
+from src import basic_operations as l
 
 @pytest.fixture
 def _add_customers():
@@ -27,7 +28,7 @@ def _search_customers(): # needs to del with database
     return [
         [("998", "Name", "Lastname", "Address", "phone", "email", "active", 999),
          ("997", "Name", "Lastname", "Address", "phone", "email", "inactive", 10)],
-        ("998", "000")
+         ("998", "000")
     ]
 @pytest.fixture
 def _delete_customers(): # needs to del with database
@@ -69,7 +70,7 @@ def test_list_active_customers(_list_active_customers):
                        )
     actives = l.list_active_customers()
 
-    assert actives == 2
+    assert actives == 4
 
     for customer in _list_active_customers:
         l.delete_customer(customer[0])
@@ -99,7 +100,7 @@ def test_add_customer(_add_customers):
 
 
 
-def test_search_customer(_search_customers[0]):
+def test_search_customer(_search_customers):
     """ search """
     for customer in _search_customers[0]:
         l.add_customer(customer[0],

@@ -1,0 +1,2 @@
+2019-07-09 20:18:55,079	{"name": "ZeroDivisionError", "msg": "division by zero"}
+2019-07-09 20:19:30,854	{"name": "NameError", "msg": "name 'd' is not defined"}
