@@ -11,11 +11,11 @@
         <form class="text-left" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Keyboard Details</legend>
+                <legend class="border-bottom mb-4"></legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-dark" type="submit">Save Keyboard</button>
+                <button class="btn btn-dark" type="submit">Save</button>
             </div>
         </form>
     </div>
