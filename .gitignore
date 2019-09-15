@@ -13,3 +13,8 @@ Podfile.lock
 xcuserdata/
 project.xcworkspace/
 DerivedData/
+
+# Other various files to ignore
+.json
+token.pickle
+
