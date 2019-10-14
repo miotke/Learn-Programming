@@ -1,20 +1,38 @@
+"""
+Playing around psutil and wanting to build a local system monitor in Python
+This is very redamentary as I jsut learned of this module.
+Getting advice from this site here:
+https://linoxide.com/monitoring-2/psutil-library-fectch-process-information/
+"""
+
 import psutil
 import os
 
 
-def get_cpu():
-    cpu_precent = psutil.cpu_percent()
-    print(f'CPU Precent: {cpu_precent}')
+def cpu():
+    cpu_count = psutil.cpu_count()
+    cpu_frequency = psutil.cpu_freq()
+
+    print(f'CPU Precent: {cpu_count}')
+    print(f'CPU Frequency: {cpu_frequency}')
 
 
-def get_virtual_memory():
+def memory():
     virtual_memory = psutil.virtual_memory()
-    print(f'Virtual Memory:{virtual_memory}')
+    print(f'Virtual Memory: {virtual_memory}')
+
+
+def disk():
+    disk_partitions = psutil.disk_partitions()
+
+    for i in disk_partitions:
+        print(f'Disk Partitions: {i}')
 
 
 def main():
-    get_cpu()
-    get_virtual_memory()
+    cpu()
+    disk()
+    memory()
 
 
 if __name__ == '__main__':
