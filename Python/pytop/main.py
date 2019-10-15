@@ -34,8 +34,10 @@ def main():
     disk()
     memory()
 
+def print_view():
+    view.print_rows()
 
 if __name__ == '__main__':
-    view.print_rows()
     # main()
+    print_view()
 
