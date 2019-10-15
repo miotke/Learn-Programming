@@ -7,7 +7,7 @@ https://linoxide.com/monitoring-2/psutil-library-fectch-process-information/
 
 import psutil
 import os
-
+import view
 
 def cpu():
     cpu_count = psutil.cpu_count()
@@ -36,5 +36,6 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    view.print_rows()
+    # main()
 
