@@ -78,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				4C9B3B8623839AB4007FE4CC /* Todoey */,
-				4C9B3B8523839AB4007FE4CC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +87,7 @@
 				4C9B3B8423839AB4007FE4CC /* Todoey.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4C9B3B8623839AB4007FE4CC /* Todoey */ = {
@@ -98,6 +98,7 @@
 				4C555F9B2385091E005EA3DF /* Controllers */,
 				4C555F9A23850912005EA3DF /* Data Model */,
 				4C9B3B9523839AB5007FE4CC /* Info.plist */,
+				4C9B3B8523839AB4007FE4CC /* Products */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
