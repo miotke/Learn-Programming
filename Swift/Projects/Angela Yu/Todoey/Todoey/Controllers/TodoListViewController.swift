@@ -19,7 +19,7 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        loadItems()
+        loadItems()
     }
     
     
@@ -44,8 +44,13 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
+        
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
+        // Deletes item in Core Data
+//        context.delete(itemArray[indexPath.row])
+//        itemArray.remove(at: indexPath.row)
+
         saveItems()
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -88,17 +93,12 @@ class TodoListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-//    func loadItems() {
-//        if let data = try? Data(contentsOf: dataFilePath!) {
-//            let decoder = PropertyListDecoder()
-//            do {
-//                itemArray = try decoder.decode([Item].self, from: data)
-//            } catch {
-//                print("Error decodingg item array, \(error)")
-//            }
-//
-//
-//        }
-//
-//    }
+    func loadItems() {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            itemArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+    }
 }
