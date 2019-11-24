@@ -16,9 +16,12 @@ class TodoListViewController: UITableViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     
+    @IBOutlet var searchBar: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBar.delegate = self
         loadItems()
     }
     
@@ -99,6 +102,19 @@ class TodoListViewController: UITableViewController {
             itemArray = try context.fetch(request)
         } catch {
             print("Error fetching data from context \(error)")
+        }
+    }
+}
+
+extension TodoListViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        
+        do {
+            
+        } catch {
+            
         }
     }
 }
