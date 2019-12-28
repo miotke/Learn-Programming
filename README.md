@@ -2,11 +2,6 @@
 Contains various projects and code files that I create to learn various languages, programming techniques, and topics. A lot of the stuff in this repo is projects I used while learning. Mostly projects in Python and Swift.
 
 
-## Current Work
-* Python
-	* UW Python Certificate: The certificate class I'm taking at the University of Washington
-
-
 ## Languages
 * Bash
 * C
