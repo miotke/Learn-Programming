@@ -24,7 +24,7 @@ struct ContentView: View {
                         .background(RoundedRectangle(cornerRadius: 50))
                         .foregroundColor(.green)
                     
-                    Button(action: {}) {Text("Pause/Reset")}
+                    Button(action: {}) {Text("Pause")}
                         .padding()
                         .foregroundColor(Color.white)
                         .background(RoundedRectangle(cornerRadius: 50))
@@ -38,9 +38,14 @@ struct ContentView: View {
                 }
                 .padding(45)
                 
+                HStack {
+                    Text("Logged Times")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                }
                 
                 List {
-                    Section(header: Text("Logged times")) {
+                    Section {
                         Text("hello")
                     }
                 }
