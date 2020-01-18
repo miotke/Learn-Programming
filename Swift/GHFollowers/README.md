@@ -6,4 +6,4 @@ https://seanallen.teachable.com/courses/enrolled/681906
 
 ### Current status
 * Section: SearchVC & Custom Alert
-* Video: 3, Create Reusable Custome Alert
+* Video: 4, Create Reusable Custome Alert 29:36
