@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C427DDD23D38105001E5B39 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */; };
 		4C427DDF23D38270001E5B39 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */; };
+		4C427DE123D38387001E5B39 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DE023D38387001E5B39 /* GFAlertVC.swift */; };
 		4C4C67B923CE44AC00972160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C67B823CE44AC00972160 /* AppDelegate.swift */; };
 		4C4C67BB23CE44AC00972160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C67BA23CE44AC00972160 /* SceneDelegate.swift */; };
 		4C4C67C223CE44AD00972160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4C67C123CE44AD00972160 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		4C427DE023D38387001E5B39 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		4C4C67B523CE44AC00972160 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4C67B823CE44AC00972160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4C67BA23CE44AC00972160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				4C4C67CC23CE495500972160 /* SearchVC.swift */,
 				4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */,
 				4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */,
+				4C427DE023D38387001E5B39 /* GFAlertVC.swift */,
 				4CED577523D235C4001A20C1 /* FollowerListVC.swift */,
 				4C4C67CE23CE498100972160 /* FavoritesListVC.swift */,
 			);
@@ -156,6 +159,7 @@
 				4C4C67CF23CE498100972160 /* FavoritesListVC.swift in Sources */,
 				4CBA56A223D1370100CEDB54 /* GFButton.swift in Sources */,
 				4C4C67CD23CE495500972160 /* SearchVC.swift in Sources */,
+				4C427DE123D38387001E5B39 /* GFAlertVC.swift in Sources */,
 				4C427DDF23D38270001E5B39 /* GFBodyLabel.swift in Sources */,
 				4C427DDD23D38105001E5B39 /* GFTitleLabel.swift in Sources */,
 				4CED577623D235C4001A20C1 /* FollowerListVC.swift in Sources */,
