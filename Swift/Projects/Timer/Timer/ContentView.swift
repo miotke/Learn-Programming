@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         NavigationView {
             VStack {
@@ -24,7 +25,7 @@ struct ContentView: View {
                         .background(RoundedRectangle(cornerRadius: 50))
                         .foregroundColor(.green)
                     
-                    Button(action: {}) {Text("Pause")}
+                    Button(action: {print("Hello")}) {Text("Pause")}
                         .padding()
                         .foregroundColor(Color.white)
                         .background(RoundedRectangle(cornerRadius: 50))
@@ -46,7 +47,12 @@ struct ContentView: View {
                 
                 List {
                     Section {
-                        Text("hello")
+                        HStack {
+                            Image(systemName: "clock")
+                            VStack {
+                                Text("Hello image")
+                            }
+                        }
                     }
                 }
             }.navigationBarTitle("Timer")
