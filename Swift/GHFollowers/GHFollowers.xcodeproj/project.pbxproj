@@ -70,22 +70,54 @@
 		4C4C67B723CE44AC00972160 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				4C4C67B823CE44AC00972160 /* AppDelegate.swift */,
-				4C4C67BA23CE44AC00972160 /* SceneDelegate.swift */,
-				4CBA56A123D1370100CEDB54 /* GFButton.swift */,
-				4CBA56A323D139A900CEDB54 /* GFTextField.swift */,
-				4C4C67C123CE44AD00972160 /* Assets.xcassets */,
-				4C4C67C323CE44AD00972160 /* LaunchScreen.storyboard */,
-				4C4C67C623CE44AD00972160 /* Info.plist */,
+				4C9A64F823E00739008F6FC8 /* Supporting Files */,
+				4C9A64F723E006EA008F6FC8 /* Extensions */,
+				4C9A64F623E006A2008F6FC8 /* Custom Views */,
+				4C9A64F523E00670008F6FC8 /* Screens */,
+			);
+			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		4C9A64F523E00670008F6FC8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				4C4C67CC23CE495500972160 /* SearchVC.swift */,
-				4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */,
-				4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */,
-				4C427DE023D38387001E5B39 /* GFAlertVC.swift */,
-				4C427DE223D389B0001E5B39 /* UIViewController+Ext.swift */,
 				4CED577523D235C4001A20C1 /* FollowerListVC.swift */,
 				4C4C67CE23CE498100972160 /* FavoritesListVC.swift */,
 			);
-			path = GHFollowers;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4C9A64F623E006A2008F6FC8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA56A123D1370100CEDB54 /* GFButton.swift */,
+				4CBA56A323D139A900CEDB54 /* GFTextField.swift */,
+				4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */,
+				4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */,
+				4C427DE023D38387001E5B39 /* GFAlertVC.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		4C9A64F723E006EA008F6FC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C427DE223D389B0001E5B39 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C9A64F823E00739008F6FC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C67B823CE44AC00972160 /* AppDelegate.swift */,
+				4C4C67BA23CE44AC00972160 /* SceneDelegate.swift */,
+				4C4C67C123CE44AD00972160 /* Assets.xcassets */,
+				4C4C67C323CE44AD00972160 /* LaunchScreen.storyboard */,
+				4C4C67C623CE44AD00972160 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = "GHFollowers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RCM6QHD86;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = "GHFollowers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
