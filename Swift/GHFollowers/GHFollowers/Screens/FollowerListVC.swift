@@ -11,12 +11,21 @@ import UIKit
 class FollowerListVC: UIViewController {
     
     var username: String!
-
+    var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureViewController()
+        configureCollectionView()
+        getFollowers()
+    }
+    
+    func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+    }
+    
+    func getFollowers() {
         NetworkManager.shared.getFollowers(for: username, page: 1) { (followers, errorMessage) in
             guard let followers = followers else {
                 self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: errorMessage!.rawValue, buttonTitle: "Ok")
@@ -26,6 +35,13 @@ class FollowerListVC: UIViewController {
             print("followers.count = \(followers.count)")
             print(followers)
         }
+    }
+    
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemPink
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
     override func viewWillAppear(_ animated: Bool) {
