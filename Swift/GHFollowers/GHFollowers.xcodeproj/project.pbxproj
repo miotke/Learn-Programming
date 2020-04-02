@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C19B41D2436413F00F2107F /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C19B41C2436413F00F2107F /* UIHelper.swift */; };
 		4C427DDD23D38105001E5B39 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */; };
 		4C427DDF23D38270001E5B39 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */; };
 		4C427DE123D38387001E5B39 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427DE023D38387001E5B39 /* GFAlertVC.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C19B41C2436413F00F2107F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		4C427DDC23D38105001E5B39 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		4C427DDE23D38270001E5B39 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		4C427DE023D38387001E5B39 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD34E7E23E62CC70067102A /* GFError.swift */,
+				4C19B41C2436413F00F2107F /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				4C4C67CF23CE498100972160 /* FavoritesListVC.swift in Sources */,
 				4CBA56A223D1370100CEDB54 /* GFButton.swift in Sources */,
 				4C427DE323D389B0001E5B39 /* UIViewController+Ext.swift in Sources */,
+				4C19B41D2436413F00F2107F /* UIHelper.swift in Sources */,
 				4CD43F5C23E73EE70027B0C1 /* GFAvatarImageView.swift in Sources */,
 				4C4C67CD23CE495500972160 /* SearchVC.swift in Sources */,
 				4C427DE123D38387001E5B39 /* GFAlertVC.swift in Sources */,
