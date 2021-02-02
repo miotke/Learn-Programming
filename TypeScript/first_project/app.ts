@@ -1,44 +1,28 @@
-// Objects
-// const person = { 
-//     name: "Andrew",
-//     age: 30,
-//     alive: true,
-//     hobbies: ["sports", "cooking", "skateboarding", "driving"],
-//     role: [2, "author"] // tuple, only available in TypeScript
-// }
+// Functions Return Types and Void
 
-enum Role { 
-    ADMIN = 0,
-    READ_ONLY = "READ_ONLY",
-    AUTHOR = 2    
+function add(n1: number, n2: number): number { 
+    return n1 + n2
 }
 
-const person = {
-    name: "Gus",
-    age: 3,
-    hobbies: ["Chasing squirrels", "sleeping"],
-    role: Role.ADMIN
+function printResult(num: number): void {
+    console.log("Result:" + num)
 }
 
-
-
-let favoriteActivities: string[]
-
-
-console.log(person.name)
-
-// Array
-const numbers = [1, 2, 3, 4] // Array example
-
-for (const hobby of person.hobbies) { 
-    console.log(hobby.toUpperCase())
+function AddAndHandle(n1: number, n2: number, cb: (num: number) => void) { 
+    const result = n1 + n2
+    cb(result)
 }
 
-// Loops
-for (const i of numbers) { 
-    console.log(i)
-}
+printResult(add(5, 12))
 
-if (person.role === Role.ADMIN) { 
-    console.log("Is admin...")
-}
+// undefined is a legit type in JavaScript/TypeScript
+let someValue: undefined
+
+// Function types
+let combinedValues: (a: number, b: number) => number
+combinedValues = add
+console.log(combinedValues(8, 1))
+
+AddAndHandle(10, 23, (result) => { 
+    console.log(result)
+})
