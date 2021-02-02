@@ -6,17 +6,21 @@ Contains various projects and code files that I create to learn various language
 
 
 ## Languages
-* Bash
-* C
-* Python
-* Swift
+
+- Bash
+- C
+- Python
+- Swift
+- TypeScript
 
 
 ## History
+
 This is a combination of two old repos _Learn-Programming_ and _Learning-Swift_. It felt odd to have two repos that essentially had the same purpose. 
 
 
 ### Commits Before Merge
+
 For historical purposes:
 
 * Learn-Programming: 103 commits
