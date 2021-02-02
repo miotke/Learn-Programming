@@ -40,3 +40,23 @@ for (const i of numbers) {
 if (person.role === Role.ADMIN) { 
     console.log("Is admin...")
 }
+
+
+// Practice stuff
+enum PermissionLevels { 
+    ADMIN = "ADMIN",
+    READ_ONLY = "READ_ONLY",
+    EDITOR = "EDITOR"
+}
+
+function setPermission(permission: PermissionLevels) { 
+    if (permission === PermissionLevels.ADMIN) { 
+        console.log("Permission level is ADMIN")
+    } else if (permission === PermissionLevels.EDITOR) { 
+        console.log("Permission level is EDITOR")
+    } else { 
+        console.log("Permission level is READ ONLY")
+    }
+}
+
+setPermission(PermissionLevels.READ_ONLY)
