@@ -1,28 +1,19 @@
-// Functions Return Types and Void
+// Unknown type
+// The unknown type should be used over "any" 
 
-function add(n1: number, n2: number): number { 
-    return n1 + n2
+let userInput: unknown
+let userName: string
+
+userInput = 5
+userInput = "Gus"
+
+if (typeof userInput === "string") { 
+    userName = userInput
 }
 
-function printResult(num: number): void {
-    console.log("Result:" + num)
+// Never type
+function generateError(message: string, code: number): never { 
+    throw { message: message, errorCode: code }
 }
 
-function AddAndHandle(n1: number, n2: number, cb: (num: number) => void) { 
-    const result = n1 + n2
-    cb(result)
-}
-
-printResult(add(5, 12))
-
-// undefined is a legit type in JavaScript/TypeScript
-let someValue: undefined
-
-// Function types
-let combinedValues: (a: number, b: number) => number
-combinedValues = add
-console.log(combinedValues(8, 1))
-
-AddAndHandle(10, 23, (result) => { 
-    console.log(result)
-})
+generateError("Some error", 500)
